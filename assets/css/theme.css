@@ -1,0 +1,196 @@
+/* Theme toggle and dark-mode surface overrides. */
+.themeToggle{
+  order: 5;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+  color: #111111;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+}
+
+.themeToggle__icon{
+  font-size: 19px;
+  line-height: 1;
+}
+
+.siteHeaderInner--title .viewToggle{
+  order: 6;
+}
+
+.siteHeaderInner--title .headerMenuButton{
+  order: 7;
+}
+
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] .header{
+  background: var(--bg);
+}
+
+:root[data-theme="dark"] .siteHeaderInner--title .headerSocial__link,
+:root[data-theme="dark"] .themeToggle{
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .header__title,
+:root[data-theme="dark"] .seminarRail__eyebrow{
+  color: #d4af37;
+}
+
+:root[data-theme="dark"] .group__label{
+  color: rgba(244,245,242,0.68);
+}
+
+:root[data-theme="dark"] .viewToggle,
+:root[data-theme="dark"] .headerMenuButton,
+:root[data-theme="dark"] .themeToggle{
+  border-color: rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.07);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.32);
+}
+
+:root[data-theme="dark"] .viewToggle__tab{
+  color: rgba(244,245,242,0.55);
+}
+
+:root[data-theme="dark"] .viewToggle__tab[aria-selected="true"]{
+  color: #111111;
+}
+
+:root[data-theme="dark"] .viewToggle__thumb{
+  background: #f4f5f2;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.42);
+}
+
+:root[data-theme="dark"] .headerMenuButton{
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .pill{
+  background: #f4f5f2;
+  border-color: rgba(255,255,255,0.16);
+  color: #111111;
+}
+
+:root[data-theme="dark"] .pill input,
+:root[data-theme="dark"] .pill button,
+:root[data-theme="dark"] .pill .pill__label{
+  color: #111111;
+}
+
+:root[data-theme="dark"] .menu,
+:root[data-theme="dark"] .suggest,
+:root[data-theme="dark"] .pricingPopup{
+  background: #252a27;
+  border-color: rgba(255,255,255,0.14);
+  color: var(--text);
+  box-shadow: 0 16px 34px rgba(0,0,0,0.52);
+}
+
+:root[data-theme="dark"] .siteMenu__item{
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .siteMenu__item + .siteMenu__item{
+  border-top-color: rgba(255,255,255,0.09);
+}
+
+:root[data-theme="dark"] .siteMenu__item:hover,
+:root[data-theme="dark"] .siteMenu__item:focus-visible,
+:root[data-theme="dark"] .menu__item:hover,
+:root[data-theme="dark"] .menu__item:focus-visible{
+  background: rgba(255,255,255,0.08);
+}
+
+:root[data-theme="dark"] .seminarRail__arrow{
+  border-color: rgba(255,255,255,0.22);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .seminarRail__arrow:hover,
+:root[data-theme="dark"] .seminarRail__arrow:focus-visible{
+  background: var(--green);
+  color: #111111;
+}
+
+:root[data-theme="dark"] .seminarCard:not(.seminarCard--poster){
+  border-color: rgba(255,255,255,0.10);
+  background: #242826;
+}
+
+:root[data-theme="dark"] .seminarCard__date{
+  border-color: rgba(255,255,255,0.12);
+  background: #f4f5f2;
+}
+
+:root[data-theme="dark"] .seminarCard__name{
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .row{
+  border-color: rgba(255,255,255,0.06);
+}
+
+:root[data-theme="dark"] .group--past{
+  opacity: 0.78;
+}
+
+:root[data-theme="dark"] .cell__websiteLink,
+:root[data-theme="dark"] .cell__whereLink{
+  color: inherit;
+}
+
+:root[data-theme="dark"] .regionTabs__button{
+  border-color: rgba(255,255,255,0.18);
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .regionTabs__button.is-active{
+  border-color: var(--green);
+  background: var(--green);
+  color: #111111;
+}
+
+:root[data-theme="dark"] .pricingOverlay{
+  background: rgba(0,0,0,0.58);
+}
+
+@media (max-width: 640px){
+  .themeToggle{
+    order: 5;
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+
+  .themeToggle__icon{
+    font-size: 16px;
+  }
+
+  .siteHeaderInner--title .viewToggle{
+    order: 6;
+  }
+
+  .siteHeaderInner--title .headerMenuButton{
+    order: 7;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference){
+  body,
+  .header,
+  .row,
+  .pill,
+  .menu,
+  .viewToggle,
+  .themeToggle,
+  .headerMenuButton{
+    transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+  }
+}

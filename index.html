@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>UNDEFINED</title>
 
-  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem("bjj-seminars-theme");
+      const theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/tokens.css?v=20260813-dark-gold" />
   <link rel="stylesheet" href="assets/css/base.css" />
-  <link rel="stylesheet" href="assets/css/layout.css" />
-  <link rel="stylesheet" href="assets/css/pills.css?v=20260129-302">
-  <link rel="stylesheet" href="assets/css/components.css?v=20260212-902" />
-  <link rel="stylesheet" href="assets/css/directory.css?v=20260210-809" />
+  <link rel="stylesheet" href="assets/css/layout.css?v=20260813-logo-above-title" />
+  <link rel="stylesheet" href="assets/css/pills.css?v=20260515-event-menu">
+  <link rel="stylesheet" href="assets/css/carousel.css?v=20260812-posters" />
+  <link rel="stylesheet" href="assets/css/components.css?v=20260813-logo-above-title" />
+  <link rel="stylesheet" href="assets/css/directory.css?v=20260813-index-regions" />
+  <link rel="stylesheet" href="assets/css/theme.css?v=20260813-index-regions" />
 <!-- IMPORTANT: repo references main.js (no sequence) -->
-  <script type="module" src="assets/js/main.js?v=20260427-eventszip-directapply"></script>
+  <script type="module" src="assets/js/main.js?v=20260813-dual-area-selection"></script>
 </head>
 
 <body>
@@ -21,15 +32,11 @@
     <!-- Header Area -->
     <header class="header" id="header">
       
-      <!-- Logo Area (above header) -->
-    <div aria-label="ANY logo" class="siteLogoRow">
-      <div class="header__inner siteHeaderInner--logo">
-        <div class="header__logoCrop"><img class="header__logoImage" src="logo.png" alt="ANY" /></div>
-      </div>
-    </div>
-
       <div class="header__inner siteHeaderInner--title">
-        <h1 class="header__title" id="viewTitle" aria-label="Current view">EVENTS</h1>
+        <div class="headerBrand">
+          <div class="header__logoCrop"><img class="header__logoImage" src="logo.png" alt="BJJ Seminars NJ + NY" /></div>
+          <h1 class="header__title" id="viewTitle" aria-label="Current view">EVENTS</h1>
+        </div>
 
         <div class="header__countWrap" id="headerCounts" aria-live="polite">
           <span id="eventsStatus" class="status header__count">Loading</span>
@@ -38,14 +45,6 @@
 
         <!-- Header social links -->
         <div class="headerSocial" aria-label="Header social links">
-          <a class="headerSocial__link" data-customization-link="github" href="#" target="_blank" rel="noopener" aria-label="GitHub repository">
-            <!-- GitHub (Feather-style) -->
-            <svg class="headerSocial__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M9 19c-5 1.5-5-2.5-7-3"></path>
-              <path d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 18.13V22"></path>
-            </svg>
-          </a>
-
           <a class="headerSocial__link" data-customization-link="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram profile">
             <!-- Instagram (Feather-style) -->
             <svg class="headerSocial__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -54,22 +53,23 @@
               <circle cx="17.5" cy="6.5" r="0.5"></circle>
             </svg>
           </a>
-
-          <a class="headerSocial__link" data-customization-link="contact" href="#" target="_blank" rel="noopener" aria-label="Instagram DM">
-            <!-- DM (paper plane / send) -->
-            <svg class="headerSocial__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-          </a>
         </div>
+        <button class="themeToggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <span class="themeToggle__icon" aria-hidden="true">&#9790;</span>
+        </button>
         <!-- End header social links -->
 
-        <!-- Toggle: LEFT = EVENTS, RIGHT = INDEX [TESTING HOLD] -->
+        <!-- Toggle: LEFT = EVENTS, RIGHT = INDEX -->
         <div class="viewToggle" id="viewToggle" role="tablist" aria-label="View toggle">
           <button class="viewToggle__tab" id="tabEvents" role="tab" aria-selected="true" type="button">Events</button>
           <button class="viewToggle__tab" id="tabIndex" role="tab" aria-selected="false" type="button">Index</button>
           <div class="viewToggle__thumb" aria-hidden="true"></div>
+        </div>
+        <button class="headerMenuButton" id="siteMenuBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="siteMenu">Menu</button>
+        <div class="menu siteMenu" id="siteMenu" role="menu" aria-label="Menu" hidden>
+          <button class="menu__item siteMenu__item" type="button" role="menuitem">About</button>
+          <button class="menu__item siteMenu__item" type="button" role="menuitem">Flyer Request</button>
+          <button class="menu__item siteMenu__item" type="button" role="menuitem">Donate</button>
         </div>
       </div>
 
@@ -129,7 +129,7 @@
                   </div>
                 </div>
 
-                <!-- INDEX mode: Training Near -->
+                <!-- MENU mode: Training Near -->
                 <div id="eventsSearchSuggestDistance" hidden>
                   <div class="menu__header menu__header--static">
                     <span class="menu__title">TRAINING NEAR</span>
@@ -176,16 +176,16 @@
 </div>
               </div>
 
-              <!-- Pill 2: STATE -->
+              <!-- Pill 2: AREA -->
               <div class="pillSelect" data-filter="eventsState">
                 <button id="eventsPill2Btn" class="pill pill--select filter-pill" data-pill="eventsState" type="button" aria-haspopup="menu" aria-expanded="false">
-                  <span class="pill__label" data-pill-title>STATE</span>
+                  <span class="pill__label" data-pill-title>AREA</span>
                   <span class="pill__dot" id="eventsPill2Dot" data-pill-indicator aria-hidden="true"></span>
                   <span class="pill__caret" aria-hidden="true">▾</span>
                 </button>
-                <div id="eventsPill2Menu" class="menu" data-pill-panel role="menu" aria-label="State menu" hidden>
+                <div id="eventsPill2Menu" class="menu" data-pill-panel role="menu" aria-label="Area menu" hidden>
                   <div class="menu__header">
-                    <div class="menu__title">STATE</div>
+                    <div class="menu__title">AREA</div>
                     <button id="eventsPill2Clear" class="menu__clear" data-pill-clear type="button">Clear</button>
                   </div>
 </div>
@@ -307,6 +307,7 @@
         <div class="viewPanel" id="viewEvents" aria-label="Events">
 <main class="content" aria-label="Events">
             <div class="content__inner">
+<div class="seminarShowcase" id="seminarShowcase" aria-label="Featured seminars"></div>
 <div id="eventsRoot"></div>
             </div>
           </main>
@@ -316,6 +317,7 @@
         <div class="viewPanel" id="viewIndex" aria-label="Index">
 <main class="content" id="content" aria-label="Directory">
             <div class="content__inner">
+<nav class="regionTabs" id="indexRegionTabs" aria-label="Area regions" hidden></nav>
 <div id="indexEventsRoot"></div>
             </div>
           </main>

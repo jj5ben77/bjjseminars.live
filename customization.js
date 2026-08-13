@@ -6,22 +6,22 @@
 
 export const CUSTOMIZATION = Object.freeze({
   // SITE HEADER NAME: browser/tab title value
-  siteHeaderName: "ANY N.E. GRAPPLING (DEV)",
+  siteHeaderName: "BJJ SEMINARS NJ + NY",
 
   // GITHUB LINK: GitHub icon destination
-  githubLink: "https://github.com/anyjiujitsu/anyjiujitsu.github.io",
+  githubLink: "https://github.com/jj5ben77/bjjseminars.live",
 
   // CONTACT LINK: message icon destination
   contactLink: "https://ig.me/m/any.jiujitsu",
 
   // INSTAGRAM LINK: instagram icon destination
-  instagramLink: "https://www.instagram.com/any.jiujitsu/",
+  instagramLink: "https://www.instagram.com/bjjseminars.nj.ny/",
 
   // ADMIN GITHUB OWNER: GitHub account/organization that receives admin CSV commits
-  adminGitHubOwner: "anyjiujitsu",
+  adminGitHubOwner: "jj5ben77",
 
   // ADMIN GITHUB REPO: GitHub repository that receives admin CSV commits
-  adminGitHubRepo: "anyjiujitsu.github.io",
+  adminGitHubRepo: "bjjseminars.live",
 
   // ADMIN GITHUB BRANCH: branch that receives admin CSV commits
   adminGitHubBranch: "main",
@@ -39,12 +39,10 @@ export const CUSTOMIZATION = Object.freeze({
   // ADMIN STATE OPTIONS: values shown in the STATE dropdowns on admin forms.
   // Edit this list to match the region/state coverage for your site.
   adminStates: [
-    "Massachusetts",
-    "New Hampshire",
-    "Vermont",
-    "Maine",
-    "Connecticut",
-    "Rhode Island"
+    "New Jersey",
+    "Long Island",
+    "NYC",
+    "New York State"
   ],
 
   // ADMIN EVENT TYPE OPTIONS: values shown in the EVENT dropdown on the admin event form.
@@ -68,7 +66,7 @@ export const CUSTOMIZATION = Object.freeze({
   adminTitleSuffix: "Admin",
 
   // PAGE HEADER COLOR: title/filter/header accent color
-  pageHeaderColor: "#234c31",
+  pageHeaderColor: "#1f2326",
 
   // ICON(s) COLOR: top social icons + row helper icons
   iconsColor: "#234c31",

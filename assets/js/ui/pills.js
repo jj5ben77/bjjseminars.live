@@ -1,9 +1,24 @@
 // ui/pills.js
 // purpose: all pill dropdown wiring + menu positioning + hasSelection indicator
 
+import { CUSTOMIZATION } from "../../../customization.js?v=20260515-area-options";
+
 /* ------------------ Utilities ------------------ */
 const eventsOptionCache = new WeakMap();
 const directoryOptionCache = new WeakMap();
+const YEAR_OPTIONS = Object.freeze(["2026"]);
+const EVENT_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NYC"]);
+const INDEX_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NEW YORK"]);
+const EVENT_TYPE_OPTIONS = Object.freeze([
+  { value: "Seminar", label: "Seminars" },
+]);
+
+function configuredAreas(){
+  const values = Array.isArray(CUSTOMIZATION?.adminStates) ? CUSTOMIZATION.adminStates : [];
+  return values
+    .map(v => String(v ?? "").trim().toUpperCase())
+    .filter(Boolean);
+}
 
 function getEventsOptions(rows){
   const key = Array.isArray(rows) ? rows : [];
@@ -24,8 +39,8 @@ function getEventsOptions(rows){
   }
 
   const options = {
-    years: Array.from(years).sort((a,b)=>Number(b)-Number(a)),
-    states: Array.from(states).sort((a,b)=>a.localeCompare(b)),
+    years: Array.from(YEAR_OPTIONS),
+    states: Array.from(EVENT_AREA_OPTIONS),
     types: Array.from(types).sort((a,b)=>a.localeCompare(b)),
   };
   eventsOptionCache.set(key, options);
@@ -43,7 +58,9 @@ function getDirectoryOptions(rows){
     if(s) states.add(s);
   }
 
-  const options = { states: Array.from(states).sort((a,b)=>a.localeCompare(b)) };
+  const options = {
+    states: configuredAreas().length ? configuredAreas() : Array.from(states).sort((a,b)=>a.localeCompare(b))
+  };
   directoryOptionCache.set(key, options);
   return options;
 }
@@ -68,7 +85,7 @@ function uniqStatesFromEvents(rows){
 }
 
 function uniqTypesFromEvents(rows){
-  return getEventsOptions(rows).types;
+  return EVENT_TYPE_OPTIONS;
 }
 
 function uniqStatesFromDirectory(rows){
@@ -82,19 +99,25 @@ function buildMenuList(panelEl, items, selectedSet, onToggle){
   const list = document.createElement('div');
   list.className = 'menu__list';
 
-  items.forEach(val=>{
+  items.forEach(item=>{
+    const val = typeof item === "object" ? String(item.value ?? "") : String(item ?? "");
+    const label = typeof item === "object" ? String(item.label ?? item.value ?? "") : val;
+    const disabled = typeof item === "object" && !!item.disabled;
+
     const row = document.createElement('label');
     row.className = 'menu__item menu__item--check';
+    if(disabled) row.classList.add('menu__item--disabled');
 
     const cb = document.createElement('input');
     cb.type = 'checkbox';
     cb.className = 'menu__checkbox';
     cb.checked = selectedSet.has(val);
     cb.value = val;
+    cb.disabled = disabled;
 
     const text = document.createElement('span');
     text.className = 'menu__itemText';
-    text.textContent = val;
+    text.textContent = label;
 
     cb.addEventListener('change', (ev)=>{
       ev.stopPropagation();
@@ -144,6 +167,21 @@ function buildMenuListIn(listEl, items, selectedSet, onChange){
 function setPillHasSelection(btnEl, has){
   if(!btnEl) return;
   btnEl.setAttribute('data-has-selection', has ? 'true' : 'false');
+}
+
+function resetActiveSearchForArea(activeEventsState){
+  const active = typeof activeEventsState === "function" ? activeEventsState() : null;
+  const input = document.getElementById("eventsSearchInput");
+  if(active){
+    active.q = "";
+    active.distFrom = "";
+  }
+  if(input) input.value = "";
+
+  const indexZip = document.getElementById("distanceOriginInput");
+  const eventsZip = document.getElementById("eventsDistanceOriginInput");
+  if(indexZip) indexZip.value = "";
+  if(eventsZip) eventsZip.value = "";
 }
 
 export function closeAllMenus(){
@@ -276,8 +314,13 @@ export function initEventsPills({ $, getEventRows, activeEventsState, isIndexVie
 
     const rebuild = ()=>{
       const sel = activeEventsState().state;
-      const items = uniqStatesFromEvents(getEventRows());
+      const indexMode = typeof isIndexView === "function" && isIndexView();
+      const items = indexMode ? INDEX_AREA_OPTIONS : uniqStatesFromEvents(getEventRows());
       buildMenuList(panel, items, sel, ()=>{
+        if(indexMode){
+          activeEventsState().region = "";
+        }
+        resetActiveSearchForArea(activeEventsState);
         setPillHasSelection(btn, sel.size>0);
         onChange();
       });

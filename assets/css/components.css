@@ -59,31 +59,31 @@
   width: auto;
 }
 
+.headerBrand{
+  order: 2;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
 .header__logoCrop{
-  height: 1em;
+  width: 48px;
   overflow: hidden;
   display: block;
   line-height: 0;
 }
 
-/* Scale + nudge the PNG to effectively "crop" the built-in transparent padding */
 .header__logoCrop .header__logoImage{
-  height: calc(1em * var(--anyLogoCropScale, 1.35));
-  width: auto;
-  transform: translateY(calc(-1em * var(--anyLogoCropY, 0.18)));
-  transform-origin: top left;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 560px){
-  /* Mobile: scale logo down slightly WITHOUT changing desktop, and prevent any cropping */
-  .header__logo{
-    --anyLogoCropScale: 1.22;
-    --anyLogoCropY: 0.20;
-    font-size: 12px;
-  }
   .header__logoCrop{
-    height: auto;
-    overflow: visible;
+    width: 38px;
   }
 }
 
@@ -135,13 +135,78 @@
   transition: transform var(--viewTransition, 220ms) ease;
 }
 
+.headerMenuButton{
+  order: 5;
+  border: 1px solid rgba(0,0,0,0.10);
+  background: rgba(255,255,255,0.35);
+  border-radius: 999px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.10);
+  color: rgba(0,0,0,0.62);
+  cursor: pointer;
+  font-family: 'Fixture', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-synthesis: none;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-left: 8px;
+  padding: 11px 14px;
+  text-transform: uppercase;
+}
+
+.headerMenuButton[aria-expanded="true"]{
+  background: #fff;
+  color: var(--text);
+}
+
+.menu.siteMenu{
+  position: fixed;
+  z-index: 9999;
+  width: 190px;
+  min-width: 190px;
+  max-width: calc(100vw - 16px);
+  padding: 6px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header,
+.siteHeaderInner--title{
+  overflow: visible;
+}
+
+.siteMenu__item{
+  width: 100%;
+  border: 0;
+  background: transparent;
+  border-radius: 5px;
+  padding: 11px 12px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.siteMenu__item:hover,
+.siteMenu__item:focus-visible{
+  background: rgba(35, 76, 49, 0.10);
+}
+
+.siteMenu__item + .siteMenu__item{
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
 /* SLIDER */
 .viewShell{ overflow: hidden;
+  transition: height var(--viewTransition, 240ms) ease;
   touch-action: pan-y;
   overscroll-behavior-x: contain;
 }
 .viewSlider{
   display:flex;
+  align-items: flex-start;
   width: 200%;
   transform: translate3d(var(--viewOffsetPx, 0px), 0, 0);
   transition: transform var(--viewTransition, 240ms) ease;

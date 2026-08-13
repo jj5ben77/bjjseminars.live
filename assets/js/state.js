@@ -22,6 +22,7 @@ export const state = {
     q: "",
     year: new Set(),
     state: new Set(),
+    region: "",
     type: new Set(),
     /* section: index distance filter
        purpose: optional radius + origin ZIP (5 digits) for filtering directory rows */

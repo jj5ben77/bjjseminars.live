@@ -48,17 +48,6 @@
   padding: 12px var(--pagePad) 48px;
 }
 
-/* section: header logo row | purpose: replace former inline header styles */
-.siteLogoRow{
-  margin: 0 0 -10px 0;
-}
-
-.siteHeaderInner--logo{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
 .siteHeaderInner--title{
-  padding-top: 0;
+  padding-top: 8px;
 }

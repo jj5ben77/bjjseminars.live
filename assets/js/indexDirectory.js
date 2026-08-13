@@ -5,6 +5,7 @@ export function dirToIndexEventRow(r){
   const row = {
     EVENT: "Drop Ins:",
     FOR: r.NAME || "",
+    WEBSITE: r.WEBSITE || "",
     WHERE: r.IG || "",
     CITY: r.CITY || "",
     STATE: r.STATE || "",
@@ -14,10 +15,41 @@ export function dirToIndexEventRow(r){
     CREATED: ""
   };
 
+  row.REGION = directoryRegion(r);
+
   row.hasSat = !!String(row.DAY || "").trim();
   row.hasSun = !!String(row.DATE || "").trim();
-  row.searchText = [row.EVENT, row.FOR, row.WHERE, row.CITY, row.STATE, row.DAY, row.DATE, row.OTA].join(" ").toLowerCase();
+  row.searchText = [row.EVENT, row.FOR, row.WEBSITE, row.WHERE, row.CITY, row.STATE, row.DAY, row.DATE, row.OTA].join(" ").toLowerCase();
   return row;
+}
+
+const NORTH_JERSEY_CITIES = new Set([
+  "BERKELEY HEIGHTS", "BLOOMFIELD", "BLOOMINGDALE", "CEDAR GROVE", "CEDAR KNOLLS",
+  "CLIFTON", "CLOSTER", "DENVILLE", "ELIZABETH", "FAIR LAWN", "FLANDERS / ROXBURY",
+  "FORT LEE", "GARWOOD", "GUTTENBERG", "HACKETTSTOWN", "HARRISON", "HAWTHORNE",
+  "JERSEY CITY", "KENILWORTH", "LAKE HOPATCONG", "LYNDHURST", "MAHWAH", "MAPLEWOOD",
+  "MORRIS PLAINS", "NEWARK", "NORTH BERGEN", "NORTHVALE", "NUTLEY", "PASSAIC",
+  "RIDGEFIELD PARK", "ROCKAWAY", "SCOTCH PLAINS", "SPARTA", "STANHOPE", "TENAFLY",
+  "TOTOWA", "UNION", "UNION CITY", "VAUXHALL", "WALDWICK", "WASHINGTON",
+  "WEST NEW YORK", "WEST ORANGE / VERONA", "WESTWOOD"
+]);
+
+const SOUTH_JERSEY_CITIES = new Set([
+  "BERLIN", "CAPE MAY COURT HOUSE", "CHERRY HILL", "CLEMENTON", "COOKSTOWN",
+  "EGG HARBOR TOWNSHIP", "HI-NELLA", "MAPLE SHADE", "MARLTON", "MOORESTOWN",
+  "MOUNT LAUREL", "OCEAN CITY", "PENNSAUKEN", "SEWELL", "VINELAND", "WILLIAMSTOWN",
+  "WOODSTOWN"
+]);
+
+function directoryRegion(r){
+  const state = String(r.STATE || "").trim().toUpperCase();
+  if(state === "NYC" || state === "LONG ISLAND" || state === "NEW YORK STATE") return state;
+  if(state !== "NEW JERSEY") return "";
+
+  const city = String(r.CITY || "").trim().toUpperCase();
+  if(NORTH_JERSEY_CITIES.has(city)) return "NORTH JERSEY";
+  if(SOUTH_JERSEY_CITIES.has(city)) return "SOUTH JERSEY";
+  return "CENTRAL JERSEY";
 }
 
 export function filterIndexDirectoryAsEvents(rows, idxState){
@@ -30,6 +62,7 @@ export function filterIndexDirectoryAsEvents(rows, idxState){
   const stateSet = idxState?.state instanceof Set ? idxState.state : new Set();
   const typeSet  = idxState?.type  instanceof Set ? idxState.type  : new Set();
   const yearSet  = idxState?.year  instanceof Set ? idxState.year  : new Set();
+  const region = String(idxState?.region || "").trim().toUpperCase();
 
   return rows.filter(r=>{
     if(q){
@@ -38,7 +71,15 @@ export function filterIndexDirectoryAsEvents(rows, idxState){
     }
     if(stateSet.size){
       const s = String(r.STATE || "").trim().toUpperCase();
-      if(!stateSet.has(s)) return false;
+      const wantsNewJersey = stateSet.has("NEW JERSEY");
+      const wantsNewYork = stateSet.has("NEW YORK");
+      const matchesNewJersey = wantsNewJersey && s === "NEW JERSEY";
+      const matchesNewYork = wantsNewYork && ["NYC", "LONG ISLAND", "NEW YORK STATE"].includes(s);
+      const matchesDirectly = !wantsNewJersey && !wantsNewYork && stateSet.has(s);
+      if(!matchesNewJersey && !matchesNewYork && !matchesDirectly) return false;
+    }
+    if(region){
+      if(String(r.REGION || "").trim().toUpperCase() !== region) return false;
     }
     // OPENS pill (Index view repurposed from YEAR): filter by SAT/SUN availability.
     if(yearSet.size){

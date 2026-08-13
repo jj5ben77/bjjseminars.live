@@ -687,6 +687,13 @@ body.pricingPopupOpen{
   letter-spacing: -0.035em;
 }
 
+#viewIndex .cell__websiteLink{
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
 /* NOTE: Render uses .cell--citystate (middle) and .cell--daydate (right). */
 #viewEvents .row.row--events .cell--citystate,
 #viewIndex .row.row--events .cell--citystate,
@@ -1827,7 +1834,149 @@ body.pricingPopupOpen{
 }
 
 @media (max-width: 520px){
-  #eventsSearchSuggestEventsDistance{
-    margin-top: 18px;
+#eventsSearchSuggestEventsDistance{
+  margin-top: 18px;
+  }
+}
+
+/* Responsive header actions: keep social links in flow so they cannot cover tabs. */
+.siteHeaderInner--title .headerSocial{
+  position: static;
+  order: 4;
+  flex: 0 0 auto;
+  margin-left: auto;
+  transform: none;
+}
+
+.siteHeaderInner--title .headerSocial__link{
+  color: #111111;
+}
+
+.regionTabs{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.regionTabs[hidden]{
+  display: none;
+}
+
+.regionTabs::-webkit-scrollbar{
+  display: none;
+}
+
+.regionTabs__button{
+  flex: 0 0 auto;
+  min-height: 34px;
+  padding: 8px 13px;
+  border: 1px solid rgba(0,0,0,0.14);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.regionTabs__button.is-active{
+  border-color: var(--green);
+  background: var(--green);
+  color: #ffffff;
+}
+
+@media (max-width: 520px){
+  .regionTabs{
+    gap: 5px;
+    margin: 1px 0 9px;
+  }
+
+  .regionTabs__button{
+    min-height: 28px;
+    padding: 6px 9px;
+    font-size: 9px;
+  }
+}
+
+.siteHeaderInner--title .viewToggle{
+  order: 5;
+  flex: 0 0 auto;
+  margin-left: 0;
+}
+
+.siteHeaderInner--title .headerMenuButton{
+  order: 6;
+  flex: 0 0 auto;
+  margin-left: 0;
+}
+
+@media (max-width: 900px){
+  .siteHeaderInner--title{
+    gap: 8px;
+  }
+
+  .siteHeaderInner--title .headerSocial{
+    gap: 7px;
+  }
+
+  .siteHeaderInner--title .headerSocial__icon{
+    width: 18px;
+    height: 18px;
+  }
+
+  .siteHeaderInner--title .viewToggle__tab{
+    padding-inline: 12px;
+  }
+}
+
+@media (max-width: 640px){
+  .siteHeaderInner--title{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .siteHeaderInner--title .headerBrand,
+  .siteHeaderInner--title .header__countWrap{
+    flex: 0 0 auto;
+  }
+
+  .siteHeaderInner--title .headerSocial{
+    position: static;
+    order: 4;
+    margin-left: auto;
+    transform: none;
+  }
+
+  .siteHeaderInner--title .headerSocial a{
+    transform: none;
+  }
+
+  .siteHeaderInner--title .viewToggle{
+    order: 5;
+    margin-left: auto;
+  }
+
+  .siteHeaderInner--title .headerMenuButton{
+    order: 6;
+  }
+}
+
+@media (max-width: 430px){
+  .siteHeaderInner--title .headerSocial{
+    gap: 5px;
+  }
+
+  .siteHeaderInner--title .headerSocial__icon{
+    width: 16px;
+    height: 16px;
+  }
+
+  .siteHeaderInner--title .headerMenuButton{
+    padding: 7px 9px;
+    font-size: 9px;
   }
 }

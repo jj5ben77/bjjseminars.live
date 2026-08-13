@@ -48,6 +48,17 @@
   --dotSize: 10px;
 }
 
+:root[data-theme="dark"]{
+  --page-background-color: #151716 !important;
+  --page-header-color: #d4af37 !important;
+  --icons-color: #f4f5f2 !important;
+  --table-header-column-color: #394039 !important;
+  --table-field-column-color: #242826 !important;
+  --table-text-line-1-color: #f4f5f2 !important;
+  --table-text-line-2-color: rgba(244,245,242,0.62) !important;
+  --shadow: rgba(0,0,0,0.46) !important;
+}
+
 /* section: responsive tokens | purpose: compact mobile density */
 @media (max-width: 430px){
   :root{

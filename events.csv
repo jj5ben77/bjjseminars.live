@@ -1,4 +1,4 @@
-EVENT,FOR,WHERE,CITY,STATE,DAY,DATE,MEMBER,NONMEMBER,PRESALE,CASH,VENMO,SIGN UP,LAT,LON,CREATED
+EVENT,FOR,WHERE,CITY,STATE,DAY,DATE,MEMBER,NONMEMBER,PRESALE,CASH,VENMO,SIGN UP,LAT,LON,CREATED,POSTER
 Seminar,Brian Glick,First Colony BJJ,Marblehead,Massachusetts,Thursday,9/25/2025,,,,,,,42.495629,-70.835820,
 Seminar,Mike Wacker,Black Hole Jiu Jitsu,Seymour,Connecticut,Friday,9/26/2025,,,,,,,41.385466,-73.083641,
 Seminar,Christos Papadelos,Lauzon MMA,Canton,Massachusetts,Sunday,9/28/2025,,,,,,,42.175737,-71.125385,
@@ -472,3 +472,65 @@ Comp,Newbreed BJJ,,Tiverton,Rhode Island,Saturday,6/27/2026,,,,,,,41.6259211,-71
 Seminar,Rafael Leite,Gracie Gym,Windham,Maine,Thursday,5/7/2026,,,,,,,43.8342439,-70.4383893,04/29/2026
 Open Mat,Small Brawl: <165 Blue Belt+,FITE Fit,Glastonbury,Connecticut,Saturday,5/30/2026,,,,,,,41.7123218,-72.6081466,04/30/2026
 Seminar,Roberto Jimenez,Flow With The Go Jiu Jitsu,Seabrook,New Hampshire,Saturday,7/11/2026,,,,,,,42.8948055,-70.8711630,05/01/2026
+Seminar,Shawn Melanson,Gorilla BJJ Academy,Mahwah,New Jersey,Sunday,8/9/2026,80,100,,,,,,,08/01/2026,assets/posters/shawn-melanson-gorilla-2026-08-09.jpg
+Seminar,Yanni Loor,ROLLSTAR Jiu Jitsu,Hackensack,New Jersey,Saturday,8/22/2026,25,30,,,,,,,08/02/2026,assets/posters/yanni-loor-rollstar-2026-08-22.jpg
+Seminar,Jarbem Pacheco,RR Martial Arts,West Long Branch,New Jersey,Friday,8/28/2026,40,50,,,,,,,08/10/2026,assets/posters/jarbem-rr-martial-arts-2026-08-28.jpg
+Seminar,JT Torres,Lockdown BJJ,Ronkonkoma,Long Island,Sunday,8/30/2026,90,110,,,,,,,08/12/2026,assets/posters/jt-torres-lockdown-2026-08-30.jpg
+Seminar,Matheus Diniz & Diego Pato,Ascend Jiu-Jitsu,Edison,New Jersey,Saturday,2/28/2026,50,75,,,,,,,02/27/2026,assets/posters/matheus-diniz-diego-pato-ascend-2026-02-28.jpg
+Seminar,Andy Murasaki,Heritage Jiu-Jitsu Studio,Morganville,New Jersey,Saturday,3/7/2026,,100,,,,,,,03/06/2026,assets/posters/andy-murasaki-heritage-2026-03-07.jpg
+Seminar,Chris Wojcik,Brazen Martial Arts,Windsor,New Jersey,Saturday,3/21/2026,50,60,,,,,,,03/14/2026,assets/posters/chris-wojcik-brazen-2026-03-21.jpg
+Seminar,Keith Krikorian,Fighters United MMA,Hi-Nella,New Jersey,Tuesday,3/31/2026,50,60,,,,,,,03/27/2026,assets/posters/keith-krikorian-fighters-united-2026-03-31.jpg
+Seminar,Owen Jones,The Fight Lab USA,Fort Lee,New Jersey,Tuesday,3/31/2026,,60,,,,,,,03/05/2026,assets/posters/owen-jones-fight-lab-2026-03-31.jpg
+Seminar,Owen Jones,ROLLSTAR Jiu Jitsu,Hackensack,New Jersey,Thursday,4/2/2026,,,60,75,,,,,03/28/2026,assets/posters/owen-jones-rollstar-2026-04-02.jpg
+Seminar,Michael Pixley,Gorilla BJJ Academy,Mahwah,New Jersey,Friday,4/24/2026,,,60,80,,,,,04/06/2026,assets/posters/michael-pixley-gorilla-2026-04-24.jpg
+Seminar,Dima Murovanni,Queens Jiu Jitsu,Astoria,NYC,Saturday,5/2/2026,,,,,,,,,04/09/2026,assets/posters/dima-murovanni-queens-2026-05-02.jpg
+Seminar,Dima Murovanni,Queens Jiu Jitsu,Astoria,NYC,Sunday,5/3/2026,,,,,,,,,04/09/2026,assets/posters/dima-murovanni-queens-2026-05-02.jpg
+Seminar,Murilo Santana,Unity Jiu Jitsu,New York,NYC,Sunday,5/10/2026,50,70,,,,,,,04/30/2026,assets/posters/murilo-santana-unity-2026-05-10.jpg
+Seminar,Vitor Shaolin,Prolific BJJ,Bayonne,New Jersey,Saturday,5/16/2026,75,90,,,,,,,04/08/2026,assets/posters/vitor-shaolin-prolific-2026-05-16.jpg
+Seminar,Adam Wardzinski,Rolling Bear BJJ,Kenilworth,New Jersey,Friday,5/22/2026,120,150,,,,,,,05/02/2026,assets/posters/adam-wardzinski-rolling-bear-2026-05-22.jpg
+Seminar,Erik Paulson & Greg Nelson,Brazen Martial Arts,Windsor,New Jersey,Saturday,5/30/2026,75,125,,,,,,,04/30/2026,assets/posters/erik-paulson-greg-nelson-brazen-2026-05-30.jpg
+Seminar,Joseph Capizzi,Renzo Gracie Northern Valley,Northvale,New Jersey,Friday,6/5/2026,,40,,,,,,,05/19/2026,assets/posters/joseph-capizzi-renzo-northern-valley-2026-06-05.jpg
+Seminar,Sebastian Serpa,ROLLSTAR Jiu Jitsu,Hackensack,New Jersey,Friday,6/19/2026,,55,,,,,,,05/30/2026,assets/posters/sebastian-serpa-rollstar-2026-06-19.jpg
+Seminar,Jamie Cruz,NJ Ronin Jiu Jitsu and Striking Academy,Hackettstown,New Jersey,Saturday,7/11/2026,,40,,,,,,,06/30/2026,assets/posters/jamie-cruz-nj-ronin-2026-07-11.jpg
+Seminar,Tim McNamara,The Grappling Club,Brooklyn,NYC,Saturday,7/11/2026,30,50,,,,,,,05/15/2026,assets/posters/tim-mcnamara-grappling-club-2026-07-11.jpg
+Seminar,Greg Souders,Close Quarters Brazilian Jiu Jitsu,West Deptford,New Jersey,Saturday,7/18/2026,,50,,,,,,,06/24/2026,assets/posters/greg-souders-close-quarters-2026-07-18.jpg
+Seminar,Clark Gracie,Jiu Livre Grappling Office,New York,NYC,Sunday,6/14/2026,,80,,,,,,,05/08/2026,assets/posters/clark-gracie-jiu-livre-2026-06-14.jpg
+Seminar,Joseph Capizzi,Richmond County BJJ,Staten Island,NYC,Thursday,8/20/2026,,,,,,,,,08/08/2026,assets/posters/reposts/004-Dbx25cJnGic.jpg
+Seminar,Mike Kalika,Hibiscus Brazilian Jiu Jitsu,North Haledon,New Jersey,Monday,8/17/2026,,40,,,,,,,08/01/2026,assets/posters/reposts/008-Dbg5zCUJ71-.jpg
+Seminar,Hugo Duarte,RR Martial Arts,West Long Branch,New Jersey,Friday,7/31/2026,,60,,,,,,,07/30/2026,assets/posters/reposts/010-DbbZ3UvRKbu.jpg
+Seminar,Fernao Zanon,Lotus Club Brazilian Jiu Jitsu Flushing,Flushing,NYC,Wednesday,8/19/2026,,,,,,,,,07/25/2026,assets/posters/reposts/012-DbHCyDmpHOu.jpg
+Seminar,Gustavo Batista,Heritage Jiu-Jitsu Studio,Morganville,New Jersey,Sunday,8/2/2026,FREE,100,,,,,,,07/25/2026,assets/posters/reposts/013-DbGXXnqR2q-.jpg
+Seminar,Hugo Duarte,Jiu Livre Grappling Office,New York,NYC,Wednesday,7/29/2026,,60,,,,,,,07/22/2026,assets/posters/reposts/014-DbCTuxZzvn2.jpg
+Seminar,Vlad Koulikov,Bataille Jiu Jitsu Academy,Bloomingdale,New Jersey,Monday,7/20/2026,FREE,50,,,,,,,07/16/2026,assets/posters/reposts/016-Da3JkzQvobq.jpg
+Seminar,Chris Palmisano,Castle Brazilian Jiu-Jitsu,Staten Island,NYC,Sunday,7/12/2026,,40,30,,,,,,07/08/2026,assets/posters/reposts/023-DZ45pr6s2M1.jpg
+Seminar,Rigan Machado,Snake Pit USA MMA / Machado Jiu-Jitsu,Hammonton,New Jersey,Saturday,11/14/2026,,140,120,,,,,,07/07/2026,assets/posters/reposts/025-DafA2oWNfLc.jpg
+Seminar,Elijah Dorsey,Sintonia Jiu Jitsu Academy,New York,NYC,Sunday,7/26/2026,,85,,,,,,,07/01/2026,assets/posters/reposts/029-DaQYWOXxvoP.jpg
+Seminar,Caio Terra,JMA BKNY,Brooklyn,NYC,Saturday,7/25/2026,,125,,,,,,,06/29/2026,assets/posters/reposts/030-DaLBz3ox7MY.jpg
+Seminar,Pat Shahgholi,Masterskya,New York,NYC,Saturday,7/11/2026,,,,,,,,,06/27/2026,assets/posters/reposts/033-DaF0q4ixRwI.jpg
+Seminar,Lilian,Procel Brazilian Jiu-Jitsu,Jersey City,New Jersey,Sunday,6/28/2026,,,,,,,,,06/21/2026,assets/posters/reposts/039-DZ44SYEOUae.jpg
+Seminar,Gianni Grippo,Cape May Brazilian Jiu Jitsu,Cape May Court House,New Jersey,Saturday,7/25/2026,,100,,,,,,,06/19/2026,assets/posters/reposts/041-DZw-tdIOCPc.jpg
+Seminar,Emily Kwok,Marcelo Garcia Jiu-Jitsu,New York,NYC,Wednesday,6/17/2026,,,,,,,,,06/10/2026,assets/posters/reposts/046-DZX7vGFufhU.jpg
+Seminar,Clark Gracie,Montclair Martial Arts,Montclair,New Jersey,Friday,6/12/2026,,80,,,,,,,06/09/2026,assets/posters/reposts/048-DZUkpz_BJKc.jpg
+Seminar,John Danaher,Renzo Gracie Northern Valley,Northvale,New Jersey,Monday,6/8/2026,,,,,,,,,06/08/2026,assets/posters/reposts/050-DZPtNQDutOj.jpg
+Seminar,Sebastian Serpa,Otherworld Jiu Jitsu,Lawrence Township,New Jersey,Friday,6/26/2026,,50,,,,,,,06/01/2026,assets/posters/reposts/053-DZDfgulPhY8.jpg
+Seminar,Felipe Giarolla,Cohab City Brazilian Jiu-Jitsu,Guttenberg,New Jersey,Saturday,7/11/2026,,,,,,,,,06/01/2026,assets/posters/reposts/054-DZDe-xOy05s.jpg
+Seminar,Eduardo Santos,Lotus Club Brazilian Jiu Jitsu Flushing,Flushing,NYC,Wednesday,6/24/2026,,,,,,,,,06/01/2026,assets/posters/reposts/055-DZC4CqgxgsG.jpg
+Seminar,Luccas Lira,Bones BJJ Academy,Clifton,New Jersey,Friday,5/22/2026,70,90,,,,,,,05/16/2026,assets/posters/reposts/066-DYavbvZuZNM.jpg
+Seminar,Paulao Rezende,Rising Sun BJJ Academy,Ridgefield Park,New Jersey,Thursday,6/11/2026,,60,,,,,,,05/15/2026,assets/posters/reposts/067-DYYqQHdjE4D.jpg
+Seminar,Felipe Costa,Savarese BJJ,Lyndhurst,New Jersey,Monday,5/18/2026,,,,,,,,,05/09/2026,assets/posters/reposts/074-DYD_vDXgvcQ.jpg
+Seminar,Sebastian Rodriguez,Glory Martial Arts Center,Brooklyn,NYC,Sunday,5/17/2026,,50,,,,,,,04/27/2026,assets/posters/reposts/080-DXpcL3TEvva.jpg
+Seminar,Joel Tudor,Madhouse Brazilian Jiu Jitsu Academy,Wall Township,New Jersey,Saturday,6/6/2026,,,,,,,,,04/21/2026,assets/posters/reposts/086-DXZgWVMAIAs.jpg
+Seminar,Steve Joachim,Swedesboro Jiu-Jitsu and MMA,Swedesboro,New Jersey,Saturday,4/25/2026,50,60,,,,,,,04/20/2026,assets/posters/reposts/087-DXHgJmsjapV.jpg
+Seminar,Adam Wardzinski,Heritage Jiu-Jitsu Studio,Morganville,New Jersey,Sunday,5/24/2026,125,150,,,,,,,04/10/2026,assets/posters/reposts/091-DWyx6b4jsso.jpg
+Seminar,Vlad Koulikov,Bataille Jiu Jitsu Academy,Bloomingdale,New Jersey,Saturday,4/18/2026,,60,,,,,,,04/03/2026,assets/posters/reposts/092-DWuZuHNFHnC.jpg
+Seminar,Vlad Koulikov,Bataille Jiu Jitsu Academy,Bloomingdale,New Jersey,Sunday,4/19/2026,,60,,,,,,,04/03/2026,assets/posters/reposts/092-DWuZuHNFHnC.jpg
+Seminar,Mike Animal Loureiro,Rolling Bear Brazilian Jiu-Jitsu,Kenilworth,New Jersey,Tuesday,3/31/2026,,,,,,,,,03/25/2026,assets/posters/reposts/094-DWWsAfBjUV8.jpg
+Seminar,Jon Blank,Heritage Jiu-Jitsu Studio,Morganville,New Jersey,Sunday,4/26/2026,FREE,50,,,,,,,03/23/2026,assets/posters/reposts/095-DWTtE2SDvXp.jpg
+Seminar,Owen Jones,Elevate Jiu Jitsu Academy,Westwood,New Jersey,Saturday,4/4/2026,,100,75,,,,,,03/20/2026,assets/posters/reposts/096-DWRf0tmkV19.jpg
+Seminar,Chris Wojcik,Bodega Jiu-Jitsu,Maplewood,New Jersey,Monday,3/16/2026,DONATION,100,,,,,,,03/11/2026,assets/posters/reposts/103-DVxH4QSkXGW.jpg
+Seminar,Matheus Diniz & Olivier Kee-Seng,Loftus Jiu-Jitsu Academy,Flemington,New Jersey,Saturday,3/7/2026,,40,,,,,,,03/05/2026,assets/posters/reposts/106-DVhp9lWjV1X.jpg
+Seminar,Josh Griffiths,North South Jiu Jitsu,Bloomfield,New Jersey,Saturday,3/21/2026,50,70,,,,,,,03/04/2026,assets/posters/reposts/107-DVeubq9gato.jpg
+Seminar,Vinicius Jimenez,Sheridan Brazilian Jiu Jitsu,Vauxhall,New Jersey,Sunday,3/15/2026,,40,,,,,,,02/26/2026,assets/posters/reposts/110-DU3URXhkdEr.jpg
+Seminar,Adam Wardzinski,Pure Mixed Martial Arts,Rockaway,New Jersey,Saturday,5/23/2026,,100,,,,,,,02/08/2026,assets/posters/reposts/112-DUg1lFTD8pR.jpg
+Seminar,Luis AP Gil,ROLLSTAR Jiu Jitsu,Hackensack,New Jersey,Sunday,3/8/2026,DONATION,,,,,,,,02/28/2026,assets/posters/reposts/114-DVXrB6ngO0L.jpg
+Seminar,Michael Pixley,South Jersey Brazilian Jiu Jitsu,Berlin,New Jersey,Sunday,4/26/2026,,78,,75,,,,,02/19/2026,assets/posters/reposts/117-DVbWgWsDjcr.jpg

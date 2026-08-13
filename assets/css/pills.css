@@ -136,6 +136,15 @@
   font-size: 14px;
 }
 
+.menu__item--disabled{
+  opacity: 0.55;
+  cursor: default;
+}
+
+.menu__item--disabled input{
+  opacity: 0.45;
+}
+
 .menu__item input{
   width: 16px;
   height: 16px;

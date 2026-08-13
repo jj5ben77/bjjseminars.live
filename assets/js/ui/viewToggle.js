@@ -1,9 +1,9 @@
 // ui/viewToggle.js
 // purpose: view state, slider UI, tab clicks, and swipe gestures
 
-import { CUSTOMIZATION } from "../../../customization.js";
-import { state, setView } from "../state.js?v=20260212-902";
-import { refreshEventsPillDots } from "./pills.js?v=20260210-911";
+import { CUSTOMIZATION } from "../../../customization.js?v=20260813-bjj-tab-title";
+import { state, setView } from "../state.js?v=20260813-index-regions";
+import { refreshEventsPillDots } from "./pills.js?v=20260813-dual-area-selection";
 
 const VIEW_LOCKED = false;
 
@@ -21,6 +21,16 @@ function setViewShellW(w){
 
 function getViewShellW($){
   return viewShellW || ($("viewShell")?.clientWidth) || window.innerWidth || 1;
+}
+
+export function syncActiveViewHeight($, view = state.view){
+  const shell = $("viewShell");
+  const panel = view === "index" ? $("viewIndex") : $("viewEvents");
+  if(!shell || !panel) return;
+
+  window.requestAnimationFrame(() => {
+    shell.style.height = `${panel.scrollHeight}px`;
+  });
 }
 
 function applyProgressVars($, p){
@@ -103,7 +113,7 @@ export function setViewUI(view, { $, onIndexViewOpen } = {}){
   const evIn = $("eventsSearchInput");
   if(evIn){
     evIn.value = String(activeEventsState().q || "");
-    evIn.setAttribute("placeholder", view === "index" ? "Search index" : "Search events");
+    evIn.setAttribute("placeholder", view === "index" ? "Search gyms" : "Search events");
   }
 
   if(view === "index" && typeof onIndexViewOpen === "function") onIndexViewOpen();
@@ -118,6 +128,7 @@ export function setViewUI(view, { $, onIndexViewOpen } = {}){
   setTransition(260);
   refreshEventsPillDots({ $, activeEventsState });
   applyProgress($, view === "index" ? 1 : 0);
+  syncActiveViewHeight($, view);
 }
 
 export function wireViewToggle({ $, onIndexViewOpen } = {}){
@@ -125,6 +136,42 @@ export function wireViewToggle({ $, onIndexViewOpen } = {}){
   const tabIndex  = $("tabIndex");
   const viewToggle = $("viewToggle");
   const viewShell  = $("viewShell");
+  const siteMenu = $("siteMenu");
+  const siteMenuBtn = $("siteMenuBtn");
+
+  if(viewShell && "ResizeObserver" in window){
+    const panelObserver = new ResizeObserver(() => syncActiveViewHeight($));
+    const eventsPanel = $("viewEvents");
+    const indexPanel = $("viewIndex");
+    if(eventsPanel) panelObserver.observe(eventsPanel);
+    if(indexPanel) panelObserver.observe(indexPanel);
+  }
+
+  window.addEventListener("resize", () => syncActiveViewHeight($));
+
+  function closeSiteMenu(){
+    if(!siteMenu || !siteMenuBtn) return;
+    siteMenu.hidden = true;
+    siteMenuBtn.setAttribute("aria-expanded", "false");
+  }
+
+  const positionSiteMenu = () => {
+    if(!siteMenuBtn || !siteMenu) return;
+    const r = siteMenuBtn.getBoundingClientRect();
+    const pad = 8;
+    siteMenu.hidden = false;
+    const menuRect = siteMenu.getBoundingClientRect();
+    const left = Math.max(pad, Math.min(window.innerWidth - menuRect.width - pad, r.right - menuRect.width));
+    const top = r.bottom + pad;
+    siteMenu.style.left = `${Math.round(left)}px`;
+    siteMenu.style.top = `${Math.round(top)}px`;
+  };
+
+  function openSiteMenu(){
+    if(!siteMenu || !siteMenuBtn) return;
+    positionSiteMenu();
+    siteMenuBtn.setAttribute("aria-expanded", "true");
+  }
 
   if(VIEW_LOCKED){
     setView("events");
@@ -140,7 +187,34 @@ export function wireViewToggle({ $, onIndexViewOpen } = {}){
     return;
   }
 
-  tabEvents?.addEventListener("click", () => setViewUI("events", { $, onIndexViewOpen }));
+  tabEvents?.addEventListener("click", () => {
+    closeSiteMenu();
+    setViewUI("events", { $, onIndexViewOpen });
+  });
+
+  siteMenuBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if(siteMenu && siteMenu.hidden) openSiteMenu();
+    else closeSiteMenu();
+  });
+
+  document.addEventListener("click", (e) => {
+    const target = e.target;
+    if(target?.closest?.("#siteMenu") || target?.closest?.("#siteMenuBtn")) return;
+    closeSiteMenu();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if(e.key === "Escape") closeSiteMenu();
+  });
+
+  window.addEventListener("resize", closeSiteMenu);
+  window.addEventListener("scroll", closeSiteMenu, { passive: true });
+  siteMenu?.querySelectorAll(".siteMenu__item").forEach((item) => {
+    item.addEventListener("click", closeSiteMenu);
+  });
+
   tabIndex?.addEventListener("click", () => setViewUI("index", { $, onIndexViewOpen }));
 
   if(viewToggle){

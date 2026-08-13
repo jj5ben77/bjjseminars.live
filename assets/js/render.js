@@ -237,7 +237,7 @@ function renderIndexEventRow(r){
       <span class="cell__eventInline">${escapeHtml(r.EVENT || "—")}</span>
       ${otaLabel ? `<span class="cell__newInline">${escapeHtml(otaLabel)}</span>` : `<span class="cell__newInline">&nbsp;</span>`}
     </div>
-    <div class="cell__top cell__for">${escapeHtml(r.FOR || "—")}</div>
+    <div class="cell__top cell__for">${renderIndexWebsiteLink(r.FOR, r.WEBSITE)}</div>
     <div class="cell__sub cell__where">${renderIndexIgLink(r.WHERE)}</div>
   `;
 
@@ -477,4 +477,18 @@ function renderIndexIgLink(whereVal){
   const label = `@${handle}`;
 
   return `<a class="cell__whereLink" href="${href}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+}
+
+function renderIndexWebsiteLink(nameVal, websiteVal){
+  const label = String(nameVal ?? "").trim() || "—";
+  const rawUrl = String(websiteVal ?? "").trim();
+  if(!rawUrl) return escapeHtml(label);
+
+  try{
+    const url = new URL(rawUrl);
+    if(url.protocol !== "http:" && url.protocol !== "https:") return escapeHtml(label);
+    return `<a class="cell__websiteLink" href="${escapeHtml(url.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  }catch{
+    return escapeHtml(label);
+  }
 }

@@ -1,22 +1,57 @@
 // main.js
 // purpose: app bootstrap + data loading + render orchestration
 
-import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260210-911";
-import { state, setIndexQuery, setEventsQuery, setIndexEventsQuery, setIndexDistanceMiles, setIndexDistanceFrom, setEventsDistanceMiles, setEventsDistanceFrom } from "./state.js?v=20260212-902";
+import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260731-websites";
+import { state, setIndexQuery, setEventsQuery, setIndexEventsQuery, setIndexDistanceMiles, setIndexDistanceFrom, setEventsDistanceMiles, setEventsDistanceFrom } from "./state.js?v=20260813-index-regions";
 import { filterEvents } from "./filters.js?v=20260210-911";
-import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260210-911";
+import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260731-websites";
+import { renderSeminarCarousels } from "./seminarCarousel.js?v=20260812-instagram-archive";
 
 import { $ } from "./utils/dom.js?v=20260210-911";
 import { applyDistanceFilter } from "./utils/geo.js?v=20260212-902";
-import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260210-911";
+import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260813-dual-area-selection";
 import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20260427-eventszip-directapply";
 import { closePricingPopup, wirePricingPopup } from "./ui/pricing.js";
-import { activeEventsState, setActiveEventsQuery, setViewUI, wireViewToggle } from "./ui/viewToggle.js";
-import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js";
+import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260813-index-regions";
+import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260813-dual-area-selection";
 
 let directoryRows = [];
 let eventRows = [];
 let didRender = false;
+
+function initThemeToggle(){
+  const button = $("themeToggle");
+  if(!button) return;
+
+  const applyTheme = (theme) => {
+    const isDark = theme === "dark";
+    document.documentElement.dataset.theme = isDark ? "dark" : "light";
+    document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+    button.querySelector(".themeToggle__icon").textContent = isDark ? "\u2600" : "\u263e";
+    const label = isDark ? "Switch to light mode" : "Switch to dark mode";
+    button.setAttribute("aria-label", label);
+    button.title = label;
+  };
+
+  applyTheme(document.documentElement.dataset.theme || "light");
+  button.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    localStorage.setItem("bjj-seminars-theme", nextTheme);
+    applyTheme(nextTheme);
+  });
+}
+
+const EVENTS_AREAS = new Set(["NEW JERSEY", "NYC"]);
+const INDEX_REGIONS = Object.freeze({
+  "NEW JERSEY": ["NORTH JERSEY", "CENTRAL JERSEY", "SOUTH JERSEY"],
+  "NEW YORK": ["NYC", "LONG ISLAND", "NEW YORK STATE"],
+});
+
+function isPublishedSeminar(row){
+  const type = String(row.TYPE || row.EVENT || "").trim().toUpperCase();
+  const area = String(row.STATE || "").trim().toUpperCase();
+  return type === "SEMINAR" && EVENTS_AREAS.has(area);
+}
 
 function syncIndexDistanceUI(){
   ensureDistanceOriginOptions();
@@ -80,6 +115,7 @@ function renderIndexView(){
 
   const idxRows = distRes.rows.map(dirToIndexEventRow);
   const idxFiltered = filterIndexDirectoryAsEvents(idxRows, state.indexEvents);
+  renderIndexRegionTabs();
   renderIndexEventsGroups($("indexEventsRoot"), idxFiltered);
 
   if(distRes.active){
@@ -92,17 +128,62 @@ function renderIndexView(){
   }
 }
 
+function renderIndexRegionTabs(){
+  const root = $("indexRegionTabs");
+  if(!root) return;
+
+  const selectedAreas = Array.from(state.indexEvents.state).filter(value => INDEX_REGIONS[value]);
+  const area = selectedAreas.length === 1 ? selectedAreas[0] : "";
+  const regions = INDEX_REGIONS[area] || [];
+  root.hidden = regions.length === 0;
+  root.replaceChildren();
+  if(!regions.length) return;
+
+  const options = ["ALL", ...regions];
+  for(const option of options){
+    const button = document.createElement("button");
+    button.className = "regionTabs__button";
+    button.type = "button";
+    button.textContent = option;
+    const active = option === "ALL" ? !state.indexEvents.region : state.indexEvents.region === option;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+    button.addEventListener("click", () => {
+      state.indexEvents.region = option === "ALL" ? "" : option;
+      render();
+    });
+    root.appendChild(button);
+  }
+}
+
 function render(){
   didRender = true;
   closePricingPopup();
   renderEventsView();
   renderIndexView();
+  syncActiveViewHeight($);
+}
+
+function focusSeminar(row){
+  const query = String(row.FOR || row.GYM || row.WHERE || "seminar").trim();
+  setEventsQuery(query);
+  const searchInput = $("eventsSearchInput");
+  if(searchInput) searchInput.value = query;
+  render();
+  $("eventsRoot")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderCarousels(){
+  renderSeminarCarousels($("seminarShowcase"), eventRows, {
+    onSelect: focusSeminar,
+  });
 }
 
 
 async function init(){
   const { applyCustomization } = await import(`../../customization.js?v=${Date.now()}`);
   applyCustomization();
+  initThemeToggle();
 
   wireViewToggle({ $, onIndexViewOpen: syncIndexDistanceUI });
   wirePricingPopup();
@@ -162,7 +243,8 @@ async function init(){
   ]);
 
   directoryRows = dirRaw.map(normalizeDirectoryRow);
-  eventRows = evRaw.map(normalizeEventRow);
+  eventRows = evRaw.map(normalizeEventRow).filter(isPublishedSeminar);
+  renderCarousels();
 
   initEventsPills({
     $,

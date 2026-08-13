@@ -1,0 +1,333 @@
+/* Seminar carousel */
+.seminarShowcase{
+  margin: 4px 0 26px;
+}
+
+.seminarRail{
+  margin-top: 24px;
+}
+
+.seminarRail:first-child{
+  margin-top: 8px;
+}
+
+.seminarRail__heading{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.seminarRail__eyebrow{
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.seminarRail__title{
+  margin: 2px 0 0;
+  color: var(--text);
+  font-family: 'Fixture', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.seminarRail__controls{
+  display: flex;
+  flex: 0 0 auto;
+  gap: 6px;
+}
+
+.seminarRail__arrow{
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(0,0,0,0.14);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--green);
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.seminarRail__arrow:hover,
+.seminarRail__arrow:focus-visible{
+  background: var(--green);
+  color: #fff;
+}
+
+.seminarRail__viewport{
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.seminarRail__viewport::-webkit-scrollbar{
+  display: none;
+}
+
+.seminarRail__track{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 34%);
+  gap: 12px;
+  width: max-content;
+  min-width: 100%;
+  padding: 2px 2px 10px;
+}
+
+.seminarCard{
+  position: relative;
+  min-height: 158px;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 13px;
+  align-items: start;
+  overflow: hidden;
+  padding: 14px;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  background: #f7f7f5;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+  color: var(--text);
+  cursor: pointer;
+  scroll-snap-align: start;
+  text-align: left;
+}
+
+.seminarCard::after{
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
+  background: #e8c85a;
+}
+
+.seminarCard--poster{
+  min-height: 290px;
+  display: block;
+  padding: 0;
+  background: #181818;
+}
+
+.seminarCard--poster::after{
+  z-index: 4;
+}
+
+.seminarCard__poster{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+.seminarCard__posterShade{
+  position: absolute;
+  inset: 38% 0 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.92));
+}
+
+.seminarCard__posterMeta{
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 16px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.65);
+}
+
+.seminarCard__posterDate{
+  color: #f3d866;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.seminarCard__posterName{
+  margin-top: 3px;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.seminarCard__posterPlace{
+  margin-top: 5px;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seminarCard:hover,
+.seminarCard:focus-visible{
+  border-color: rgba(35,76,49,0.35);
+  transform: translateY(-2px);
+}
+
+.seminarCard__date{
+  display: grid;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+}
+
+.seminarCard__month{
+  padding: 5px 3px 4px;
+  background: var(--green);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.seminarCard__day{
+  padding: 5px 2px 7px;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.seminarCard__body{
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.seminarCard__type{
+  color: var(--green);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.seminarCard__name{
+  margin-top: 4px;
+  overflow: hidden;
+  color: #111;
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.08;
+  text-overflow: ellipsis;
+}
+
+.seminarCard__gym,
+.seminarCard__location{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.seminarCard__gym{
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.seminarCard__location{
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.seminarCard__action{
+  position: absolute;
+  right: 13px;
+  bottom: 12px;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.seminarRail__empty{
+  width: min(100%, 440px);
+  min-height: 112px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  border: 1px dashed rgba(0,0,0,0.18);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 640px){
+  .seminarShowcase{
+    margin-bottom: 18px;
+  }
+
+  .seminarRail{
+    margin-top: 19px;
+  }
+
+  .seminarRail__heading{
+    padding: 0 5px;
+  }
+
+  .seminarRail__title{
+    font-size: 19px;
+  }
+
+  .seminarRail__arrow{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .seminarRail__track{
+    grid-auto-columns: minmax(244px, 82vw);
+    gap: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .seminarCard{
+    min-height: 148px;
+    grid-template-columns: 52px minmax(0, 1fr);
+    padding: 12px;
+  }
+
+  .seminarCard--poster{
+    min-height: 318px;
+  }
+
+  .seminarCard__name{
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .seminarRail__viewport{
+    scroll-behavior: auto;
+  }
+
+  .seminarCard{
+    transition: none;
+  }
+}
