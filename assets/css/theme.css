@@ -93,6 +93,51 @@
   box-shadow: 0 16px 34px rgba(0,0,0,0.52);
 }
 
+/* The search panel has an ID-based light background in directory.css. */
+:root[data-theme="dark"] #eventsSearchSuggest.suggest{
+  background: #252a27;
+  border-color: rgba(255,255,255,0.14);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .menu__divider{
+  background: rgba(255,255,255,0.14);
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .menu__header--static .menu__title,
+:root[data-theme="dark"] #eventsSearchSuggest .distance__hintText{
+  color: rgba(244,245,242,0.68);
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .distance__input{
+  background: #f4f5f2;
+  border-color: rgba(255,255,255,0.22);
+  color: #111111;
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .distance__apply{
+  background: #d4af37;
+  border-color: #d4af37;
+  color: #111111;
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .iosSeg{
+  background: rgba(255,255,255,0.12);
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .iosSeg__btn{
+  color: rgba(244,245,242,0.76);
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .iosSeg__btn.is-active{
+  color: #111111;
+}
+
+:root[data-theme="dark"] #eventsSearchSuggest .suggest__item:hover,
+:root[data-theme="dark"] #eventsSearchSuggest .suggest__item:focus-visible{
+  background: rgba(255,255,255,0.08) !important;
+}
+
 :root[data-theme="dark"] .siteMenu__item{
   color: var(--text);
 }
