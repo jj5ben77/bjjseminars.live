@@ -41,7 +41,7 @@ function initThemeToggle(){
   });
 }
 
-const EVENTS_AREAS = new Set(["NEW JERSEY", "NYC"]);
+const EVENTS_AREAS = new Set(["NEW JERSEY", "NYC", "LONG ISLAND", "NEW YORK STATE"]);
 const INDEX_REGIONS = Object.freeze({
   "NEW JERSEY": ["NORTH JERSEY", "CENTRAL JERSEY", "SOUTH JERSEY"],
   "NEW YORK": ["NYC", "LONG ISLAND", "NEW YORK STATE"],
