@@ -175,6 +175,8 @@
 }
 
 .siteMenu__item{
+  display: block;
+  box-sizing: border-box;
   width: 100%;
   border: 0;
   background: transparent;
@@ -185,6 +187,7 @@
   font-weight: 800;
   letter-spacing: 0.04em;
   text-align: left;
+  text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }

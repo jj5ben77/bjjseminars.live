@@ -12,10 +12,13 @@ export const CUSTOMIZATION = Object.freeze({
   githubLink: "https://github.com/jj5ben77/bjjseminars.live",
 
   // CONTACT LINK: message icon destination
-  contactLink: "https://ig.me/m/any.jiujitsu",
+  contactLink: "https://ig.me/m/bjjseminars.nj.ny",
 
   // INSTAGRAM LINK: instagram icon destination
   instagramLink: "https://www.instagram.com/bjjseminars.nj.ny/",
+
+  // SUPPORT LINK: Buy Me a Coffee or another supporter page
+  supportLink: "https://buymeacoffee.com/jj5ben77",
 
   // ADMIN GITHUB OWNER: GitHub account/organization that receives admin CSV commits
   adminGitHubOwner: "jj5ben77",
@@ -114,6 +117,11 @@ export function applyCustomization(customization = CUSTOMIZATION){
   const instagramLink = document.querySelector('[data-customization-link="instagram"]');
   if(instagramLink && typeof customization.instagramLink === "string" && customization.instagramLink.trim()){
     instagramLink.href = customization.instagramLink.trim();
+  }
+
+  const supportLink = document.querySelector('[data-customization-link="support"]');
+  if(supportLink && typeof customization.supportLink === "string" && customization.supportLink.trim()){
+    supportLink.href = customization.supportLink.trim();
   }
 
   const githubLink = document.querySelector('[data-customization-link="github"]');
