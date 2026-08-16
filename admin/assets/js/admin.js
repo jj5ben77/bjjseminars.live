@@ -87,7 +87,7 @@ async function loadAdminCustomization(){
       ? customization.adminTitleSuffix.trim()
       : "Admin";
 
-    document.title = `${siteName || "UNDEFINED"} - ${adminSuffix}`;
+    document.title = `${siteName || "BJJ SEMINARS NJ + NY"} - ${adminSuffix}`;
     return customization;
   } catch(err){
     console.warn("Admin customization failed to load", err);

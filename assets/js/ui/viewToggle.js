@@ -123,7 +123,7 @@ export function setViewUI(view, { $, onIndexViewOpen } = {}){
   if(evStatus) evStatus.hidden = (view !== "events");
   if(idxStatus) idxStatus.hidden = (view !== "index");
 
-  document.title = CUSTOMIZATION.siteHeaderName || "UNDEFINED";
+  document.title = CUSTOMIZATION.siteHeaderName || "BJJ SEMINARS NJ + NY";
 
   setTransition(260);
   refreshEventsPillDots({ $, activeEventsState });
