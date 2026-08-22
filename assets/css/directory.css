@@ -1914,6 +1914,52 @@ body.pricingPopupOpen{
   margin-left: 0;
 }
 
+.siteHeaderInner--title .headerNavCluster{
+  order: 6;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.siteHeaderInner--title .headerNavCluster .viewToggle{
+  width: 152px;
+  height: 40px;
+  padding: 0;
+  gap: 0;
+  margin-left: 0;
+  border-right: 0;
+  border-radius: 999px 0 0 999px;
+}
+
+.siteHeaderInner--title .headerNavCluster .viewToggle__tab{
+  flex: 0 0 76px;
+  width: 76px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.siteHeaderInner--title .headerNavCluster .viewToggle__thumb{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 76px;
+}
+
+.siteHeaderInner--title .headerNavCluster .headerMenuButton{
+  width: 76px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-left: 0;
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+}
+
 @media (max-width: 900px){
   .siteHeaderInner--title{
     gap: 8px;
@@ -2024,9 +2070,15 @@ body.pricingPopupOpen{
     justify-self: end;
   }
 
-  .siteHeaderInner--title .viewToggle{
-    grid-column: 2;
+  .siteHeaderInner--title .headerNavCluster{
+    grid-column: 2 / span 2;
     grid-row: 2;
+    width: 162px;
+    height: 24px;
+    justify-self: end;
+  }
+
+  .siteHeaderInner--title .headerNavCluster .viewToggle{
     width: 108px;
     height: 24px;
     padding: 0;
@@ -2037,23 +2089,21 @@ body.pricingPopupOpen{
     box-shadow: 0 3px 8px rgba(0,0,0,0.18);
   }
 
-  .siteHeaderInner--title .viewToggle__tab{
+  .siteHeaderInner--title .headerNavCluster .viewToggle__tab{
     flex: 0 0 54px;
     width: 54px;
     height: 24px;
     padding: 0;
   }
 
-  .siteHeaderInner--title .viewToggle__thumb{
+  .siteHeaderInner--title .headerNavCluster .viewToggle__thumb{
     top: 0;
     bottom: 0;
     left: 0;
     width: 54px;
   }
 
-  .siteHeaderInner--title .headerMenuButton{
-    grid-column: 3;
-    grid-row: 2;
+  .siteHeaderInner--title .headerNavCluster .headerMenuButton{
     width: 54px;
     height: 24px;
     display: inline-flex;

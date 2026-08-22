@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/pills.css?v=20260515-event-menu">
   <link rel="stylesheet" href="assets/css/carousel.css?v=20260812-posters" />
   <link rel="stylesheet" href="assets/css/components.css?v=20260816-header-palette-equal-size" />
-  <link rel="stylesheet" href="assets/css/directory.css?v=20260822-mobile-segmented-nav" />
+  <link rel="stylesheet" href="assets/css/directory.css?v=20260822-responsive-segmented-nav" />
   <link rel="stylesheet" href="assets/css/theme.css?v=20260814-search-panel-2" />
 <!-- IMPORTANT: repo references main.js (no sequence) -->
   <script type="module" src="assets/js/main.js?v=20260822-disable-page-swipe"></script>
@@ -72,13 +72,15 @@
         </button>
         <!-- End header social links -->
 
-        <!-- Toggle: LEFT = EVENTS, RIGHT = INDEX -->
-        <div class="viewToggle" id="viewToggle" role="tablist" aria-label="View toggle">
-          <button class="viewToggle__tab" id="tabEvents" role="tab" aria-selected="true" type="button">Events</button>
-          <button class="viewToggle__tab" id="tabIndex" role="tab" aria-selected="false" type="button">Index</button>
-          <div class="viewToggle__thumb" aria-hidden="true"></div>
+        <div class="headerNavCluster">
+          <!-- Toggle: LEFT = EVENTS, RIGHT = INDEX -->
+          <div class="viewToggle" id="viewToggle" role="tablist" aria-label="View toggle">
+            <button class="viewToggle__tab" id="tabEvents" role="tab" aria-selected="true" type="button">Events</button>
+            <button class="viewToggle__tab" id="tabIndex" role="tab" aria-selected="false" type="button">Index</button>
+            <div class="viewToggle__thumb" aria-hidden="true"></div>
+          </div>
+          <button class="headerMenuButton" id="siteMenuBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="siteMenu">Menu</button>
         </div>
-        <button class="headerMenuButton" id="siteMenuBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="siteMenu">Menu</button>
         <div class="menu siteMenu" id="siteMenu" role="menu" aria-label="Menu" hidden>
           <button class="menu__item siteMenu__item" type="button" role="menuitem">About</button>
           <a class="menu__item siteMenu__item" href="https://ig.me/m/bjjseminars.nj.ny" target="_blank" rel="noopener noreferrer" role="menuitem">Flyer Request</a>
