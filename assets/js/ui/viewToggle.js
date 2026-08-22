@@ -1,5 +1,5 @@
 // ui/viewToggle.js
-// purpose: view state, slider UI, tab clicks, and swipe gestures
+// purpose: view state, slider UI, and tab controls
 
 import { CUSTOMIZATION } from "../../../customization.js?v=20260813-bjj-tab-title";
 import { state, setView } from "../state.js?v=20260813-index-regions";
@@ -275,101 +275,4 @@ export function wireViewToggle({ $, onIndexViewOpen } = {}){
     viewToggle.addEventListener("lostpointercapture", endDrag);
   }
 
-  if(viewShell){
-    let startX = 0, startY = 0, startP = 0;
-    let shellW = 0;
-    let lastX = 0, lastT = 0, vx = 0;
-    let lockedAxis = "";
-    let swipeActive = false;
-    let rafLoop = 0;
-    let targetP = null;
-
-    function startSwipeLoop(){
-      if(rafLoop) return;
-      const SWIPE_BLEND = 0.88;
-      let p = currentP || startP || 0;
-      const tick = () => {
-        rafLoop = requestAnimationFrame(tick);
-        if(targetP === null) return;
-        p = p + (targetP - p) * SWIPE_BLEND;
-        applyProgressVars($, p);
-      };
-      rafLoop = requestAnimationFrame(tick);
-    }
-
-    function stopSwipeLoop(){
-      if(rafLoop){
-        cancelAnimationFrame(rafLoop);
-        rafLoop = 0;
-      }
-    }
-
-    viewShell.addEventListener("touchstart", (e) => {
-      if(e.touches.length !== 1) return;
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      startP = currentP || 0;
-      shellW = Math.max(1, viewShell.clientWidth || 1);
-      setViewShellW(shellW);
-      lastX = startX;
-      lastT = performance.now();
-      vx = 0;
-      lockedAxis = "";
-      swipeActive = false;
-      stopSwipeLoop();
-      targetP = null;
-    }, { passive: true });
-
-    viewShell.addEventListener("touchmove", (e) => {
-      if(e.touches.length !== 1) return;
-      const x = e.touches[0].clientX;
-      const y = e.touches[0].clientY;
-      const dx = x - startX;
-      const dy = y - startY;
-
-      if(!lockedAxis){
-        if(Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
-        lockedAxis = (Math.abs(dx) >= Math.abs(dy)) ? "x" : "y";
-      }
-      if(lockedAxis === "y") return;
-
-      if(!swipeActive){
-        swipeActive = true;
-        setTransition(0);
-        targetP = startP;
-        startSwipeLoop();
-      }
-
-      e.preventDefault();
-
-      const now = performance.now();
-      const dt = Math.max(1, now - lastT);
-      vx = (x - lastX) / dt;
-      lastX = x;
-      lastT = now;
-
-      targetP = startP + (-dx / (shellW || 1));
-    }, { passive: false });
-
-    viewShell.addEventListener("touchend", () => {
-      setTransition(220);
-      stopSwipeLoop();
-      if(targetP !== null) applyProgress($, targetP);
-
-      const p = currentP || 0;
-      const FLICK_V = 0.45;
-      const EDGE_T  = 0.35;
-
-      if(Math.abs(vx) > FLICK_V){
-        setViewUI(vx < 0 ? "index" : "events", { $, onIndexViewOpen });
-        return;
-      }
-
-      if(startP >= 0.5){
-        setViewUI(p <= (1 - EDGE_T) ? "events" : "index", { $, onIndexViewOpen });
-      } else {
-        setViewUI(p >= EDGE_T ? "index" : "events", { $, onIndexViewOpen });
-      }
-    }, { passive: true });
-  }
 }

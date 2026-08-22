@@ -12,7 +12,7 @@ import { applyDistanceFilter } from "./utils/geo.js?v=20260212-902";
 import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260813-dual-area-selection";
 import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20260427-eventszip-directapply";
 import { closePricingPopup, wirePricingPopup } from "./ui/pricing.js";
-import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260813-index-regions";
+import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260822-disable-page-swipe";
 import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260813-dual-area-selection";
 
 let directoryRows = [];
