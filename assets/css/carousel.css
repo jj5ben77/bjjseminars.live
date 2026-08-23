@@ -104,6 +104,8 @@
   cursor: pointer;
   scroll-snap-align: start;
   text-align: left;
+  text-decoration: none;
+  font: inherit;
 }
 
 .seminarCard::after{

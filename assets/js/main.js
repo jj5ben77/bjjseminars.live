@@ -1,19 +1,19 @@
 // main.js
 // purpose: app bootstrap + data loading + render orchestration
 
-import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260731-websites";
+import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260823-instagram-links";
 import { state, setIndexQuery, setEventsQuery, setIndexEventsQuery, setIndexDistanceMiles, setIndexDistanceFrom, setEventsDistanceMiles, setEventsDistanceFrom } from "./state.js?v=20260813-index-regions";
 import { filterEvents } from "./filters.js?v=20260210-911";
-import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260731-websites";
-import { renderSeminarCarousels } from "./seminarCarousel.js?v=20260812-instagram-archive";
+import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260823-instagram-links";
+import { renderSeminarCarousels } from "./seminarCarousel.js?v=20260823-instagram-links";
 
 import { $ } from "./utils/dom.js?v=20260210-911";
 import { applyDistanceFilter } from "./utils/geo.js?v=20260212-902";
-import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260813-dual-area-selection";
+import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260823-grappling-events-soon";
 import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20260427-eventszip-directapply";
 import { closePricingPopup, wirePricingPopup } from "./ui/pricing.js";
 import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260822-disable-page-swipe";
-import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260813-dual-area-selection";
+import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260823-gym-address";
 
 let directoryRows = [];
 let eventRows = [];

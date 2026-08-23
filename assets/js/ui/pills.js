@@ -11,6 +11,7 @@ const EVENT_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NYC"]);
 const INDEX_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NEW YORK"]);
 const EVENT_TYPE_OPTIONS = Object.freeze([
   { value: "Seminar", label: "Seminars" },
+  { value: "Grappling Event", label: "Grappling Events (Coming Soon...)", disabled: true },
 ]);
 
 function configuredAreas(){
@@ -106,7 +107,10 @@ function buildMenuList(panelEl, items, selectedSet, onToggle){
 
     const row = document.createElement('label');
     row.className = 'menu__item menu__item--check';
-    if(disabled) row.classList.add('menu__item--disabled');
+    if(disabled){
+      row.classList.add('menu__item--disabled');
+      row.setAttribute('aria-disabled', 'true');
+    }
 
     const cb = document.createElement('input');
     cb.type = 'checkbox';

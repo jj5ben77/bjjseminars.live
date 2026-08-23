@@ -81,6 +81,18 @@
   height: auto;
 }
 
+.header__logoImage--dark{
+  display: none !important;
+}
+
+:root[data-theme="dark"] .header__logoImage--light{
+  display: none;
+}
+
+:root[data-theme="dark"] .header__logoImage--dark{
+  display: block !important;
+}
+
 @media (max-width: 560px){
   .header__logoCrop{
     width: 38px;
@@ -374,10 +386,13 @@ line-height: 1;
 .row:first-child{ border-top: 0; }
 
 .cell__name{ font-weight: 800; }
+.cell__forLink{ color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.row--source{ cursor: pointer; }
 .cell__ig{ font-size: calc(var(--rowFont) - 2px); color: var(--muted); margin-top: 2px; }
 
 .cell__city{ font-weight: 800; }
 .cell__state{ font-size: calc(var(--rowFont) - 2px); color: var(--muted); margin-top: 2px; text-transform: uppercase; letter-spacing: 0.06em; }
+.cell__address{ font-size: calc(var(--rowFont) - 4px); color: var(--muted); line-height: 1.25; margin-top: 3px; }
 
 .cell__days{ font-weight: 800; text-align: right; }
 .cell__ota{ font-size: calc(var(--rowFont) - 2px); color: var(--muted); margin-top: 2px; text-align: right; }

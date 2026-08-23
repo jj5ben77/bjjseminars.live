@@ -28,18 +28,21 @@ export function renderSeminarCarousels(root, rows, { onSelect } = {}){
     })
     .sort(sortByDate("desc"));
 
+  const uniqueThisMonth = dedupeCarouselRows(thisMonth);
+  const uniquePrevious = dedupeCarouselRows(previous);
+
   root.replaceChildren(
     buildCarouselSection({
       eyebrow: monthStart.toLocaleDateString("en-US", { month: "long", year: "numeric" }),
       title: "This Month's Seminars",
-      rows: thisMonth,
+      rows: uniqueThisMonth,
       emptyText: "No seminars are listed for this month yet.",
       onSelect,
     }),
     buildCarouselSection({
       eyebrow: "Recent sessions",
       title: "Previous Seminars",
-      rows: previous,
+      rows: uniquePrevious,
       emptyText: "Previous seminars will appear here.",
       onSelect,
     }),
@@ -104,9 +107,16 @@ function buildCarouselSection({ eyebrow, title, rows, emptyText, onSelect }){
 
 function buildSeminarCard(row, onSelect){
   const date = row._date || parseEventDate(row.DATE);
-  const card = document.createElement("button");
+  const source = String(row.SOURCE || "").trim();
+  const card = document.createElement(source ? "a" : "button");
   card.className = "seminarCard";
-  card.type = "button";
+  if(source){
+    card.href = source;
+    card.target = "_blank";
+    card.rel = "noopener noreferrer";
+  } else {
+    card.type = "button";
+  }
 
   const instructor = String(row.FOR || row.NAME || "Seminar").trim() || "Seminar";
   const gym = String(row.GYM || row.WHERE || "Location coming soon").trim() || "Location coming soon";
@@ -115,7 +125,9 @@ function buildSeminarCard(row, onSelect){
   const location = [city, state].filter(Boolean).join(", ");
   const poster = String(row.POSTER || "").trim();
 
-  card.setAttribute("aria-label", `Find ${instructor}, ${formatFullDate(date)}`);
+  card.setAttribute("aria-label", source
+    ? `Open Instagram flyer for ${instructor}, ${formatFullDate(date)}`
+    : `Find ${instructor}, ${formatFullDate(date)}`);
   if(poster){
     card.classList.add("seminarCard--poster");
     card.innerHTML = `
@@ -127,7 +139,7 @@ function buildSeminarCard(row, onSelect){
         <span class="seminarCard__posterPlace">${escapeHtml(gym)} · ${escapeHtml(location)}</span>
       </span>
     `;
-    card.addEventListener("click", () => onSelect?.(row));
+    if(!source) card.addEventListener("click", () => onSelect?.(row));
     return card;
   }
 
@@ -145,8 +157,19 @@ function buildSeminarCard(row, onSelect){
     <span class="seminarCard__action" aria-hidden="true">View <span>→</span></span>
   `;
 
-  card.addEventListener("click", () => onSelect?.(row));
+  if(!source) card.addEventListener("click", () => onSelect?.(row));
   return card;
+}
+
+function dedupeCarouselRows(rows){
+  const seenPosters = new Set();
+  return rows.filter((row) => {
+    const poster = String(row.POSTER || "").trim().toLowerCase();
+    if(!poster) return true;
+    if(seenPosters.has(poster)) return false;
+    seenPosters.add(poster);
+    return true;
+  });
 }
 
 function wireAutoAdvance(viewport, itemCount){

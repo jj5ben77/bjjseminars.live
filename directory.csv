@@ -1,4 +1,4 @@
-STATE,CITY,NAME,IG,SAT,SUN,OTA,CREATED,LAT,LON,WEBSITE
+STATE,CITY,NAME,IG,SAT,SUN,OTA,CREATED,LAT,LON,WEBSITE,ADDRESS
 New Jersey,Westwood,Training Grounds BJJ & MMA,training_grounds_mma,,,,,,,https://www.njtraininggrounds.com/
 New Jersey,Ridgefield Park,Rising Sun BJJ Academy,risingsunbjj,,,,,,,https://www.risingsunacademy.com/
 New Jersey,Fair Lawn,Performance Jiu-Jitsu,performancebjj,,,,,,,https://armlock.com/
@@ -159,7 +159,7 @@ NYC,Brooklyn,Gregor Gracie Jiu-Jitsu,gregorgraciejiujitsu,,,,,,,https://www.greg
 NYC,Brooklyn,Zero Gravity BJJ Academy,zerogbjj,,,,,,,https://zerogbjj.com/
 NYC,Brooklyn,Lions Fight Brighton,lions_fight,,,,,,,https://lionsfight.com/
 NYC,Brooklyn,South Brooklyn BJJ / DarFight BJJ,zhenyasakirski,,,,,,,https://www.southbrooklynbjj.com/
-NYC,Brooklyn,Brooklyn Mixed Martial Arts,,,,,,,,https://www.brooklynmixedmartialarts.com/
+NYC,Brooklyn,Brooklyn Mixed Martial Arts,brooklynmmaofficial2008,,,,,,,https://www.brooklynmixedmartialarts.com/,"2418 Ralph Ave, Brooklyn, NY 11234, USA"
 NYC,Brooklyn,Vagabond Jiu Jitsu,vagabondbjjbrooklyn,,,,,,,https://www.vagabondbjjbrooklyn.com/
 NYC,Brooklyn,DiamondHeart / Physical Culture Collective,,,,,,,,https://diamondheartnyc.com/
 NYC,Brooklyn,Tiger Schulmann’s - Bay Ridge,bayridgetsmma,,,,,,,https://tsk.com/locations/ny/brooklyn-bay-ridge/
@@ -240,9 +240,8 @@ Long Island,Miller Place,United Studios PMA,unitedstudiospma,,,,,,,https://www.t
 Long Island,Huntington Station,ROK Jiu Jitsu,rok_bjj,,,,,,,https://rokbjj.com/
 Long Island,Holbrook,Forge Wrestling and Jiu Jitsu,forge_wrestling_bjj,,,,,,,https://forgewrestlingbjj.com/
 Long Island,West Babylon,Long Island MMA,li_mma,,,,,,,https://limixedmartialarts.com/
-Long Island,Holbrook,Vamos Jiu Jitsu - Holbrook,,,,,,,,https://www.vamosjiujitsu.com/
-Long Island,Riverhead,Vamos Jiu Jitsu - Riverhead,,,,,,,,https://www.vamosjiujitsu.com/
-Long Island,Bellport,Vamos Jiu Jitsu - Bellport,,,,,,,,https://www.vamosjiujitsu.com/
+Long Island,Holbrook,Vamos Mixed Martial Arts - Holbrook,vamos_mma,,,,,,,https://www.vamosmma.com/holbrook-ny/,"1708 Church Street, Holbrook, NY 11741"
+Long Island,Riverhead,Vamos Mixed Martial Arts - Riverhead,vamos_mma,,,,,,,https://www.vamosmma.com/riverhead-ny/,"67 East Main Street, Riverhead, NY 11901"
 New York State,Eastchester / New Rochelle,Igor Gracie Jiu Jitsu Academy,,,,,,,,https://igorgraciejiujitsu.com/
 New York State,Briarcliff Manor,Julio Cruz BJJ Westchester,juliocruzbjj,,,,,,,https://www.juliocruzbjjwestchester.com/
 New York State,Hawthorne,Westchester Jiu Jitsu Academy / Alliance Westchester,,,,,,,,https://westchesterjjacademy.com/

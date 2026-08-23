@@ -25,6 +25,15 @@ function buildSearchText(obj){
   return normalizeSearchText(Object.values(obj).join(" "));
 }
 
+function deriveEventSource(r){
+  const explicit = (r.SOURCE || r.Source || r.INSTAGRAM || r.Instagram || "").trim();
+  if(explicit) return explicit;
+
+  const poster = (r.POSTER || r.Poster || "").trim();
+  const repostMatch = poster.match(/\/reposts\/\d+-([^/]+?)\.[a-z0-9]+$/i);
+  return repostMatch ? `https://www.instagram.com/p/${repostMatch[1]}/` : "";
+}
+
 /* section: directory normalization | purpose: standardize directory rows */
 export function normalizeDirectoryRow(r){
   const STATE = (r.STATE || "").trim().toUpperCase();
@@ -32,6 +41,7 @@ export function normalizeDirectoryRow(r){
   const NAME  = (r.NAME || "").trim();
   const IG    = (r.IG || "").trim();
   const WEBSITE = (r.WEBSITE || r.Website || "").trim();
+  const ADDRESS = (r.ADDRESS || r.Address || "").trim();
   const SAT   = (r.SAT || "").trim();
   const SUN   = (r.SUN || "").trim();
   const OTA   = (r.OTA || "").trim().toUpperCase(); // Y / N / blank
@@ -42,7 +52,7 @@ export function normalizeDirectoryRow(r){
   const lat = LAT === "" ? NaN : Number(LAT);
   const lon = LON === "" ? NaN : Number(LON);
 
-  const row = { STATE, CITY, NAME, IG, WEBSITE, SAT, SUN, OTA, LAT: lat, LON: lon };
+  const row = { STATE, CITY, NAME, IG, WEBSITE, ADDRESS, SAT, SUN, OTA, LAT: lat, LON: lon };
 
   return {
     ...row,
@@ -61,12 +71,13 @@ export function normalizeEventRow(r){
   const TYPE    = (r.TYPE || r.Event || r.EVENT || "").trim();
   const DATE    = (r.DATE || r.Date || "").trim();
   const CREATED = (r.CREATED || r.Created || "").trim();
+  const SOURCE  = deriveEventSource(r);
   const LAT = (r.LAT ?? r.Lat ?? "").toString().trim();
   const LON = (r.LON ?? r.Lon ?? r.LONG ?? r.Long ?? "").toString().trim();
   const lat = LAT === "" ? NaN : Number(LAT);
   const lon = LON === "" ? NaN : Number(LON);
 
-  const row = { YEAR, STATE, CITY, GYM, TYPE, DATE, CREATED, LAT: lat, LON: lon };
+  const row = { YEAR, STATE, CITY, GYM, TYPE, DATE, CREATED, SOURCE, LAT: lat, LON: lon };
   const parsedDate = parseEventDate(DATE);
   const parsedCreated = parseCreatedDate(CREATED);
 

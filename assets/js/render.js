@@ -246,6 +246,7 @@ function renderIndexEventRow(r){
   c3.innerHTML = `
     <div class="cell__top cell__city">${escapeHtml(r.CITY || "—")}</div>
     <div class="cell__sub cell__state">${escapeHtml(r.STATE || "—")}</div>
+    ${r.ADDRESS ? `<div class="cell__sub cell__address">${escapeHtml(r.ADDRESS)}</div>` : ""}
   `;
 
   const c4 = document.createElement("div");
@@ -301,6 +302,8 @@ function renderEventGroup(root, groupTuple, dir, isPast=false){
 function renderEventRow(r){
   const row = document.createElement("div");
   row.className = "row row--events";
+  const sourceUrl = String(r.SOURCE || "").trim();
+  const athleteName = escapeHtml(r.FOR || "—");
 
   const rawDate = String(r.DATE ?? "").trim();
   const parsed = r._date || (rawDate ? parseEventDate(rawDate) : null);
@@ -348,7 +351,7 @@ function renderEventRow(r){
       <span class="cell__eventInline">${escapeHtml(r.EVENT || "—")}</span>
       ${showNew ? `<span class="cell__newInline">*NEW</span>` : `<span class="cell__newInline">&nbsp;</span>`}
     </div>
-    <div class="cell__top cell__for">${escapeHtml(r.FOR || "—")}</div>
+    <div class="cell__top cell__for">${sourceUrl ? `<a class="cell__forLink" href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${athleteName}</a>` : athleteName}</div>
     <div class="cell__sub cell__where">${escapeHtml(getWhereText(r))}</div>
   `;
 
@@ -370,6 +373,22 @@ function renderEventRow(r){
   row.appendChild(c2);
   row.appendChild(c3);
   row.appendChild(c4);
+  if(sourceUrl){
+    row.classList.add("row--source");
+    row.tabIndex = 0;
+    row.setAttribute("role", "link");
+    row.setAttribute("aria-label", `Open Instagram flyer for ${r.FOR || "seminar"}`);
+    const openSource = () => window.open(sourceUrl, "_blank", "noopener,noreferrer");
+    row.addEventListener("click", (event) => {
+      if(event.target instanceof Element && event.target.closest("a, button")) return;
+      openSource();
+    });
+    row.addEventListener("keydown", (event) => {
+      if(event.key !== "Enter") return;
+      event.preventDefault();
+      openSource();
+    });
+  }
   return row;
 }
 

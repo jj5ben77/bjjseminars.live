@@ -6,6 +6,7 @@ export function dirToIndexEventRow(r){
     EVENT: "Drop Ins:",
     FOR: r.NAME || "",
     WEBSITE: r.WEBSITE || "",
+    ADDRESS: r.ADDRESS || "",
     WHERE: r.IG || "",
     CITY: r.CITY || "",
     STATE: r.STATE || "",
@@ -19,7 +20,7 @@ export function dirToIndexEventRow(r){
 
   row.hasSat = !!String(row.DAY || "").trim();
   row.hasSun = !!String(row.DATE || "").trim();
-  row.searchText = [row.EVENT, row.FOR, row.WEBSITE, row.WHERE, row.CITY, row.STATE, row.DAY, row.DATE, row.OTA].join(" ").toLowerCase();
+  row.searchText = [row.EVENT, row.FOR, row.WEBSITE, row.WHERE, row.ADDRESS, row.CITY, row.STATE, row.DAY, row.DATE, row.OTA].join(" ").toLowerCase();
   return row;
 }
 
