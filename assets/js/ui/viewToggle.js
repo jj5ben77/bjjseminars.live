@@ -61,17 +61,19 @@ function setSharedPillLabels(view){
   const pill1Menu = document.getElementById("eventsPill1Menu");
   const pill1BtnLabel = pill1Btn?.querySelector('[data-pill-title]');
   const pill1MenuTitle = pill1Menu?.querySelector('.menu__title');
-  if(pill1BtnLabel) pill1BtnLabel.textContent = isIndex ? "OPENS" : "YEAR";
-  if(pill1MenuTitle) pill1MenuTitle.textContent = isIndex ? "OPENS" : "YEAR";
-  if(pill1Menu) pill1Menu.setAttribute("aria-label", isIndex ? "Opens menu" : "Year menu");
+  if(pill1BtnLabel) pill1BtnLabel.textContent = "YEAR";
+  if(pill1MenuTitle) pill1MenuTitle.textContent = "YEAR";
+  if(pill1Menu) pill1Menu.setAttribute("aria-label", "Year menu");
 
   const wrapYear  = document.querySelector('.pillSelect[data-filter="eventsYear"]');
   const wrapState = document.querySelector('.pillSelect[data-filter="eventsState"]');
+  const wrapType = document.querySelector('.pillSelect[data-filter="eventsType"]');
+  if(wrapYear) wrapYear.hidden = isIndex;
+  if(wrapType) wrapType.hidden = isIndex;
+  if(wrapState) wrapState.hidden = false;
   const parent = wrapYear?.parentElement;
   if(wrapYear && wrapState && parent){
-    if(isIndex){
-      if(wrapState.nextElementSibling !== wrapYear) parent.insertBefore(wrapState, wrapYear);
-    } else if(wrapYear.nextElementSibling !== wrapState){
+    if(!isIndex && wrapYear.nextElementSibling !== wrapState){
       parent.insertBefore(wrapYear, wrapState);
     }
   }
@@ -80,9 +82,9 @@ function setSharedPillLabels(view){
   const pill3Menu = document.getElementById("eventsPill3Menu");
   const pill3BtnLabel = pill3Btn?.querySelector('[data-pill-title]');
   const pill3MenuTitle = pill3Menu?.querySelector('.menu__title');
-  if(pill3BtnLabel) pill3BtnLabel.textContent = isIndex ? "DROP IN" : "EVENT";
-  if(pill3MenuTitle) pill3MenuTitle.textContent = isIndex ? "DROP IN" : "EVENT";
-  if(pill3Menu) pill3Menu.setAttribute("aria-label", isIndex ? "Drop In menu" : "Event menu");
+  if(pill3BtnLabel) pill3BtnLabel.textContent = "EVENT";
+  if(pill3MenuTitle) pill3MenuTitle.textContent = "EVENT";
+  if(pill3Menu) pill3Menu.setAttribute("aria-label", "Event menu");
 }
 
 export function activeEventsState(){

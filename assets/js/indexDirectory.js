@@ -3,24 +3,18 @@
 
 export function dirToIndexEventRow(r){
   const row = {
-    EVENT: "Drop Ins:",
     FOR: r.NAME || "",
     WEBSITE: r.WEBSITE || "",
     ADDRESS: r.ADDRESS || "",
     WHERE: r.IG || "",
     CITY: r.CITY || "",
     STATE: r.STATE || "",
-    DAY: r.SAT || "",
-    DATE: r.SUN || "",
-    OTA: (r.OTA || "").toUpperCase(),
     CREATED: ""
   };
 
   row.REGION = directoryRegion(r);
 
-  row.hasSat = !!String(row.DAY || "").trim();
-  row.hasSun = !!String(row.DATE || "").trim();
-  row.searchText = [row.EVENT, row.FOR, row.WEBSITE, row.WHERE, row.ADDRESS, row.CITY, row.STATE, row.DAY, row.DATE, row.OTA].join(" ").toLowerCase();
+  row.searchText = [row.FOR, row.WEBSITE, row.WHERE, row.ADDRESS, row.CITY, row.STATE].join(" ").toLowerCase();
   return row;
 }
 
@@ -61,8 +55,6 @@ export function filterIndexDirectoryAsEvents(rows, idxState){
     ? ""
     : qRaw.toLowerCase();
   const stateSet = idxState?.state instanceof Set ? idxState.state : new Set();
-  const typeSet  = idxState?.type  instanceof Set ? idxState.type  : new Set();
-  const yearSet  = idxState?.year  instanceof Set ? idxState.year  : new Set();
   const region = String(idxState?.region || "").trim().toUpperCase();
 
   return rows.filter(r=>{
@@ -81,28 +73,6 @@ export function filterIndexDirectoryAsEvents(rows, idxState){
     }
     if(region){
       if(String(r.REGION || "").trim().toUpperCase() !== region) return false;
-    }
-    // OPENS pill (Index view repurposed from YEAR): filter by SAT/SUN availability.
-    if(yearSet.size){
-      const hasSat = r.hasSat ?? (String(r.DAY || "").trim() !== "");
-      const hasSun = r.hasSun ?? (String(r.DATE || "").trim() !== "");
-      const wantSat  = yearSet.has("SATURDAY");
-      const wantSun  = yearSet.has("SUNDAY");
-      const wantBoth = yearSet.has("BOTH") || (wantSat && wantSun);
-
-      if(wantBoth){
-        if(!(hasSat || hasSun)) return false;
-      } else {
-        let ok = false;
-        if(wantSat && hasSat) ok = true;
-        if(wantSun && hasSun) ok = true;
-        if(!ok) return false;
-      }
-    }
-    // EVENT pill (Index view repurposed): any selection => OTA === "Y".
-    if(typeSet.size){
-      const ota = String(r.OTA || "").trim().toUpperCase();
-      if(ota !== "Y") return false;
     }
     return true;
   });

@@ -218,25 +218,11 @@ export function renderIndexEventsGroups(root, rows){
 
 function renderIndexEventRow(r){
   const row = document.createElement("div");
-  row.className = "row row--events";
-
-  const otaVal = String(r.OTA || "").trim().toUpperCase();
-  const otaLabel = otaVal === "Y" ? "ALLOWED" : (otaVal === "N" ? "NOT ALLOWED" : "");
-
-  const c1 = document.createElement("div");
-  c1.className = "cell cell--event";
-  c1.innerHTML = `
-    <div class="cell__top cell__event">${escapeHtml(r.EVENT || "—")}</div>
-    ${otaLabel ? `<div class="cell__sub cell__new">${escapeHtml(otaLabel)}</div>` : `<div class="cell__sub cell__new">&nbsp;</div>`}
-  `;
+  row.className = "row row--events row--directory";
 
   const c2 = document.createElement("div");
   c2.className = "cell cell--forwhere";
   c2.innerHTML = `
-    <div class="cell__eventInlineWrap">
-      <span class="cell__eventInline">${escapeHtml(r.EVENT || "—")}</span>
-      ${otaLabel ? `<span class="cell__newInline">${escapeHtml(otaLabel)}</span>` : `<span class="cell__newInline">&nbsp;</span>`}
-    </div>
     <div class="cell__top cell__for">${renderIndexWebsiteLink(r.FOR, r.WEBSITE)}</div>
     <div class="cell__sub cell__where">${renderIndexIgLink(r.WHERE)}</div>
   `;
@@ -249,26 +235,8 @@ function renderIndexEventRow(r){
     ${r.ADDRESS ? `<div class="cell__sub cell__address">${escapeHtml(r.ADDRESS)}</div>` : ""}
   `;
 
-  const c4 = document.createElement("div");
-  c4.className = "cell cell--daydate";
-  // Index view mapping: SAT -> DAY, SUN -> DATE (see main.js dirToIndexEventRow)
-  const sat = String(r.DAY ?? "").trim() || "—";
-  const sun = String(r.DATE ?? "").trim() || "—";
-  c4.innerHTML = `
-    <div class="cell__dayline">
-      <span class="cell__top dayLabel">Sat:</span>
-      <span class="cell__sub dayValue">${escapeHtml(sat)}</span>
-    </div>
-    <div class="cell__dayline">
-      <span class="cell__top dayLabel">Sun:</span>
-      <span class="cell__sub dayValue">${escapeHtml(sun)}</span>
-    </div>
-  `;
-
-  row.appendChild(c1);
   row.appendChild(c2);
   row.appendChild(c3);
-  row.appendChild(c4);
   return row;
 }
 function renderEventGroup(root, groupTuple, dir, isPast=false){

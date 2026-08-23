@@ -763,7 +763,6 @@ body.pricingPopupOpen{
   opacity: 0.85;
 }
 
-
 @media (min-width: 769px){
   /* Desktop-only: slightly reduce NEW label size */
   #viewEvents .row.row--events .cell__sub.cell__new,
@@ -2114,5 +2113,31 @@ body.pricingPopupOpen{
     border-left: 0;
     border-radius: 0 999px 999px 0;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.18);
+  }
+}
+
+/* Final Index directory layout override. */
+#viewIndex .row.row--directory{
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  column-gap: 24px;
+}
+
+#viewIndex .row--directory .cell--forwhere,
+#viewIndex .row--directory .cell--citystate{
+  padding-top: 0;
+}
+
+@media (max-width: 520px){
+  #viewIndex .row.row--directory{
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    column-gap: 10px;
+  }
+
+  #viewIndex .row--directory .cell__top{
+    font-size: 11px;
+  }
+
+  #viewIndex .row--directory .cell__sub{
+    font-size: 9px;
   }
 }
