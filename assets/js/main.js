@@ -12,8 +12,8 @@ import { applyDistanceFilter } from "./utils/geo.js?v=20260212-902";
 import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260823-grappling-events-soon";
 import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20260427-eventszip-directapply";
 import { closePricingPopup, wirePricingPopup } from "./ui/pricing.js";
-import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260822-disable-page-swipe";
-import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260823-gym-address";
+import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260823-persist-view";
+import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260823-raw-fitness-lodi";
 
 let directoryRows = [];
 let eventRows = [];
@@ -39,6 +39,14 @@ function initThemeToggle(){
     localStorage.setItem("bjj-seminars-theme", nextTheme);
     applyTheme(nextTheme);
   });
+}
+
+function restoreSavedView(){
+  try{
+    state.view = localStorage.getItem("bjj-seminars-view") === "index" ? "index" : "events";
+  } catch{
+    state.view = "events";
+  }
 }
 
 const EVENTS_AREAS = new Set(["NEW JERSEY", "NYC", "LONG ISLAND", "NEW YORK STATE"]);
@@ -184,6 +192,7 @@ async function init(){
   const { applyCustomization } = await import(`../../customization.js?v=${Date.now()}`);
   applyCustomization();
   initThemeToggle();
+  restoreSavedView();
 
   wireViewToggle({ $, onIndexViewOpen: syncIndexDistanceUI });
   wirePricingPopup();
@@ -232,7 +241,7 @@ async function init(){
 
 
   if(!state.view) state.view = "events";
-  setViewUI(state.view, { $, onIndexViewOpen: syncIndexDistanceUI });
+  setViewUI(state.view, { $, onIndexViewOpen: syncIndexDistanceUI, animate: false });
 
   $("status").textContent = "Loading...";
   $("eventsStatus").textContent = "Loading...";

@@ -94,8 +94,11 @@ export function setActiveEventsQuery(val, setters){
   else setters.setEventsQuery(val);
 }
 
-export function setViewUI(view, { $, onIndexViewOpen } = {}){
+export function setViewUI(view, { $, onIndexViewOpen, animate = true } = {}){
   setView(view);
+  try{
+    localStorage.setItem("bjj-seminars-view", state.view);
+  } catch{}
 
   $("tabEvents")?.setAttribute("aria-selected", view === "events" ? "true" : "false");
   $("tabIndex")?.setAttribute("aria-selected", view === "index" ? "true" : "false");
@@ -125,7 +128,7 @@ export function setViewUI(view, { $, onIndexViewOpen } = {}){
 
   document.title = CUSTOMIZATION.siteHeaderName || "BJJ SEMINARS NJ + NY";
 
-  setTransition(260);
+  setTransition(animate ? 260 : 0);
   refreshEventsPillDots({ $, activeEventsState });
   applyProgress($, view === "index" ? 1 : 0);
   syncActiveViewHeight($, view);

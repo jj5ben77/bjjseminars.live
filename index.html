@@ -12,9 +12,11 @@
   <script>
     (() => {
       const savedTheme = localStorage.getItem("bjj-seminars-theme");
-      const theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      const theme = savedTheme === "dark" ? "dark" : "light";
+      const savedView = localStorage.getItem("bjj-seminars-view") === "index" ? "index" : "events";
       document.documentElement.dataset.theme = theme;
       document.documentElement.style.colorScheme = theme;
+      document.documentElement.style.setProperty("--viewProgress", savedView === "index" ? "1" : "0");
     })();
   </script>
 
@@ -27,7 +29,7 @@
   <link rel="stylesheet" href="assets/css/directory.css?v=20260822-responsive-segmented-nav" />
   <link rel="stylesheet" href="assets/css/theme.css?v=20260814-search-panel-2" />
 <!-- IMPORTANT: repo references main.js (no sequence) -->
-  <script type="module" src="assets/js/main.js?v=20260823-grappling-events-soon"></script>
+  <script type="module" src="assets/js/main.js?v=20260823-persist-view-theme"></script>
 </head>
 
 <body>
