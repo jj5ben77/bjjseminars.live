@@ -4,7 +4,7 @@
 import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260823-instagram-links";
 import { state, setIndexQuery, setEventsQuery, setIndexEventsQuery, setIndexDistanceMiles, setIndexDistanceFrom, setEventsDistanceMiles, setEventsDistanceFrom } from "./state.js?v=20260813-index-regions";
 import { filterEvents } from "./filters.js?v=20260210-911";
-import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260823-simple-gym-index";
+import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260823-directory-social-links";
 import { renderSeminarCarousels } from "./seminarCarousel.js?v=20260823-instagram-links";
 
 import { $ } from "./utils/dom.js?v=20260210-911";

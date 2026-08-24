@@ -456,6 +456,24 @@ function renderIndexIgLink(whereVal){
   const raw = String(whereVal ?? "").trim();
   if(!raw || raw === "—") return escapeHtml(raw || "—");
 
+  if(/^https?:\/\//i.test(raw)){
+    try{
+      const url = new URL(raw);
+      if(url.protocol !== "http:" && url.protocol !== "https:") return "—";
+
+      const hostname = url.hostname.replace(/^www\./i, "").toLowerCase();
+      const label = hostname === "facebook.com" || hostname.endsWith(".facebook.com")
+        ? "Facebook"
+        : hostname === "instagram.com" || hostname.endsWith(".instagram.com")
+          ? "Instagram"
+          : "Social";
+
+      return `<a class="cell__whereLink" href="${escapeHtml(url.href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    }catch{
+      return "—";
+    }
+  }
+
   // Display always with leading '@', but build URL without '@'
   const handle = raw.replace(/^@+/, "").trim();
   if(!handle) return "—";
