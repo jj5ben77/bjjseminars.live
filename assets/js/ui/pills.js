@@ -7,7 +7,7 @@ import { CUSTOMIZATION } from "../../../customization.js?v=20260515-area-options
 const eventsOptionCache = new WeakMap();
 const directoryOptionCache = new WeakMap();
 const YEAR_OPTIONS = Object.freeze(["2026"]);
-const EVENT_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NYC"]);
+const EVENT_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NEW YORK"]);
 const INDEX_AREA_OPTIONS = Object.freeze(["NEW JERSEY", "NEW YORK"]);
 const EVENT_TYPE_OPTIONS = Object.freeze([
   { value: "Seminar", label: "Seminars" },
@@ -173,14 +173,14 @@ function setPillHasSelection(btnEl, has){
   btnEl.setAttribute('data-has-selection', has ? 'true' : 'false');
 }
 
-function resetActiveSearchForArea(activeEventsState){
+function resetActiveSearchForArea(activeEventsState, { preserveQuery = false } = {}){
   const active = typeof activeEventsState === "function" ? activeEventsState() : null;
   const input = document.getElementById("eventsSearchInput");
   if(active){
-    active.q = "";
+    if(!preserveQuery) active.q = "";
     active.distFrom = "";
   }
-  if(input) input.value = "";
+  if(input && !preserveQuery) input.value = "";
 
   const indexZip = document.getElementById("distanceOriginInput");
   const eventsZip = document.getElementById("eventsDistanceOriginInput");
@@ -324,7 +324,7 @@ export function initEventsPills({ $, getEventRows, activeEventsState, isIndexVie
         if(indexMode){
           activeEventsState().region = "";
         }
-        resetActiveSearchForArea(activeEventsState);
+        resetActiveSearchForArea(activeEventsState, { preserveQuery: !indexMode });
         setPillHasSelection(btn, sel.size>0);
         onChange();
       });

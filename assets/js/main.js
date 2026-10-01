@@ -3,14 +3,14 @@
 
 import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260823-instagram-links";
 import { state, setIndexQuery, setEventsQuery, setIndexEventsQuery, setIndexDistanceMiles, setIndexDistanceFrom, setEventsDistanceMiles, setEventsDistanceFrom } from "./state.js?v=20260813-index-regions";
-import { filterEvents } from "./filters.js?v=20261001-upcoming-carousel";
+import { filterEvents } from "./filters.js?v=20261001-area-carousel";
 import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260823-directory-social-links";
-import { renderSeminarCarousels } from "./seminarCarousel.js?v=20260823-instagram-links";
+import { renderSeminarCarousels } from "./seminarCarousel.js?v=20261001-dynamic-quick-carousel";
 
 import { $ } from "./utils/dom.js?v=20260210-911";
 import { applyDistanceFilter } from "./utils/geo.js?v=20261001-zip-focus-fix";
-import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260823-grappling-events-soon";
-import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20261001-zip-focus-fix";
+import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20261001-area-carousel";
+import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20261001-dynamic-quick-carousel";
 import { closePricingPopup, wirePricingPopup } from "./ui/pricing.js";
 import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260823-simple-gym-index";
 import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260823-simple-gym-index";
@@ -18,6 +18,55 @@ import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAs
 let directoryRows = [];
 let eventRows = [];
 let didRender = false;
+let renderedCarouselMode = "";
+
+const QUICK_CAROUSELS = Object.freeze({
+  "THIS WEEK": {
+    title: "This Week's Seminars",
+    eyebrow: "Coming up this week",
+    emptyText: "No seminars are listed for this week yet.",
+  },
+  "NEXT WEEK": {
+    title: "Next Week's Seminars",
+    eyebrow: "Coming up next week",
+    emptyText: "No seminars are listed for next week yet.",
+  },
+  "NEW EVENTS": {
+    title: "New Events Added",
+    eyebrow: "Recently added",
+    emptyText: "No newly added seminars are listed yet.",
+  },
+  "THIS MONTH": {
+    title: "This Month's Seminars",
+    eyebrow: "Current month",
+    emptyText: "No seminars are listed for this month yet.",
+  },
+});
+
+function normalizedQuickQuery(value){
+  return String(value || "")
+    .toUpperCase()
+    .replace(/[^A-Z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function selectedCarouselArea(){
+  const selected = state.events.state;
+  if(!(selected instanceof Set) || selected.size !== 1) return "";
+  if(selected.has("NEW JERSEY")) return "NEW JERSEY";
+  if(selected.has("NEW YORK")) return "NEW YORK";
+  return "";
+}
+
+function combinedCarouselTitle(quickMode, area){
+  const areaName = area === "NEW JERSEY" ? "New Jersey" : "New York";
+  if(quickMode === "THIS WEEK") return `This Week's ${areaName} Seminars`;
+  if(quickMode === "NEXT WEEK") return `Next Week's ${areaName} Seminars`;
+  if(quickMode === "NEW EVENTS") return `Newly Added ${areaName} Seminars`;
+  if(quickMode === "THIS MONTH") return `This Month's ${areaName} Seminars`;
+  return `${areaName} Seminars`;
+}
 
 function initThemeToggle(){
   const button = $("themeToggle");
@@ -172,8 +221,34 @@ function render(){
   closePricingPopup();
   renderEventsView();
   renderIndexView();
+  syncSeminarCarousels();
   syncSeminarCarouselVisibility();
   syncActiveViewHeight($);
+}
+
+function syncSeminarCarousels(){
+  const quickMode = normalizedQuickQuery(state.events.q);
+  const quickConfig = QUICK_CAROUSELS[quickMode] || null;
+  const area = selectedCarouselArea();
+  const renderMode = [quickConfig ? quickMode : "", area].filter(Boolean).join("|") || "DEFAULT";
+  if(renderMode === renderedCarouselMode) return;
+
+  let featured = null;
+  if(quickConfig || area){
+    const query = quickConfig ? quickMode : "THIS MONTH";
+    const areaSelection = area ? new Set([area]) : new Set();
+    const rows = filterEvents(eventRows, { events: { q: query, state: areaSelection } });
+    featured = {
+      ...(quickConfig || {
+        eyebrow: "This month's regional seminars",
+        emptyText: "No seminars are listed for this area this month yet.",
+      }),
+      title: area ? combinedCarouselTitle(quickConfig ? quickMode : "", area) : quickConfig.title,
+      rows,
+    };
+  }
+  renderCarousels(featured);
+  renderedCarouselMode = renderMode;
 }
 
 function syncSeminarCarouselVisibility(){
@@ -193,8 +268,15 @@ function syncSeminarCarouselVisibility(){
     "this month",
   ].some(token => query.includes(token));
 
+  const featured = root.querySelector(".seminarRail");
   const previous = root.querySelector('.seminarRail[aria-label="Previous Seminars"]');
+  const featuredCount = featured?.querySelectorAll(".seminarCard").length || 0;
+  const isDynamicCarousel = renderedCarouselMode !== "DEFAULT";
+  const hideFeatured = isDynamicCarousel && featuredCount < 2;
+
+  if(featured) featured.hidden = hideFeatured;
   if(previous) previous.hidden = isUpcomingSearch;
+  root.hidden = hideFeatured && isUpcomingSearch;
 }
 
 function focusSeminar(row){
@@ -206,9 +288,10 @@ function focusSeminar(row){
   $("eventsRoot")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function renderCarousels(){
+function renderCarousels(featured = null){
   renderSeminarCarousels($("seminarShowcase"), eventRows, {
     onSelect: focusSeminar,
+    featured,
   });
 }
 
@@ -278,8 +361,6 @@ async function init(){
 
   directoryRows = dirRaw.map(normalizeDirectoryRow);
   eventRows = evRaw.map(normalizeEventRow).filter(isPublishedSeminar);
-  renderCarousels();
-
   initEventsPills({
     $,
     getEventRows: () => eventRows,

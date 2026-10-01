@@ -78,9 +78,31 @@ export function wireSearchSuggestions({
     if(indexDist) indexDist.hidden = (m !== "index");
   }
 
+  const normalizeQuickValue = (value) => String(value || "")
+    .toUpperCase()
+    .replace(/[^A-Z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  const quickButtons = quick ? Array.from(quick.querySelectorAll("button[data-value]")) : [];
+  const isQuickValue = (value) => {
+    const normalized = normalizeQuickValue(value);
+    return quickButtons.some((button) => normalizeQuickValue(button.dataset.value) === normalized);
+  };
+
+  function syncQuickButtons(){
+    const current = normalizeQuickValue(input.value);
+    quickButtons.forEach((button) => {
+      const active = !!current && normalizeQuickValue(button.dataset.value) === current;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
   const open = ()=>{
     if(!canSuggest()) return;
     setModeUI();
+    syncQuickButtons();
     if(panel.hasAttribute("hidden")) panel.removeAttribute("hidden");
     if(mode() === "index" && typeof onIndexViewOpen === "function") onIndexViewOpen();
     if(mode() === "events" && typeof onEventsViewOpen === "function") onEventsViewOpen();
@@ -92,12 +114,12 @@ export function wireSearchSuggestions({
 
   input.addEventListener("focus", ()=>{
     if(!canSuggest()) return;
-    if(!String(input.value || "").trim()) open();
+    if(!String(input.value || "").trim() || isQuickValue(input.value)) open();
   });
 
   input.addEventListener("click", ()=>{
     if(!canSuggest()) return;
-    if(!String(input.value || "").trim()) open();
+    if(!String(input.value || "").trim() || isQuickValue(input.value)) open();
   });
 
   input.addEventListener("input", ()=>{
@@ -115,8 +137,9 @@ export function wireSearchSuggestions({
     e.stopPropagation();
 
     const val = btn.getAttribute("data-value") || "";
-    input.value = val;
-    setActiveEventsQuery(val);
+    const nextValue = normalizeQuickValue(input.value) === normalizeQuickValue(val) ? "" : val;
+    input.value = nextValue;
+    setActiveEventsQuery(nextValue);
     input.dispatchEvent(new Event("input", { bubbles: true }));
     close();
     input.blur();

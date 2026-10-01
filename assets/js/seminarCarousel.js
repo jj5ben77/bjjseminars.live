@@ -2,7 +2,7 @@ import { localMidnight, parseEventDate } from "./utils/dates.js";
 
 const AUTO_ADVANCE_MS = 3600;
 
-export function renderSeminarCarousels(root, rows, { onSelect } = {}){
+export function renderSeminarCarousels(root, rows, { onSelect, featured = null } = {}){
   if(!root) return;
 
   const today = localMidnight();
@@ -30,13 +30,19 @@ export function renderSeminarCarousels(root, rows, { onSelect } = {}){
 
   const uniqueThisMonth = dedupeCarouselRows(thisMonth);
   const uniquePrevious = dedupeCarouselRows(previous);
+  const featuredRows = featured
+    ? dedupeCarouselRows(featured.rows.slice().sort(sortByDate("asc")))
+    : uniqueThisMonth;
+  const featuredTitle = featured?.title || "This Month's Seminars";
+  const featuredEyebrow = featured?.eyebrow || monthStart.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  const featuredEmptyText = featured?.emptyText || "No seminars are listed for this month yet.";
 
   root.replaceChildren(
     buildCarouselSection({
-      eyebrow: monthStart.toLocaleDateString("en-US", { month: "long", year: "numeric" }),
-      title: "This Month's Seminars",
-      rows: uniqueThisMonth,
-      emptyText: "No seminars are listed for this month yet.",
+      eyebrow: featuredEyebrow,
+      title: featuredTitle,
+      rows: featuredRows,
+      emptyText: featuredEmptyText,
       onSelect,
     }),
     buildCarouselSection({

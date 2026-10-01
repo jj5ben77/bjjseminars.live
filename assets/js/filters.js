@@ -226,7 +226,15 @@ export function filterEvents(rows, state){
   // STATE pill
   const statesSel = state?.events?.state;
   if(statesSel && statesSel.size){
-    out = out.filter(r => statesSel.has(String(r.STATE ?? "").trim()));
+    out = out.filter(r => {
+      const area = String(r.STATE ?? "").trim().toUpperCase();
+      const wantsNewJersey = statesSel.has("NEW JERSEY");
+      const wantsNewYork = statesSel.has("NEW YORK");
+      const matchesNewJersey = wantsNewJersey && area === "NEW JERSEY";
+      const matchesNewYork = wantsNewYork && ["NYC", "LONG ISLAND", "NEW YORK STATE"].includes(area);
+      const matchesDirectly = !wantsNewJersey && !wantsNewYork && statesSel.has(area);
+      return matchesNewJersey || matchesNewYork || matchesDirectly;
+    });
   }
 
   // TYPE pill
