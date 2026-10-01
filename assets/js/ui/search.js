@@ -388,9 +388,9 @@ export function wireSearchSuggestions({
     // captured before Safari/Chrome auto-scrolls the viewport for suggestions.
     // For EVENTS ZIP only, prevent the native tap-to-focus scroll and focus with
     // preventScroll. INDEX keeps its original native behavior.
-    ["pointerdown", "touchstart", "mousedown"].forEach((type)=>{
-      distInput?.addEventListener(type, focusZipWithoutNativeScroll, { capture: true, passive: false });
-    });
+    // Only intercept real touch focus. Intercepting pointerdown/mousedown here
+    // blocks normal desktop and in-app-browser focus before a ZIP can submit.
+    distInput?.addEventListener("touchstart", focusZipWithoutNativeScroll, { capture: true, passive: false });
     distInput?.addEventListener("focus", startZipFocusScrollLock);
     distInput?.addEventListener("input", handleZipValueRefresh);
     distInput?.addEventListener("change", handleZipValueRefresh);

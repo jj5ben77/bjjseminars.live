@@ -12,7 +12,9 @@
   <script>
     (() => {
       const savedTheme = localStorage.getItem("bjj-seminars-theme");
-      const theme = savedTheme === "dark" ? "dark" : "light";
+      const theme = savedTheme === "dark" || savedTheme === "light"
+        ? savedTheme
+        : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
       const savedView = localStorage.getItem("bjj-seminars-view") === "index" ? "index" : "events";
       document.documentElement.dataset.theme = theme;
       document.documentElement.style.colorScheme = theme;
@@ -27,9 +29,9 @@
   <link rel="stylesheet" href="assets/css/carousel.css?v=20260823-instagram-links" />
   <link rel="stylesheet" href="assets/css/components.css?v=20260823-instagram-links" />
   <link rel="stylesheet" href="assets/css/directory.css?v=20260823-simple-gym-index" />
-  <link rel="stylesheet" href="assets/css/theme.css?v=20260814-search-panel-2" />
+  <link rel="stylesheet" href="assets/css/theme.css?v=20261001-theme-breath" />
 <!-- IMPORTANT: repo references main.js (no sequence) -->
-  <script type="module" src="assets/js/main.js?v=20260823-directory-social-links"></script>
+  <script type="module" src="assets/js/main.js?v=20261001-theme-breath"></script>
 </head>
 
 <body>
@@ -120,10 +122,11 @@
                     <span class="menu__title">Quick Searches</span>
                   </div>
                   <div class="menu__divider"></div>
-                  <button type="button" class="suggest__item" data-value="THIS WEEKEND">THIS WEEKEND</button>
-                  <button type="button" class="suggest__item" data-value="NEXT WEEKEND">NEXT WEEKEND</button>
-                  <button type="button" class="suggest__item" data-value="2026, SEMINAR">2026, SEMINAR</button>
+                  <button type="button" class="suggest__item" data-value="THIS WEEK">THIS WEEK</button>
+                  <button type="button" class="suggest__item" data-value="NEXT WEEK">NEXT WEEK</button>
+                  <button type="button" class="suggest__item" data-value="SEMINAR, 2026">SEMINAR 2026</button>
                   <button type="button" class="suggest__item" data-value="NEW EVENTS">NEW EVENTS</button>
+                  <button type="button" class="suggest__item" data-value="THIS MONTH">THIS MONTH</button>
                 </div>
 
                 <!-- EVENTS mode: Events Near -->

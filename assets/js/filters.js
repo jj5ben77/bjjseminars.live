@@ -92,6 +92,46 @@ function isRowNextWeekend(row){
   return sameYMD(d, sat) || sameYMD(d, sun);
 }
 
+function weekRange(offsetWeeks = 0){
+  const start = startOfWeekMonday(new Date());
+  start.setDate(start.getDate() + (offsetWeeks * 7));
+  const end = new Date(start);
+  end.setDate(end.getDate() + 7);
+  return { start, end };
+}
+
+function isRowInWeek(row, offsetWeeks = 0){
+  const d = row?._date || parseEventDate(row?.DATE);
+  if(!d) return false;
+  const { start, end } = weekRange(offsetWeeks);
+  return d >= start && d < end;
+}
+
+function isRowThisMonth(row){
+  const d = row?._date || parseEventDate(row?.DATE);
+  if(!d) return false;
+  const now = new Date();
+  return d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth();
+}
+
+function extractDateRangeTokens(q){
+  const raw = String(q ?? "");
+  const n = norm(raw);
+  const wantsNextWeek = (n.includes("next week") || n.includes("net week")) && !n.includes("next weekend");
+  const wantsThisWeek = n.includes("this week") && !n.includes("this weekend");
+  const wantsThisMonth = n.includes("this month");
+
+  const remaining = n
+    .replace(/\bnext\s+week\b/g, " ")
+    .replace(/\bnet\s+week\b/g, " ")
+    .replace(/\bthis\s+week\b/g, " ")
+    .replace(/\bthis\s+month\b/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return { wantsNextWeek, wantsThisWeek, wantsThisMonth, remaining };
+}
+
 function extractNextWeekendToken(q){
   // detect "next weekend" and remove from remaining query
   const raw = String(q ?? "");
@@ -202,21 +242,31 @@ export function filterEvents(rows, state){
   const qForSearch = (/^\d{5}$/.test(qRaw) && String(state?.events?.distFrom || "").trim() === qRaw)
     ? ""
     : qRaw;
+  const wantsZipCurrentMonth = /^\d{5}$/.test(qRaw)
+    && String(state?.events?.distFrom || "").trim() === qRaw;
   const tokenNew = extractNewEventsToken(qForSearch);
   const tokenWeekend = extractThisWeekendToken(tokenNew.remaining);
   const tokenNextWeekend = extractNextWeekendToken(tokenWeekend.remaining);
+  const tokenDateRange = extractDateRangeTokens(tokenNextWeekend.remaining);
 
-  const cs = clauses(tokenNextWeekend.remaining);
+  const cs = clauses(tokenDateRange.remaining);
   const wantsNew = tokenNew.wantsNew;
   const wantsWeekend = tokenWeekend.wantsWeekend;
   const wantsNextWeekend = tokenNextWeekend.wantsNextWeekend;
+  const wantsThisWeek = tokenDateRange.wantsThisWeek;
+  const wantsNextWeek = tokenDateRange.wantsNextWeek;
+  const wantsThisMonth = tokenDateRange.wantsThisMonth;
 
-  if(!cs.length && !wantsNew && !wantsWeekend && !wantsNextWeekend) return out;
+  if(!cs.length && !wantsNew && !wantsWeekend && !wantsNextWeekend && !wantsThisWeek && !wantsNextWeek && !wantsThisMonth && !wantsZipCurrentMonth) return out;
 
   return out.filter(r => {
     if(wantsNew && !isRowNew(r)) return false;
     if(wantsWeekend && !isRowThisWeekend(r)) return false;
     if(wantsNextWeekend && !isRowNextWeekend(r)) return false;
+    if(wantsThisWeek && !isRowInWeek(r, 0)) return false;
+    if(wantsNextWeek && !isRowInWeek(r, 1)) return false;
+    if(wantsThisMonth && !isRowThisMonth(r)) return false;
+    if(wantsZipCurrentMonth && !isRowThisMonth(r)) return false;
 
     if(!cs.length) return true;
 

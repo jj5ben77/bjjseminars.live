@@ -3,14 +3,14 @@
 
 import { loadCSV, normalizeDirectoryRow, normalizeEventRow } from "./data.js?v=20260823-instagram-links";
 import { state, setIndexQuery, setEventsQuery, setIndexEventsQuery, setIndexDistanceMiles, setIndexDistanceFrom, setEventsDistanceMiles, setEventsDistanceFrom } from "./state.js?v=20260813-index-regions";
-import { filterEvents } from "./filters.js?v=20260210-911";
+import { filterEvents } from "./filters.js?v=20261001-upcoming-carousel";
 import { renderEventsGroups, renderIndexEventsGroups } from "./render.js?v=20260823-directory-social-links";
 import { renderSeminarCarousels } from "./seminarCarousel.js?v=20260823-instagram-links";
 
 import { $ } from "./utils/dom.js?v=20260210-911";
-import { applyDistanceFilter } from "./utils/geo.js?v=20260212-902";
+import { applyDistanceFilter } from "./utils/geo.js?v=20261001-zip-focus-fix";
 import { initEventsPills, initIndexPills } from "./ui/pills.js?v=20260823-grappling-events-soon";
-import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20260427-eventszip-directapply";
+import { wireSearch, wireSearchSuggestions } from "./ui/search.js?v=20261001-zip-focus-fix";
 import { closePricingPopup, wirePricingPopup } from "./ui/pricing.js";
 import { activeEventsState, setActiveEventsQuery, setViewUI, syncActiveViewHeight, wireViewToggle } from "./ui/viewToggle.js?v=20260823-simple-gym-index";
 import { dirToIndexEventRow, ensureDistanceOriginOptions, filterIndexDirectoryAsEvents, syncDistanceUIFromState } from "./indexDirectory.js?v=20260823-simple-gym-index";
@@ -23,6 +23,9 @@ function initThemeToggle(){
   const button = $("themeToggle");
   if(!button) return;
 
+  let settledTheme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+  const breathTimers = [];
+
   const applyTheme = (theme) => {
     const isDark = theme === "dark";
     document.documentElement.dataset.theme = isDark ? "dark" : "light";
@@ -33,9 +36,32 @@ function initThemeToggle(){
     button.title = label;
   };
 
-  applyTheme(document.documentElement.dataset.theme || "light");
+  const stopThemeBreath = () => {
+    breathTimers.splice(0).forEach(window.clearTimeout);
+    document.documentElement.classList.remove("theme-breathing");
+  };
+
+  const startThemeBreath = () => {
+    if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    try{
+      if(sessionStorage.getItem("bjj-seminars-theme-breathed")) return;
+      sessionStorage.setItem("bjj-seminars-theme-breathed", "1");
+    } catch{}
+
+    const oppositeTheme = settledTheme === "dark" ? "light" : "dark";
+    document.documentElement.classList.add("theme-breathing");
+    breathTimers.push(window.setTimeout(() => applyTheme(oppositeTheme), 180));
+    breathTimers.push(window.setTimeout(() => applyTheme(settledTheme), 760));
+    breathTimers.push(window.setTimeout(stopThemeBreath, 1420));
+  };
+
+  applyTheme(settledTheme);
+  startThemeBreath();
   button.addEventListener("click", () => {
-    const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    stopThemeBreath();
+    const nextTheme = settledTheme === "dark" ? "light" : "dark";
+    settledTheme = nextTheme;
     localStorage.setItem("bjj-seminars-theme", nextTheme);
     applyTheme(nextTheme);
   });
@@ -169,7 +195,29 @@ function render(){
   closePricingPopup();
   renderEventsView();
   renderIndexView();
+  syncSeminarCarouselVisibility();
   syncActiveViewHeight($);
+}
+
+function syncSeminarCarouselVisibility(){
+  const root = $("seminarShowcase");
+  if(!root) return;
+
+  const query = String(state.events.q || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const isUpcomingSearch = [
+    "this week",
+    "next week",
+    "net week",
+    "new events",
+    "this month",
+  ].some(token => query.includes(token));
+
+  const previous = root.querySelector('.seminarRail[aria-label="Previous Seminars"]');
+  if(previous) previous.hidden = isUpcomingSearch;
 }
 
 function focusSeminar(row){

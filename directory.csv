@@ -1,412 +1,412 @@
 STATE,CITY,NAME,IG,SAT,SUN,OTA,CREATED,LAT,LON,WEBSITE,ADDRESS
-New Jersey,Lodi,Raw Fitness,rawfitness_lodi,,,,,,,https://rawfitnesslodi.com/,"935 Main St, Lodi, NJ 07644"
-New Jersey,Westwood,Training Grounds BJJ & MMA,training_grounds_mma,,,,,,,https://www.njtraininggrounds.com/
-New Jersey,Ridgefield Park,Rising Sun BJJ Academy,risingsunbjj,,,,,,,https://www.risingsunacademy.com/
-New Jersey,Fair Lawn,Performance Jiu-Jitsu,performancebjj,,,,,,,https://armlock.com/
-New Jersey,Fort Lee,Renzo Gracie Fort Lee / TEO BJJ,rgafortlee,,,,,,,https://teobjj.com/
-New Jersey,Mahwah,Gorilla BJJ Academy,gorilla_bjj_academy,,,,,,,https://www.gorillabjjacademy.com/schedule
-New Jersey,Waldwick,Rival Jiu-Jitsu,rivalbjj,,,,,,,https://rivalbjj.com/
-New Jersey,Closter,ODA Jiu Jitsu,odabjj,,,,,,,https://odabjj.com/
-New Jersey,Tenafly,The Ark of Jiu-Jitsu,arkofjiujitsu,,,,,,,https://www.arkofjiujitsu.com/
-New Jersey,Fair Lawn,Park West BJJ,parkwestbjj,,,,,,,https://parkwestbjj.com/
-New Jersey,Lyndhurst,Savarese BJJ,savaresebjj,,,,,,,https://njbjj.com/
-New Jersey,Northvale,Renzo Gracie Northern Valley,renzogracienorthernvalley,,,,,,,https://nvbjj.com/
-New Jersey,Jersey City,Mundo BJJ,mundo_bjj_,,,,,,,https://mundobjjacademy.com/
-New Jersey,Jersey City,Studio 1908 Jiu Jitsu Academy,studio.1908,,,,,,,https://studio1908jj.com/
-New Jersey,Harrison,Chokelab Brazilian Jiu-Jitsu Academy,chokelab_hq,,,,,,,https://chokelabacademy.org/
-New Jersey,West New York,Hudson County BJJ / Team 48,team48_jiujitsu,,,,,,,https://www.hudsoncountybjj.com/
-New Jersey,West New York,High Impact Martial Arts,team_high_impact,,,,,,,https://www.highimpactma.com/
-New Jersey,North Bergen,Anaconda Brazilian Jiu-Jitsu,anacondabjjnjny,,,,,,,https://anacondabjjnjny.com/
-New Jersey,North Bergen,Team Curuma Brazilian Jiu-Jitsu Academy,teamcurumabjj,,,,,,,https://teamcuruma.com/
+New Jersey,Lodi,Raw Fitness,rawfitness_lodi,,,,,40.876400,-74.083800,https://rawfitnesslodi.com/,"935 Main St, Lodi, NJ 07644"
+New Jersey,Westwood,Training Grounds BJJ & MMA,training_grounds_mma,,,,,41.009200,-74.004100,https://www.njtraininggrounds.com/,
+New Jersey,Ridgefield Park,Rising Sun BJJ Academy,risingsunbjj,,,,,40.856200,-74.023000,https://www.risingsunacademy.com/,
+New Jersey,Fair Lawn,Performance Jiu-Jitsu,performancebjj,,,,,40.934300,-74.116600,https://armlock.com/,
+New Jersey,Fort Lee,Renzo Gracie Fort Lee / TEO BJJ,rgafortlee,,,,,40.850300,-73.974500,https://teobjj.com/,
+New Jersey,Mahwah,Gorilla BJJ Academy,gorilla_bjj_academy,,,,,41.092800,-74.175250,https://www.gorillabjjacademy.com/schedule,
+New Jersey,Waldwick,Rival Jiu-Jitsu,rivalbjj,,,,,41.013000,-74.124300,https://rivalbjj.com/,
+New Jersey,Closter,ODA Jiu Jitsu,odabjj,,,,,40.972100,-73.959000,https://odabjj.com/,
+New Jersey,Tenafly,The Ark of Jiu-Jitsu,arkofjiujitsu,,,,,40.921600,-73.965900,https://www.arkofjiujitsu.com/,
+New Jersey,Fair Lawn,Park West BJJ,parkwestbjj,,,,,40.934300,-74.116600,https://parkwestbjj.com/,
+New Jersey,Lyndhurst,Savarese BJJ,savaresebjj,,,,,40.809400,-74.124500,https://njbjj.com/,
+New Jersey,Northvale,Renzo Gracie Northern Valley,renzogracienorthernvalley,,,,,41.008600,-73.938900,https://nvbjj.com/,
+New Jersey,Jersey City,Mundo BJJ,mundo_bjj_,,,,,40.728808,-74.068792,https://mundobjjacademy.com/,
+New Jersey,Jersey City,Studio 1908 Jiu Jitsu Academy,studio.1908,,,,,40.728808,-74.068792,https://studio1908jj.com/,
+New Jersey,Harrison,Chokelab Brazilian Jiu-Jitsu Academy,chokelab_hq,,,,,40.744500,-74.150800,https://chokelabacademy.org/,
+New Jersey,West New York,Hudson County BJJ / Team 48,team48_jiujitsu,,,,,40.788800,-74.011500,https://www.hudsoncountybjj.com/,
+New Jersey,West New York,High Impact Martial Arts,team_high_impact,,,,,40.788800,-74.011500,https://www.highimpactma.com/,
+New Jersey,North Bergen,Anaconda Brazilian Jiu-Jitsu,anacondabjjnjny,,,,,40.793900,-74.025800,https://anacondabjjnjny.com/,
+New Jersey,North Bergen,Team Curuma Brazilian Jiu-Jitsu Academy,teamcurumabjj,,,,,40.793900,-74.025800,https://teamcuruma.com/,
 New Jersey,Guttenberg,Cohab City Brazilian Jiu-Jitsu,cohabcity_usa,,,,,,,https://www.cohabcity.com/
-New Jersey,Union City,Chute Boxe Luis Azeredo,chuteboxeluisazeredo,,,,,,,https://chuteboxela.com/
+New Jersey,Union City,Chute Boxe Luis Azeredo,chuteboxeluisazeredo,,,,,40.767400,-74.032300,https://chuteboxela.com/,
 New Jersey,West Orange / Verona,BeltQuest Jiu Jitsu,beltquestjiujitsu,,,,,,,https://www.beltquestjiujitsu.com/
-New Jersey,Newark,Renzo Gracie Newark,renzogracienewark,,,,,,,https://www.renzogracienj.com/
-New Jersey,Nutley,Momentum Brazilian Jiu Jitsu,momentumbjj,,,,,,,https://momentumbjj.com/
-New Jersey,Bloomfield,North South Jiu Jitsu,northsouthbjj,,,,,,,https://northsouthbjj.com/
-New Jersey,Cedar Grove,Roost Martial Arts,roostmartialarts,,,,,,,https://www.roostmartialarts.com/
-New Jersey,Maplewood,Bodega Jiu-Jitsu,bodegajiujitsu,,,,,,,https://www.bodegajiujitsu.com/
-New Jersey,Hawthorne,Americana Jiu Jitsu,americana_jj,,,,,,,https://americanajj.com/
-New Jersey,Clifton,Immortals Jiu Jitsu,immortalsjiujitsu,,,,,,,https://immortalsjiujitsu.com/
-New Jersey,Bloomingdale,Bataille Jiu Jitsu Academy,bataillejj,,,,,,,https://www.bataillejj.com/
-New Jersey,Totowa,Camal and Cruz Judo and BJJ Academy,camalandcruz,,,,,,,https://camalandcruz.com/
-New Jersey,Totowa,NJ United Mixed Martial Arts,njunitedmma,,,,,,,https://www.njunitedmma.com/
-New Jersey,Passaic,ABERIK MMA,aberikmma,,,,,,,https://www.aberikmma.com/
-New Jersey,Clifton,Bones BJJ Academy,bonesbjjacademy,,,,,,,https://bonesjiujitsu.com/
-New Jersey,Clifton,Grappling University Martial Arts,guma_bjj,,,,,,,https://gumacliftonnj.com/
-New Jersey,Cedar Knolls,AMA Fight Club,amafightclub,,,,,,,https://www.joinamafightclub.com/
-New Jersey,Denville,Renzo Gracie Denville,teamrenzograciedenville,,,,,,,https://renzograciedenville.com/
-New Jersey,Morris Plains,Parsippany BJJ,parsippany_bjj,,,,,,,https://www.parsippanybjj.com/
+New Jersey,Newark,Renzo Gracie Newark,renzogracienewark,,,,,40.746235,-74.198195,https://www.renzogracienj.com/,
+New Jersey,Nutley,Momentum Brazilian Jiu Jitsu,momentumbjj,,,,,40.818500,-74.158900,https://momentumbjj.com/,
+New Jersey,Bloomfield,North South Jiu Jitsu,northsouthbjj,,,,,40.803500,-74.189100,https://northsouthbjj.com/,
+New Jersey,Cedar Grove,Roost Martial Arts,roostmartialarts,,,,,40.853400,-74.229700,https://www.roostmartialarts.com/,
+New Jersey,Maplewood,Bodega Jiu-Jitsu,bodegajiujitsu,,,,,40.727900,-74.265600,https://www.bodegajiujitsu.com/,
+New Jersey,Hawthorne,Americana Jiu Jitsu,americana_jj,,,,,40.952850,-74.155350,https://americanajj.com/,
+New Jersey,Clifton,Immortals Jiu Jitsu,immortalsjiujitsu,,,,,40.857960,-74.155260,https://immortalsjiujitsu.com/,
+New Jersey,Bloomingdale,Bataille Jiu Jitsu Academy,bataillejj,,,,,41.012800,-74.333800,https://www.bataillejj.com/,
+New Jersey,Totowa,Camal and Cruz Judo and BJJ Academy,camalandcruz,,,,,40.958100,-74.260800,https://camalandcruz.com/,
+New Jersey,Totowa,NJ United Mixed Martial Arts,njunitedmma,,,,,40.958100,-74.260800,https://www.njunitedmma.com/,
+New Jersey,Passaic,ABERIK MMA,aberikmma,,,,,40.860100,-74.128300,https://www.aberikmma.com/,
+New Jersey,Clifton,Bones BJJ Academy,bonesbjjacademy,,,,,40.857960,-74.155260,https://bonesjiujitsu.com/,
+New Jersey,Clifton,Grappling University Martial Arts,guma_bjj,,,,,40.857960,-74.155260,https://gumacliftonnj.com/,
+New Jersey,Cedar Knolls,AMA Fight Club,amafightclub,,,,,40.822300,-74.456900,https://www.joinamafightclub.com/,
+New Jersey,Denville,Renzo Gracie Denville,teamrenzograciedenville,,,,,40.889700,-74.484400,https://renzograciedenville.com/,
+New Jersey,Morris Plains,Parsippany BJJ,parsippany_bjj,,,,,40.844500,-74.482400,https://www.parsippanybjj.com/,
 New Jersey,Flanders / Roxbury,Gael Force Jiu Jitsu,gaelforcebjj,,,,,,,https://www.gaelforcejiujitsu.com/
-New Jersey,Rockaway,Pure Mixed Martial Arts,puremmanj,,,,,,,https://puremixedmartialarts.com/
-New Jersey,Lake Hopatcong,North Jersey MMA Academy,njmmaacademy,,,,,,,https://www.njmmaa.com/
-New Jersey,Stanhope,Core Brazilian Jiu Jitsu Academy,corebjjnj,,,,,,,https://corebjjnj.com/
-New Jersey,Sparta,Sussex County MMA & Fitness,sussexmma,,,,,,,https://sussexcountymma.com/
-New Jersey,Hackettstown,NJ Ronin Jiu Jitsu and Striking Academy,njronin,,,,,,,https://njronin.com/
-New Jersey,Warren,Colton Brown Training Center,coltonbrowntrainingcenter,,,,,,,https://coltonbrowntrainingcenter.com/
-New Jersey,Washington,Esoteric Jiu Jitsu Academy,esotericjiujitsuacademy,,,,,,,https://www.esotericjiujitsu.com/
-New Jersey,Union,Elijah Brazilian Jiujitsu Academy,elijahbrazilianjiujitsu,,,,,,,https://ebjj.com/
-New Jersey,Scotch Plains,Vitor Shaolin Brazilian Jiu-Jitsu Academy,vshaolin,,,,,,,https://www.shaolinbjj.com/
-New Jersey,Garwood,Renzo Gracie Garwood,renzograciegarwood,,,,,,,https://www.renzograciegarwood.com/
-New Jersey,Vauxhall,Sheridan Brazilian Jiu Jitsu,sheridanbjj,,,,,,,https://www.sheridanbjj.com/
-New Jersey,Kenilworth,Rolling Bear Brazilian Jiu-Jitsu,rollingbearbjj,,,,,,,https://rollingbearbjj.com/
-New Jersey,Union,AllStar Martial Arts,allstar_martialarts,,,,,,,https://allstarbjj.com/
-New Jersey,Berkeley Heights,Team Jucao,teamjucaobjj_official,,,,,,,https://www.teamjucaoacademy.com/
-New Jersey,Elizabeth,Stiles Street MMA,stilesstreetmma,,,,,,,https://allamericansambo.com/clubs/streetmmaacademy/
-New Jersey,East Brunswick,Revel Jiu Jitsu,reveljiujitsu,,,,,,,https://reveljiujitsu.com/
-New Jersey,East Brunswick,Garry Tonon Jiu Jitsu,garrytononjiujitsu,,,,,,,https://www.garrytononjiujitsu.com/
+New Jersey,Rockaway,Pure Mixed Martial Arts,puremmanj,,,,,40.922900,-74.509400,https://puremixedmartialarts.com/,
+New Jersey,Lake Hopatcong,North Jersey MMA Academy,njmmaacademy,,,,,40.950600,-74.612900,https://www.njmmaa.com/,
+New Jersey,Stanhope,Core Brazilian Jiu Jitsu Academy,corebjjnj,,,,,40.921700,-74.700400,https://corebjjnj.com/,
+New Jersey,Sparta,Sussex County MMA & Fitness,sussexmma,,,,,41.027700,-74.640700,https://sussexcountymma.com/,
+New Jersey,Hackettstown,NJ Ronin Jiu Jitsu and Striking Academy,njronin,,,,,40.852900,-74.834300,https://njronin.com/,
+New Jersey,Warren,Colton Brown Training Center,coltonbrowntrainingcenter,,,,,40.631800,-74.510500,https://coltonbrowntrainingcenter.com/,
+New Jersey,Washington,Esoteric Jiu Jitsu Academy,esotericjiujitsuacademy,,,,,40.758200,-74.991400,https://www.esotericjiujitsu.com/,
+New Jersey,Union,Elijah Brazilian Jiujitsu Academy,elijahbrazilianjiujitsu,,,,,40.695200,-74.267700,https://ebjj.com/,
+New Jersey,Scotch Plains,Vitor Shaolin Brazilian Jiu-Jitsu Academy,vshaolin,,,,,40.637900,-74.368200,https://www.shaolinbjj.com/,
+New Jersey,Garwood,Renzo Gracie Garwood,renzograciegarwood,,,,,40.651200,-74.323900,https://www.renzograciegarwood.com/,
+New Jersey,Vauxhall,Sheridan Brazilian Jiu Jitsu,sheridanbjj,,,,,40.717900,-74.282900,https://www.sheridanbjj.com/,
+New Jersey,Kenilworth,Rolling Bear Brazilian Jiu-Jitsu,rollingbearbjj,,,,,40.675900,-74.294400,https://rollingbearbjj.com/,
+New Jersey,Union,AllStar Martial Arts,allstar_martialarts,,,,,40.695200,-74.267700,https://allstarbjj.com/,
+New Jersey,Berkeley Heights,Team Jucao,teamjucaobjj_official,,,,,40.675200,-74.434600,https://www.teamjucaoacademy.com/,
+New Jersey,Elizabeth,Stiles Street MMA,stilesstreetmma,,,,,40.666725,-74.215100,https://allamericansambo.com/clubs/streetmmaacademy/,
+New Jersey,East Brunswick,Revel Jiu Jitsu,reveljiujitsu,,,,,40.428400,-74.406400,https://reveljiujitsu.com/,
+New Jersey,East Brunswick,Garry Tonon Jiu Jitsu,garrytononjiujitsu,,,,,40.428400,-74.406400,https://www.garrytononjiujitsu.com/,
 New Jersey,Monroe,Monroe Jiu-Jitsu Academy / OMTC BJJ,monroe.jiujitsu,,,,,,,https://monroejj.com/
 New Jersey,Fords / Woodbridge,Radji Barrett Jiu Jitsu Academy,radjibarrettjiujitsu,,,,,,,https://radjibarrettjiujitsu.com/
 New Jersey,Green Brook,All In Jiu-Jitsu,allinjiujitsu,,,,,,,https://www.allinjiujitsu.com/
 New Jersey,Montgomery Township,Montgomery Brazilian Jiu-Jitsu,montgomery_bjj,,,,,,,https://montgomerybjj.com/
 New Jersey,Somerset / Franklin Township,New Journey MMA,newjourneymmasomersetnj,,,,,,,https://newjourneymma.com/
-New Jersey,Hillsborough,Hillsborough Brazilian Jiu-Jitsu,hillsboroughbjj,,,,,,,https://www.hillsboroughbjj.com/
-New Jersey,Princeton,Princeton Brazilian Jiu Jitsu,princetonbjj,,,,,,,https://www.princetonbjj.com/
+New Jersey,Hillsborough,Hillsborough Brazilian Jiu-Jitsu,hillsboroughbjj,,,,,40.477500,-74.627200,https://www.hillsboroughbjj.com/,
+New Jersey,Princeton,Princeton Brazilian Jiu Jitsu,princetonbjj,,,,,40.339700,-74.664800,https://www.princetonbjj.com/,
 New Jersey,Lawrenceville,Gracie Barra Princeton - Lawrenceville,graciebarraprinceton,,,,,,,https://gbprinceton.com/
 New Jersey,North Princeton,Gracie Barra Princeton - North Princeton,gbnorthprinceton,,,,,,,https://gbprinceton.com/
-New Jersey,Lawrence Township,Otherworld Jiu Jitsu,otherworld.jj,,,,,,,https://www.otherworldjj.com/
+New Jersey,Lawrence Township,Otherworld Jiu Jitsu,otherworld.jj,,,,,40.217100,-74.742900,https://www.otherworldjj.com/,
 New Jersey,Ewing,Budo Martial Arts Studio,budomartialartsstudio,,,,,,,https://budomartialartsstudio.com/
 New Jersey,Robbinsville,Ricardo Almeida BJJ / RABJJ Academy,rabjjacademy,,,,,,,https://ricardoalmeida.com/
 New Jersey,Robbinsville,Upper Twelve Jiu Jitsu,uppertwelvejj,,,,,,,https://www.uppertwelvejj.com/
 New Jersey,Red Bank / Middletown,Garden State Brazilian Jiu-Jitsu Academy,gardenstatebjj,,,,,,,https://gardenstatebjj.com/
-New Jersey,Middletown,Renzo Gracie Middletown,renzograciemiddletown,,,,,,,https://renzograciemiddletownmartialarts.com/
-New Jersey,Freehold,Dante Rivera BJJ Academy,danterivera_bjj,,,,,,,https://www.danteriverabjjacademy.com/
+New Jersey,Middletown,Renzo Gracie Middletown,renzograciemiddletown,,,,,40.394400,-74.115700,https://renzograciemiddletownmartialarts.com/,
+New Jersey,Freehold,Dante Rivera BJJ Academy,danterivera_bjj,,,,,40.245800,-74.276800,https://www.danteriverabjjacademy.com/,
 New Jersey,Manalapan,Lucky Cat Grappling Co.,luckycatgrapplingnj,,,,,,,https://www.luckycatgrappling.com/
-New Jersey,Long Branch,House of Salt Jiu-Jitsu,houseofsaltjiujitsu,,,,,,,https://houseofsaltnj.com/
-New Jersey,Morganville,Heritage Jiu-Jitsu,heritage_bjj,,,,,,,https://heritage-bjj.com/
-New Jersey,Morganville,DAK Brazilian Jiu-Jitsu,dakbjj,,,,,,,https://dakbjj.com/,"209 Commercial Ct, Morganville, NJ 07751"
-New Jersey,Marlboro,The Inferno Training and Performance Center,infernotpc,,,,,,,https://www.infernotpc.com/
-New Jersey,Morganville,Fatjo’s Mixed Martial Arts,fatjosmma,,,,,,,https://fatjosmma.com/
-New Jersey,Hazlet,Bayshore Brazilian Jiu Jitsu,bayshorebjj,,,,,,,https://bayshorebjj.com/
-New Jersey,Toms River,The Academy of Jiu-Jitsu,academyofjj,,,,,,,https://theacademyjj.com/
-New Jersey,Forked River,Ocean County Brazilian Jiu-Jitsu,oceancountybjj,,,,,,,https://oceancountybjj.com/
+New Jersey,Long Branch,House of Salt Jiu-Jitsu,houseofsaltjiujitsu,,,,,40.299200,-73.991200,https://houseofsaltnj.com/,
+New Jersey,Morganville,Heritage Jiu-Jitsu,heritage_bjj,,,,,40.352900,-74.277900,https://heritage-bjj.com/,
+New Jersey,Morganville,DAK Brazilian Jiu-Jitsu,dakbjj,,,,,40.352900,-74.277900,https://dakbjj.com/,"209 Commercial Ct, Morganville, NJ 07751"
+New Jersey,Marlboro,The Inferno Training and Performance Center,infernotpc,,,,,40.318200,-74.263900,https://www.infernotpc.com/,
+New Jersey,Morganville,Fatjo’s Mixed Martial Arts,fatjosmma,,,,,40.352900,-74.277900,https://fatjosmma.com/,
+New Jersey,Hazlet,Bayshore Brazilian Jiu Jitsu,bayshorebjj,,,,,40.422600,-74.179900,https://bayshorebjj.com/,
+New Jersey,Toms River,The Academy of Jiu-Jitsu,academyofjj,,,,,39.947460,-74.214180,https://theacademyjj.com/,
+New Jersey,Forked River,Ocean County Brazilian Jiu-Jitsu,oceancountybjj,,,,,39.844400,-74.197300,https://oceancountybjj.com/,
 New Jersey,Point Pleasant,Bill Scott BJJ Shore Academy,bjjshoreacademy,,,,,,,https://www.billscottbjj.com/
-New Jersey,Brick,Nick Catone MMA & Fitness,nsc_trainingcenter,,,,,,,https://www.nickcatonefitness.com/
-New Jersey,Bayville,Tong Dragon MMA,tongdragonmma,,,,,,,https://tongdragon.com/
-New Jersey,Flemington,Loftus Jiu-Jitsu Academy,loftusjiujitsu,,,,,,,https://loftusjiujitsu.com/
-New Jersey,Lebanon,Gracie New Jersey Academy,gracienjacademy,,,,,,,https://gracienewjersey.com/
-New Jersey,Clinton,Impact Martial Arts Clinton,impactmartialartsclinton,,,,,,,https://impactmartialarts.net/
-New Jersey,Pennsauken,Maverick Brazilian Jiu Jitsu,maverick_bjj,,,,,,,https://www.maverickbjj.net/
-New Jersey,Clementon,Daniel Tavares BJJ Academy,danieltavaresbjjacademy,,,,,,,https://www.danieltavaresbjjacademy.com/
-New Jersey,Cherry Hill,Strive Brazilian Jiu Jitsu,strivebjj,,,,,,,https://strivebjj.com/
+New Jersey,Brick,Nick Catone MMA & Fitness,nsc_trainingcenter,,,,,40.063150,-74.113050,https://www.nickcatonefitness.com/,
+New Jersey,Bayville,Tong Dragon MMA,tongdragonmma,,,,,39.909300,-74.154900,https://tongdragon.com/,
+New Jersey,Flemington,Loftus Jiu-Jitsu Academy,loftusjiujitsu,,,,,40.518000,-74.845300,https://loftusjiujitsu.com/,
+New Jersey,Lebanon,Gracie New Jersey Academy,gracienjacademy,,,,,40.646600,-74.829000,https://gracienewjersey.com/,
+New Jersey,Clinton,Impact Martial Arts Clinton,impactmartialartsclinton,,,,,40.641200,-74.908800,https://impactmartialarts.net/,
+New Jersey,Pennsauken,Maverick Brazilian Jiu Jitsu,maverick_bjj,,,,,39.972300,-75.060700,https://www.maverickbjj.net/,
+New Jersey,Clementon,Daniel Tavares BJJ Academy,danieltavaresbjjacademy,,,,,39.803600,-75.005800,https://www.danieltavaresbjjacademy.com/,
+New Jersey,Cherry Hill,Strive Brazilian Jiu Jitsu,strivebjj,,,,,39.906233,-74.996300,https://strivebjj.com/,
 New Jersey,Hi-Nella,Fighters United,fightersunitedmma,,,,,,,https://fightersunitednj.com/
-New Jersey,Marlton,McHugh Jiu Jitsu - Marlton,mchughjiujitsuhq,,,,,,,https://mchughbjj.com/locations/marlton/
-New Jersey,Mount Laurel,McHugh Jiu Jitsu - Mount Laurel,mchughjiujitsu_mtlaurel,,,,,,,https://mchughbjjmtlaurel.com/
-New Jersey,Moorestown,Moorestown Brazilian Jiu-Jitsu,moorestownbjj,,,,,,,https://moorestownbjj.com/
-New Jersey,Maple Shade,New Jersey Martial Arts (NJMA) - Maple Shade,teamnjma,,,,,,,https://njmaonline.com/jiu-jitsu-classes/
-New Jersey,Cookstown,Power Half Wrestling & MMA,power_half_wrestling,,,,,,,https://powerhalfwrestling.com/
-New Jersey,Sewell,Hassett’s Jiu-Jitsu - Sewell,hassettsjiujitsu,,,,,,,https://hassettsjiujitsu.com/sewell
-New Jersey,Williamstown,Hassett’s Jiu-Jitsu - Williamstown,hassettsjiujitsu,,,,,,,https://hassettsjiujitsu.com/williamstown
-New Jersey,Woodstown,Freedom Jiu-Jitsu,freedom_jiujitsu_southjersey,,,,,,,https://www.freedomjiu-jitsu.com/
-New Jersey,Egg Harbor Township,609 Jiu-Jitsu,609jiujitsu,,,,,,,https://609jiujitsu.com/
-New Jersey,Egg Harbor Township,Harbor Jiu Jitsu,harborjiujitsu,,,,,,,https://www.harborjiujitsu.com/
-New Jersey,Ocean City,South Jersey Brazilian Jiu Jitsu - Ocean City,sjbjjoceancity,,,,,,,https://sjbjjoc.com/
-New Jersey,Cape May Court House,Cape May Brazilian Jiu Jitsu,capemaybjj,,,,,,,https://capemaybjj.com/
-New Jersey,Vineland,Shark Tank Brazilian Jiu Jitsu,sharktankvinelandbjj,,,,,,,https://sharktankbjj.com/
-New Jersey,Berlin,South Jersey Brazilian Jiu Jitsu - Berlin,southjerseybjj,,,,,,,https://sjbjj.com/
-NYC,New York,Renzo Gracie Academy / Blue Basement,renzogracieacademy,,,,,,,https://renzogracieacademy.com/
-NYC,New York,Renzo Gracie Upper West Side,renzogracieuws,,,,,,,https://renzogracieuws.com/
-NYC,New York,Renzo Gracie Wall Street,renzograciewallst,,,,,,,https://renzograciewallst.com/
-NYC,New York,Renzo Gracie East Side,renzogracieeastside,,,,,,,https://www.renzogracieeastside.com/
-NYC,New York,Marcelo Garcia Jiu-Jitsu NYC,mgjjnyc,,,,,,,https://marcelogarciajj.com/nyc/
-NYC,New York,Unity Jiu Jitsu,unityjiujitsu,,,,,,,https://unityjiujitsu.com/
-NYC,New York,Studio X BJJ,studioxjiujitsu,,,,,,,https://www.studiox.nyc/
-NYC,New York,SD Jiu-Jitsu - Studio X,sdjiujitsu,,,,,,,https://www.sdjiujitsu.com/
-NYC,New York,10th Planet NYC,10thplanetnyc,,,,,,,https://www.10thplanetjjnyc.com/
-NYC,New York,Clockwork Brazilian Jiu-Jitsu,clockworkbjj,,,,,,,https://www.clockworkbjj.com/
-NYC,New York,Masterskya,masterskyajiujitsu,,,,,,,https://masterskya.com/
-NYC,New York,Paxibellum Jiu-Jitsu,paxibellum,,,,,,,https://paxibellum.com/
-NYC,New York,Range Brazilian Jiu-Jitsu,rangebjj,,,,,,,https://www.rangebjj.com/
-NYC,New York,Workshop NYC,workshop.nyc,,,,,,,https://www.workshop-nyc.com/
-NYC,New York,Five Points Academy,fivepointsacademy,,,,,,,https://www.academyfivepoints.com/
-NYC,New York,Ronin Athletics,roninathletics,,,,,,,https://roninathletics.com/
-NYC,New York,Modern Martial Arts - Upper East Side,mma_nyc_ues,,,,,,,https://www.mmanewyorkcity.com/upper-east-side-schedule
-NYC,New York,Modern Martial Arts - Tribeca,mma_nyc,,,,,,,https://www.mmanewyorkcity.com/tribeca
-NYC,New York,Modern Martial Arts - Upper West Side,mma_nyc,,,,,,,https://www.mmanewyorkcity.com/upper-west-side
-NYC,New York,Anderson’s Martial Arts Academy,andersonsmartialarts,,,,,,,https://www.andersonsmartialarts.com/
-NYC,New York,Mushin Mixed Martial Arts,mushinmma,,,,,,,https://www.mushinmma.org/
-NYC,New York,Church Street Boxing Gym,churchstreetboxinggym,,,,,,,https://csboxinggym.com/
-NYC,New York,Dan Covel Jiu-Jitsu,dancoveljiujitsu,,,,,,,https://coveljiujitsu.com/
-NYC,New York,Evolution Muay Thai,evolutionmuaythainyc,,,,,,,https://evolutionmuaythai.com/
-NYC,New York,Radical MMA NYC,radicalmmanyc,,,,,,,https://radicalmmanyc.com/
-NYC,New York,Sintonia Jiu Jitsu Academy,sintoniajiujitsu,,,,,,,https://www.sintoniajiujitsu.com/
-NYC,New York,East Side Brazilian Jiu-Jitsu,chrisreymann,,,,,,,https://eastsidebrazilianjiujitsu.com/
-NYC,New York,Training Zone NYC / Gramercy,trainingzonenyc,,,,,,,https://www.tznyc.com/locations/manhattan
-NYC,New York,Tiger Schulmann’s - Chelsea,tigerschulmannschelsea,,,,,,,https://tsk.com/locations/ny/chelsea/
-NYC,New York,Kano Martial Arts NYC,kanomartialarts,,,,,,,https://kanomartialartsnyc.com/
-NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Dyker Heights,brooklynbjj,,,,,,,https://brooklynbjj.com/bbjj-dyker-heights
-NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Gravesend,brooklynbjj,,,,,,,https://brooklynbjj.com/bbjj-gravesend
-NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Bay Parkway,brooklynbjj,,,,,,,https://brooklynbjj.com/bbjj-bay-parkway
-NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Clinton Hill,brooklynbjj,,,,,,,https://brooklynbjj.com/bbjj-clinton-hill
-NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Cobble Hill,brooklynbjj,,,,,,,https://brooklynbjj.com/bbjj-cobble-hill
-NYC,Brooklyn,Kings Combat Williamsburg,kingscombatwillyb,,,,,,,https://kingscombatwillyb.com/
-NYC,Brooklyn,Chop & Chops MMA,chopandchopsmma,,,,,,,https://www.chopandchopsmma.com/
-NYC,Brooklyn,Darfight Martial Arts,teamdarfight,,,,,,,https://darfight.com/
-NYC,Brooklyn,Deadweight Martial Arts,deadweightmma,,,,,,,https://www.deadweightbjj.com/
-NYC,Brooklyn,Renzo Gracie Brooklyn,renzograciebrooklyn,,,,,,,https://renzograciebrooklynnyc.com/
-NYC,Brooklyn,The Dojo NYC,thedojonyc,,,,,,,https://www.thedojonyc.com/
-NYC,Brooklyn,The Grappling Club,thegrapplingclubnyc,,,,,,,https://www.thegrapplingclubnyc.com/
-NYC,Brooklyn,Bancho MMA,banchomma,,,,,,,
-NYC,Brooklyn,Park Slope Academy of Brazilian Jiu-Jitsu,psa_bjj,,,,,,,https://www.psabjj.com/
-NYC,Brooklyn,JMA BKNY / Caio Terra BJJ,jmabkny,,,,,,,https://jmabkny.com/
-NYC,Brooklyn,Glory Martial Arts Center,glorymartialartscenter,,,,,,,https://glorymacenter.com/
-NYC,Brooklyn,Pillar Jiu Jitsu,pillarjiujitsu,,,,,,,https://pillarjiujitsu.com/
-NYC,Brooklyn,Williamsburg MMA,williamsburgmma,,,,,,,https://www.williamsburgmma.com/
-NYC,Brooklyn,Renzo Gracie Bay Ridge,renzograciebayridge,,,,,,,https://www.renzograciebayridge.com/
-NYC,Brooklyn,Brooklyn Martial Arts,brooklyn_martial_arts,,,,,,,https://brooklynmartialarts.com/
-NYC,Brooklyn,The 47 BJJ Coop,the47bjjcoop,,,,,,,https://www.47bjjcoop.com/
-NYC,Brooklyn,Daruma Martial Arts,darumamartialarts,,,,,,,https://www.darumamartialarts.com/
-NYC,Brooklyn,Gregor Gracie Jiu-Jitsu,gregorgraciejiujitsu,,,,,,,https://www.gregorgracie.com/
-NYC,Brooklyn,Zero Gravity BJJ Academy,zerogbjj,,,,,,,https://zerogbjj.com/
-NYC,Brooklyn,Lions Fight Brighton,lions_fight,,,,,,,https://lionsfight.com/
-NYC,Brooklyn,South Brooklyn BJJ / DarFight BJJ,zhenyasakirski,,,,,,,https://www.southbrooklynbjj.com/
-NYC,Brooklyn,Brooklyn Mixed Martial Arts,brooklynmmaofficial2008,,,,,,,https://www.brooklynmixedmartialarts.com/,"2418 Ralph Ave, Brooklyn, NY 11234, USA"
-NYC,Brooklyn,Vagabond Jiu Jitsu,vagabondbjjbrooklyn,,,,,,,https://www.vagabondbjjbrooklyn.com/
-NYC,Brooklyn,DiamondHeart / Physical Culture Collective,diamondheartbjj,,,,,,,https://diamondheartnyc.com/
-NYC,Brooklyn,Tiger Schulmann’s - Bay Ridge,bayridgetsmma,,,,,,,https://tsk.com/locations/ny/brooklyn-bay-ridge/
-NYC,Brooklyn,Tiger Schulmann’s - Greenpoint,tsma_greenpoint,,,,,,,https://tsk.com/locations/
-NYC,Brooklyn,Tiger Schulmann’s - Carroll Gardens,tsmacarrollgardens,,,,,,,https://tsk.com/locations/ny/carroll-gardens/
-NYC,Brooklyn,Canarsie Community Dojo,canarsiedojo,,,,,,,https://canarsiedojo.com/
-NYC,Astoria,Queens Jiu Jitsu,queensjiujitsu,,,,,,,https://queensjiujitsu.com/
-NYC,Flushing,Lotus Club Brazilian Jiu Jitsu Flushing,andylotusbjj,,,,,,,https://www.flushingjiujitsu.com/
-NYC,Astoria,Enigma Brazilian Jiu Jitsu,enigmajiujitsu,,,,,,,https://enigma-bjj.com/
-NYC,Forest Hills,Kings Combat Forest Hills,kingscombatforesthills,,,,,,,https://kingscombatforesthills.com/
-NYC,Forest Hills,Una Brazilian Jiu Jitsu,unabjj,,,,,,,https://www.unabjj.com/
-NYC,Flushing,Peak Performance / Caio Terra Academy Queens,peak_fitness_nyc,,,,,,,https://peakfitnessny.com/
-NYC,Whitestone,East Coast United Queens Academy of BJJ,eastcoastunitedbjj,,,,,,,https://www.ecubjj.com/
-NYC,Long Island City,Marlon Colorado BJJ NYC & Judo Academy,marlon_colorado_bjj_nyc,,,,,,,https://www.marloncoloradobjjnyc.com/
-NYC,Long Island City,City Jiu Jitsu Academy,cityjiujitsuacademy,,,,,,,https://cityjiujitsuacademy.com/
-NYC,Rockaway Park,Clockwork Jiu Jitsu Rockaway Chapter,clockworkbjj,,,,,,,https://www.clockworkbjj.com/
-NYC,Bayside,Renzo Gracie Bayside,renzograciebayside,,,,,,,https://renzograciebayside.com/
-NYC,Rego Park,Kings Combat Fitness,kingscombatfitness,,,,,,,https://kingscombatfitness.com/
-NYC,Kew Gardens,Royal Jiu-Jitsu Queens,royaljiujitsuqueens,,,,,,,https://www.royaljiujitsuqueens.com/
-NYC,Astoria,Renzo Gracie Queens,renzograciequeens,,,,,,,https://www.renzograciequeens.com/
-NYC,Whitestone,Renzo Gracie Whitestone,renzograciewhitestone,,,,,,,https://www.renzogracie-whitestone.com/
-NYC,Jackson Heights,AT Jiu-Jitsu NYC,jiujitsunyc,,,,,,,https://www.atjiujitsunyc.com/
-NYC,Long Island City,Team Jucao LIC Jiu Jitsu,jucao_long_island_city,,,,,,,https://www.bjjlic.com/
-NYC,Ridgewood,The Jiu Jitsu Lounge,thejiujitsulounge,,,,,,,https://www.thejiujitsulounge.com/
-NYC,Ridgewood,5 Boro FightHaus,5borofh,,,,,,,https://5bfh.com/
-NYC,Astoria,Lifestyle BJJ/MMA,lifestyle_bjj_academy_nyc,,,,,,,https://www.lifestylebjj.com/
-NYC,Astoria,Tiger Schulmann’s - Astoria,tigerschulmannsastoria,,,,,,,https://tsk.com/locations/ny/queens-astoria/
-NYC,Rego Park,Tiger Schulmann’s - Rego Park,tigerschulmannsregopark,,,,,,,https://tsk.com/locations/ny/queens-rego-park/
+New Jersey,Marlton,McHugh Jiu Jitsu - Marlton,mchughjiujitsuhq,,,,,39.884500,-74.906700,https://mchughbjj.com/locations/marlton/,
+New Jersey,Mount Laurel,McHugh Jiu Jitsu - Mount Laurel,mchughjiujitsu_mtlaurel,,,,,39.947800,-74.903600,https://mchughbjjmtlaurel.com/,
+New Jersey,Moorestown,Moorestown Brazilian Jiu-Jitsu,moorestownbjj,,,,,39.968300,-74.953300,https://moorestownbjj.com/,
+New Jersey,Maple Shade,New Jersey Martial Arts (NJMA) - Maple Shade,teamnjma,,,,,39.951100,-74.994600,https://njmaonline.com/jiu-jitsu-classes/,
+New Jersey,Cookstown,Power Half Wrestling & MMA,power_half_wrestling,,,,,40.048100,-74.559500,https://powerhalfwrestling.com/,
+New Jersey,Sewell,Hassett’s Jiu-Jitsu - Sewell,hassettsjiujitsu,,,,,39.747300,-75.089900,https://hassettsjiujitsu.com/sewell,
+New Jersey,Williamstown,Hassett’s Jiu-Jitsu - Williamstown,hassettsjiujitsu,,,,,39.665000,-74.971000,https://hassettsjiujitsu.com/williamstown,
+New Jersey,Woodstown,Freedom Jiu-Jitsu,freedom_jiujitsu_southjersey,,,,,39.645700,-75.324800,https://www.freedomjiu-jitsu.com/,
+New Jersey,Egg Harbor Township,609 Jiu-Jitsu,609jiujitsu,,,,,39.374100,-74.611800,https://609jiujitsu.com/,
+New Jersey,Egg Harbor Township,Harbor Jiu Jitsu,harborjiujitsu,,,,,39.374100,-74.611800,https://www.harborjiujitsu.com/,
+New Jersey,Ocean City,South Jersey Brazilian Jiu Jitsu - Ocean City,sjbjjoceancity,,,,,39.270900,-74.587500,https://sjbjjoc.com/,
+New Jersey,Cape May Court House,Cape May Brazilian Jiu Jitsu,capemaybjj,,,,,39.137800,-74.780600,https://capemaybjj.com/,
+New Jersey,Vineland,Shark Tank Brazilian Jiu Jitsu,sharktankvinelandbjj,,,,,39.477833,-75.000033,https://sharktankbjj.com/,
+New Jersey,Berlin,South Jersey Brazilian Jiu Jitsu - Berlin,southjerseybjj,,,,,39.778800,-74.930800,https://sjbjj.com/,
+NYC,New York,Renzo Gracie Academy / Blue Basement,renzogracieacademy,,,,,40.759186,-73.981724,https://renzogracieacademy.com/,
+NYC,New York,Renzo Gracie Upper West Side,renzogracieuws,,,,,40.759186,-73.981724,https://renzogracieuws.com/,
+NYC,New York,Renzo Gracie Wall Street,renzograciewallst,,,,,40.759186,-73.981724,https://renzograciewallst.com/,
+NYC,New York,Renzo Gracie East Side,renzogracieeastside,,,,,40.759186,-73.981724,https://www.renzogracieeastside.com/,
+NYC,New York,Marcelo Garcia Jiu-Jitsu NYC,mgjjnyc,,,,,40.759186,-73.981724,https://marcelogarciajj.com/nyc/,
+NYC,New York,Unity Jiu Jitsu,unityjiujitsu,,,,,40.759186,-73.981724,https://unityjiujitsu.com/,
+NYC,New York,Studio X BJJ,studioxjiujitsu,,,,,40.759186,-73.981724,https://www.studiox.nyc/,
+NYC,New York,SD Jiu-Jitsu - Studio X,sdjiujitsu,,,,,40.759186,-73.981724,https://www.sdjiujitsu.com/,
+NYC,New York,10th Planet NYC,10thplanetnyc,,,,,40.759186,-73.981724,https://www.10thplanetjjnyc.com/,
+NYC,New York,Clockwork Brazilian Jiu-Jitsu,clockworkbjj,,,,,40.759186,-73.981724,https://www.clockworkbjj.com/,
+NYC,New York,Masterskya,masterskyajiujitsu,,,,,40.759186,-73.981724,https://masterskya.com/,
+NYC,New York,Paxibellum Jiu-Jitsu,paxibellum,,,,,40.759186,-73.981724,https://paxibellum.com/,
+NYC,New York,Range Brazilian Jiu-Jitsu,rangebjj,,,,,40.759186,-73.981724,https://www.rangebjj.com/,
+NYC,New York,Workshop NYC,workshop.nyc,,,,,40.759186,-73.981724,https://www.workshop-nyc.com/,
+NYC,New York,Five Points Academy,fivepointsacademy,,,,,40.759186,-73.981724,https://www.academyfivepoints.com/,
+NYC,New York,Ronin Athletics,roninathletics,,,,,40.759186,-73.981724,https://roninathletics.com/,
+NYC,New York,Modern Martial Arts - Upper East Side,mma_nyc_ues,,,,,40.759186,-73.981724,https://www.mmanewyorkcity.com/upper-east-side-schedule,
+NYC,New York,Modern Martial Arts - Tribeca,mma_nyc,,,,,40.759186,-73.981724,https://www.mmanewyorkcity.com/tribeca,
+NYC,New York,Modern Martial Arts - Upper West Side,mma_nyc,,,,,40.759186,-73.981724,https://www.mmanewyorkcity.com/upper-west-side,
+NYC,New York,Anderson’s Martial Arts Academy,andersonsmartialarts,,,,,40.759186,-73.981724,https://www.andersonsmartialarts.com/,
+NYC,New York,Mushin Mixed Martial Arts,mushinmma,,,,,40.759186,-73.981724,https://www.mushinmma.org/,
+NYC,New York,Church Street Boxing Gym,churchstreetboxinggym,,,,,40.759186,-73.981724,https://csboxinggym.com/,
+NYC,New York,Dan Covel Jiu-Jitsu,dancoveljiujitsu,,,,,40.759186,-73.981724,https://coveljiujitsu.com/,
+NYC,New York,Evolution Muay Thai,evolutionmuaythainyc,,,,,40.759186,-73.981724,https://evolutionmuaythai.com/,
+NYC,New York,Radical MMA NYC,radicalmmanyc,,,,,40.759186,-73.981724,https://radicalmmanyc.com/,
+NYC,New York,Sintonia Jiu Jitsu Academy,sintoniajiujitsu,,,,,40.759186,-73.981724,https://www.sintoniajiujitsu.com/,
+NYC,New York,East Side Brazilian Jiu-Jitsu,chrisreymann,,,,,40.759186,-73.981724,https://eastsidebrazilianjiujitsu.com/,
+NYC,New York,Training Zone NYC / Gramercy,trainingzonenyc,,,,,40.759186,-73.981724,https://www.tznyc.com/locations/manhattan,
+NYC,New York,Tiger Schulmann’s - Chelsea,tigerschulmannschelsea,,,,,40.759186,-73.981724,https://tsk.com/locations/ny/chelsea/,
+NYC,New York,Kano Martial Arts NYC,kanomartialarts,,,,,40.759186,-73.981724,https://kanomartialartsnyc.com/,
+NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Dyker Heights,brooklynbjj,,,,,40.651551,-73.954526,https://brooklynbjj.com/bbjj-dyker-heights,
+NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Gravesend,brooklynbjj,,,,,40.651551,-73.954526,https://brooklynbjj.com/bbjj-gravesend,
+NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Bay Parkway,brooklynbjj,,,,,40.651551,-73.954526,https://brooklynbjj.com/bbjj-bay-parkway,
+NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Clinton Hill,brooklynbjj,,,,,40.651551,-73.954526,https://brooklynbjj.com/bbjj-clinton-hill,
+NYC,Brooklyn,Brooklyn Brazilian Jiu-Jitsu - Cobble Hill,brooklynbjj,,,,,40.651551,-73.954526,https://brooklynbjj.com/bbjj-cobble-hill,
+NYC,Brooklyn,Kings Combat Williamsburg,kingscombatwillyb,,,,,40.651551,-73.954526,https://kingscombatwillyb.com/,
+NYC,Brooklyn,Chop & Chops MMA,chopandchopsmma,,,,,40.651551,-73.954526,https://www.chopandchopsmma.com/,
+NYC,Brooklyn,Darfight Martial Arts,teamdarfight,,,,,40.651551,-73.954526,https://darfight.com/,
+NYC,Brooklyn,Deadweight Martial Arts,deadweightmma,,,,,40.651551,-73.954526,https://www.deadweightbjj.com/,
+NYC,Brooklyn,Renzo Gracie Brooklyn,renzograciebrooklyn,,,,,40.651551,-73.954526,https://renzograciebrooklynnyc.com/,
+NYC,Brooklyn,The Dojo NYC,thedojonyc,,,,,40.651551,-73.954526,https://www.thedojonyc.com/,
+NYC,Brooklyn,The Grappling Club,thegrapplingclubnyc,,,,,40.651551,-73.954526,https://www.thegrapplingclubnyc.com/,
+NYC,Brooklyn,Bancho MMA,banchomma,,,,,40.651551,-73.954526,,
+NYC,Brooklyn,Park Slope Academy of Brazilian Jiu-Jitsu,psa_bjj,,,,,40.651551,-73.954526,https://www.psabjj.com/,
+NYC,Brooklyn,JMA BKNY / Caio Terra BJJ,jmabkny,,,,,40.651551,-73.954526,https://jmabkny.com/,
+NYC,Brooklyn,Glory Martial Arts Center,glorymartialartscenter,,,,,40.651551,-73.954526,https://glorymacenter.com/,
+NYC,Brooklyn,Pillar Jiu Jitsu,pillarjiujitsu,,,,,40.651551,-73.954526,https://pillarjiujitsu.com/,
+NYC,Brooklyn,Williamsburg MMA,williamsburgmma,,,,,40.651551,-73.954526,https://www.williamsburgmma.com/,
+NYC,Brooklyn,Renzo Gracie Bay Ridge,renzograciebayridge,,,,,40.651551,-73.954526,https://www.renzograciebayridge.com/,
+NYC,Brooklyn,Brooklyn Martial Arts,brooklyn_martial_arts,,,,,40.651551,-73.954526,https://brooklynmartialarts.com/,
+NYC,Brooklyn,The 47 BJJ Coop,the47bjjcoop,,,,,40.651551,-73.954526,https://www.47bjjcoop.com/,
+NYC,Brooklyn,Daruma Martial Arts,darumamartialarts,,,,,40.651551,-73.954526,https://www.darumamartialarts.com/,
+NYC,Brooklyn,Gregor Gracie Jiu-Jitsu,gregorgraciejiujitsu,,,,,40.651551,-73.954526,https://www.gregorgracie.com/,
+NYC,Brooklyn,Zero Gravity BJJ Academy,zerogbjj,,,,,40.651551,-73.954526,https://zerogbjj.com/,
+NYC,Brooklyn,Lions Fight Brighton,lions_fight,,,,,40.651551,-73.954526,https://lionsfight.com/,
+NYC,Brooklyn,South Brooklyn BJJ / DarFight BJJ,zhenyasakirski,,,,,40.651551,-73.954526,https://www.southbrooklynbjj.com/,
+NYC,Brooklyn,Brooklyn Mixed Martial Arts,brooklynmmaofficial2008,,,,,40.651551,-73.954526,https://www.brooklynmixedmartialarts.com/,"2418 Ralph Ave, Brooklyn, NY 11234, USA"
+NYC,Brooklyn,Vagabond Jiu Jitsu,vagabondbjjbrooklyn,,,,,40.651551,-73.954526,https://www.vagabondbjjbrooklyn.com/,
+NYC,Brooklyn,DiamondHeart / Physical Culture Collective,diamondheartbjj,,,,,40.651551,-73.954526,https://diamondheartnyc.com/,
+NYC,Brooklyn,Tiger Schulmann’s - Bay Ridge,bayridgetsmma,,,,,40.651551,-73.954526,https://tsk.com/locations/ny/brooklyn-bay-ridge/,
+NYC,Brooklyn,Tiger Schulmann’s - Greenpoint,tsma_greenpoint,,,,,40.651551,-73.954526,https://tsk.com/locations/,
+NYC,Brooklyn,Tiger Schulmann’s - Carroll Gardens,tsmacarrollgardens,,,,,40.651551,-73.954526,https://tsk.com/locations/ny/carroll-gardens/,
+NYC,Brooklyn,Canarsie Community Dojo,canarsiedojo,,,,,40.651551,-73.954526,https://canarsiedojo.com/,
+NYC,Astoria,Queens Jiu Jitsu,queensjiujitsu,,,,,40.767600,-73.920475,https://queensjiujitsu.com/,
+NYC,Flushing,Lotus Club Brazilian Jiu Jitsu Flushing,andylotusbjj,,,,,40.733188,-73.838725,https://www.flushingjiujitsu.com/,
+NYC,Astoria,Enigma Brazilian Jiu Jitsu,enigmajiujitsu,,,,,40.767600,-73.920475,https://enigma-bjj.com/,
+NYC,Forest Hills,Kings Combat Forest Hills,kingscombatforesthills,,,,,40.722900,-73.847300,https://kingscombatforesthills.com/,
+NYC,Forest Hills,Una Brazilian Jiu Jitsu,unabjj,,,,,40.722900,-73.847300,https://www.unabjj.com/,
+NYC,Flushing,Peak Performance / Caio Terra Academy Queens,peak_fitness_nyc,,,,,40.733188,-73.838725,https://peakfitnessny.com/,
+NYC,Whitestone,East Coast United Queens Academy of BJJ,eastcoastunitedbjj,,,,,40.785100,-73.809600,https://www.ecubjj.com/,
+NYC,Long Island City,Marlon Colorado BJJ NYC & Judo Academy,marlon_colorado_bjj_nyc,,,,,40.744933,-73.946900,https://www.marloncoloradobjjnyc.com/,
+NYC,Long Island City,City Jiu Jitsu Academy,cityjiujitsuacademy,,,,,40.744933,-73.946900,https://cityjiujitsuacademy.com/,
+NYC,Rockaway Park,Clockwork Jiu Jitsu Rockaway Chapter,clockworkbjj,,,,,40.576600,-73.842800,https://www.clockworkbjj.com/,
+NYC,Bayside,Renzo Gracie Bayside,renzograciebayside,,,,,40.778733,-73.777467,https://renzograciebayside.com/,
+NYC,Rego Park,Kings Combat Fitness,kingscombatfitness,,,,,40.727800,-73.860200,https://kingscombatfitness.com/,
+NYC,Kew Gardens,Royal Jiu-Jitsu Queens,royaljiujitsuqueens,,,,,40.706900,-73.829700,https://www.royaljiujitsuqueens.com/,
+NYC,Astoria,Renzo Gracie Queens,renzograciequeens,,,,,40.767600,-73.920475,https://www.renzograciequeens.com/,
+NYC,Whitestone,Renzo Gracie Whitestone,renzograciewhitestone,,,,,40.785100,-73.809600,https://www.renzogracie-whitestone.com/,
+NYC,Jackson Heights,AT Jiu-Jitsu NYC,jiujitsunyc,,,,,40.751300,-73.883000,https://www.atjiujitsunyc.com/,
+NYC,Long Island City,Team Jucao LIC Jiu Jitsu,jucao_long_island_city,,,,,40.744933,-73.946900,https://www.bjjlic.com/,
+NYC,Ridgewood,The Jiu Jitsu Lounge,thejiujitsulounge,,,,,40.701850,-73.900900,https://www.thejiujitsulounge.com/,
+NYC,Ridgewood,5 Boro FightHaus,5borofh,,,,,40.701850,-73.900900,https://5bfh.com/,
+NYC,Astoria,Lifestyle BJJ/MMA,lifestyle_bjj_academy_nyc,,,,,40.767600,-73.920475,https://www.lifestylebjj.com/,
+NYC,Astoria,Tiger Schulmann’s - Astoria,tigerschulmannsastoria,,,,,40.767600,-73.920475,https://tsk.com/locations/ny/queens-astoria/,
+NYC,Rego Park,Tiger Schulmann’s - Rego Park,tigerschulmannsregopark,,,,,40.727800,-73.860200,https://tsk.com/locations/ny/queens-rego-park/,
 NYC,Glendale,Tiger Schulmann’s - Glendale,tigerschulmannsglendale,,,,,,,https://tsk.com/locations/ny/queens-glendale/
 NYC,Glendale,Tiger Schulmann’s - Middle Village,tsmamiddlevillage,,,,,,,https://tsk.com/locations/ny/queens-middle-village/
-NYC,Bayside,Tiger Schulmann’s - Bayside,baysidetsma,,,,,,,https://tsk.com/locations/ny/queens-bayside/
-NYC,East Elmhurst,Tiger Schulmann’s - Jackson Heights,tsmajacksonheights,,,,,,,https://tsk.com/locations/ny/queens-jackson-heights/
-NYC,Bellerose,Tiger Schulmann’s - Bellerose,tsma_bellerose,,,,,,,https://tsk.com/locations/ny/bellerose/
-NYC,Bronx,Gracie Jiu-Jitsu NY / Mike Casey Academy,mike_gracieny,,,,,,,https://gracieny.com/
-NYC,Bronx,Kaizen Brazilian Jiu-Jitsu,kaizenbjj,,,,,,,https://www.kaizen-jiujitsu.com/
-NYC,Bronx,Team Prospect Martial Arts,teamprospectma,,,,,,,https://teamprospectma.com/
-NYC,Bronx,Bronx Martial Arts Academy,bxmartialarts,,,,,,,https://www.bronxmartialarts.com/
-NYC,Bronx,Bronx Jiu-Jitsu,bronxjiujitsu,,,,,,,https://bronxjiujitsu.com/
-NYC,Bronx,Jungle Gym Martial Arts,junglegymbronx,,,,,,,https://junglegymbronx.com/
-NYC,Bronx,Bronx Combat Club / Factory,bronxcombatfactory,,,,,,,https://bronxcombatfactory.nyc/
-NYC,Bronx,Bronx Combat Factory - Striker’s Paradise,strikersparadise_bx,,,,,,,https://bronxcombatfactory.nyc/
-NYC,Bronx,East Coast United BJJ & MMA Bronx,eastcoastunitedbjj,,,,,,,https://bronxbjj.wordpress.com/
-NYC,Staten Island,Renzo Gracie Staten Island,renzograciesinybjj,,,,,,,https://sinybjj.com/
-NYC,Staten Island,Codella Brazilian Jiu Jitsu Academy,codellaacademy,,,,,,,https://codellaacademy.com/
-NYC,Staten Island,Staten Island Brazilian Jiu-Jitsu / MMA,si_bjjmma,,,,,,,https://sibjjmma.com/
-NYC,Staten Island,Dento Teki Na Judo & Jujitsu Dojo,dentotekinadojo,,,,,,,https://dtnjjd.com/
-NYC,Staten Island,Tiger Schulmann’s - Staten Island / Tottenville,tsmmatottenville,,,,,,,https://tsk.com/locations/ny/staten-island-tottenville/
-Long Island,Great Neck,A-Force Brazilian Jiu Jitsu - Great Neck,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,Port Washington,A-Force Brazilian Jiu Jitsu - Port Washington,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,Manhasset,A-Force Brazilian Jiu Jitsu - Manhasset,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,Roslyn,A-Force Brazilian Jiu Jitsu - Roslyn,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,Rockville Centre,A-Force Brazilian Jiu Jitsu - Rockville Centre,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,Syosset,A-Force Brazilian Jiu Jitsu - Syosset,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,New Hyde Park,Gracie Barra Long Island,graciebarralongisland,,,,,,,https://gblongisland.com/
-Long Island,Mineola,Royal Jiu Jitsu Academy,royaljiujitsu_,,,,,,,https://www.royaljiujitsuacademy.com/
-Long Island,Levittown,Serra BJJ Academy - Levittown,serrabjjacademy,,,,,,,https://serrabjjacademy.com/
-Long Island,Wantagh,Soca BJJ Academy - Wantagh,socabjj,,,,,,,https://socabjj.com/wantagh/
-Long Island,Glen Cove,Soca BJJ Academy - Glen Cove,socabjjglencove,,,,,,,https://socabjjglencove.com/
-Long Island,Garden City,Ray Longo’s MMA / Longo-Weidman MMA,longosmma,,,,,,,https://www.longosmma.com/
-Long Island,Malverne,Monarch Jiu-Jitsu Academy,monarch_jjacademy,,,,,,,https://monarchjiujitsuacademy.com/
-Long Island,Oceanside,ECF Gym,ecfmmagym,,,,,,,https://ecfmmagym.com/
-Long Island,Huntington,A-Force Brazilian Jiu Jitsu - Huntington,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,East Northport,A-Force Brazilian Jiu Jitsu - East Northport,aforcebjj,,,,,,,https://www.aforcebjj.com/
-Long Island,Huntington,Serra BJJ Academy - Huntington,serrabjjacademy,,,,,,,https://serrabjjacademy.com/
-Long Island,Amityville,Heavyweight Jiu-Jitsu Academy,heavyweightbjj__academy_,,,,,,,https://heavyweightjiujitsu.com/
-Long Island,Lindenhurst,Korfhage BJJ / Caio Terra Academy Long Island,korfhagebjj_cta_long_island,,,,,,,https://korfhagebjj.com/
-Long Island,Hauppauge,10th Planet Long Island,10plongisland,,,,,,,https://10plongisland.com/
-Long Island,Lake Grove,Vanguard Academy Jiu-Jitsu - Lake Grove,vanguardacademyjj,,,,,,,https://vanguardjj.com/
-Long Island,Commack,Vanguard Academy Jiu-Jitsu - Commack,vanguardacademyjj,,,,,,,https://vanguardjj.com/
-Long Island,Oakdale,Kioto Brazilian Jiu Jitsu South Shore,kiotobjj,,,,,,,https://kiotobjj.com/
-Long Island,Islip Terrace,Maxum BJJ,maxumbjj,,,,,,,https://www.maxumbjj.com/
-Long Island,Patchogue,Peak Jiu-Jitsu,jtsatava,,,,,,,https://www.peakjj.com/
-Long Island,Patchogue,Freedom Jiu Jitsu,freedomjiujitsu,,,,,,,https://freedomjiujitsu.com/
-Long Island,Yaphank,Breathe Jiu-Jitsu,breathejiujitsu,,,,,,,https://www.breathejiujitsu.com/
-Long Island,Lindenhurst,Sucker Free Jiu Jitsu,suckerfreejiujitsu,,,,,,,https://suckerfreejiujitsu.com/
-Long Island,Miller Place,United Studios PMA,unitedstudiospma,,,,,,,https://www.tryuskarate.com/
-Long Island,Huntington Station,ROK Jiu Jitsu,rok_bjj,,,,,,,https://rokbjj.com/
-Long Island,Holbrook,Forge Wrestling and Jiu Jitsu,forge_wrestling_bjj,,,,,,,https://forgewrestlingbjj.com/
-Long Island,West Babylon,Long Island MMA,li_mma,,,,,,,https://limixedmartialarts.com/
-Long Island,Holbrook,Vamos Mixed Martial Arts - Holbrook,vamos_mma,,,,,,,https://www.vamosmma.com/holbrook-ny/,"1708 Church Street, Holbrook, NY 11741"
-Long Island,Riverhead,Vamos Mixed Martial Arts - Riverhead,vamos_mma,,,,,,,https://www.vamosmma.com/riverhead-ny/,"67 East Main Street, Riverhead, NY 11901"
+NYC,Bayside,Tiger Schulmann’s - Bayside,baysidetsma,,,,,40.778733,-73.777467,https://tsk.com/locations/ny/queens-bayside/,
+NYC,East Elmhurst,Tiger Schulmann’s - Jackson Heights,tsmajacksonheights,,,,,40.761200,-73.882750,https://tsk.com/locations/ny/queens-jackson-heights/,
+NYC,Bellerose,Tiger Schulmann’s - Bellerose,tsma_bellerose,,,,,40.734700,-73.723000,https://tsk.com/locations/ny/bellerose/,
+NYC,Bronx,Gracie Jiu-Jitsu NY / Mike Casey Academy,mike_gracieny,,,,,40.848988,-73.878148,https://gracieny.com/,
+NYC,Bronx,Kaizen Brazilian Jiu-Jitsu,kaizenbjj,,,,,40.848988,-73.878148,https://www.kaizen-jiujitsu.com/,
+NYC,Bronx,Team Prospect Martial Arts,teamprospectma,,,,,40.848988,-73.878148,https://teamprospectma.com/,
+NYC,Bronx,Bronx Martial Arts Academy,bxmartialarts,,,,,40.848988,-73.878148,https://www.bronxmartialarts.com/,
+NYC,Bronx,Bronx Jiu-Jitsu,bronxjiujitsu,,,,,40.848988,-73.878148,https://bronxjiujitsu.com/,
+NYC,Bronx,Jungle Gym Martial Arts,junglegymbronx,,,,,40.848988,-73.878148,https://junglegymbronx.com/,
+NYC,Bronx,Bronx Combat Club / Factory,bronxcombatfactory,,,,,40.848988,-73.878148,https://bronxcombatfactory.nyc/,
+NYC,Bronx,Bronx Combat Factory - Striker’s Paradise,strikersparadise_bx,,,,,40.848988,-73.878148,https://bronxcombatfactory.nyc/,
+NYC,Bronx,East Coast United BJJ & MMA Bronx,eastcoastunitedbjj,,,,,40.848988,-73.878148,https://bronxbjj.wordpress.com/,
+NYC,Staten Island,Renzo Gracie Staten Island,renzograciesinybjj,,,,,40.586793,-74.146629,https://sinybjj.com/,
+NYC,Staten Island,Codella Brazilian Jiu Jitsu Academy,codellaacademy,,,,,40.586793,-74.146629,https://codellaacademy.com/,
+NYC,Staten Island,Staten Island Brazilian Jiu-Jitsu / MMA,si_bjjmma,,,,,40.586793,-74.146629,https://sibjjmma.com/,
+NYC,Staten Island,Dento Teki Na Judo & Jujitsu Dojo,dentotekinadojo,,,,,40.586793,-74.146629,https://dtnjjd.com/,
+NYC,Staten Island,Tiger Schulmann’s - Staten Island / Tottenville,tsmmatottenville,,,,,40.586793,-74.146629,https://tsk.com/locations/ny/staten-island-tottenville/,
+Long Island,Great Neck,A-Force Brazilian Jiu Jitsu - Great Neck,aforcebjj,,,,,40.783943,-73.693414,https://www.aforcebjj.com/,
+Long Island,Port Washington,A-Force Brazilian Jiu Jitsu - Port Washington,aforcebjj,,,,,40.768167,-73.617567,https://www.aforcebjj.com/,
+Long Island,Manhasset,A-Force Brazilian Jiu Jitsu - Manhasset,aforcebjj,,,,,40.793400,-73.688800,https://www.aforcebjj.com/,
+Long Island,Roslyn,A-Force Brazilian Jiu Jitsu - Roslyn,aforcebjj,,,,,40.798400,-73.647700,https://www.aforcebjj.com/,
+Long Island,Rockville Centre,A-Force Brazilian Jiu Jitsu - Rockville Centre,aforcebjj,,,,,40.661200,-73.639600,https://www.aforcebjj.com/,
+Long Island,Syosset,A-Force Brazilian Jiu Jitsu - Syosset,aforcebjj,,,,,40.820400,-73.502250,https://www.aforcebjj.com/,
+Long Island,New Hyde Park,Gracie Barra Long Island,graciebarralongisland,,,,,40.744800,-73.688900,https://gblongisland.com/,
+Long Island,Mineola,Royal Jiu Jitsu Academy,royaljiujitsu_,,,,,40.746900,-73.639800,https://www.royaljiujitsuacademy.com/,
+Long Island,Levittown,Serra BJJ Academy - Levittown,serrabjjacademy,,,,,40.725400,-73.516600,https://serrabjjacademy.com/,
+Long Island,Wantagh,Soca BJJ Academy - Wantagh,socabjj,,,,,40.685000,-73.510300,https://socabjj.com/wantagh/,
+Long Island,Glen Cove,Soca BJJ Academy - Glen Cove,socabjjglencove,,,,,40.865000,-73.627700,https://socabjjglencove.com/,
+Long Island,Garden City,Ray Longo’s MMA / Longo-Weidman MMA,longosmma,,,,,40.726033,-73.639100,https://www.longosmma.com/,
+Long Island,Malverne,Monarch Jiu-Jitsu Academy,monarch_jjacademy,,,,,40.675000,-73.673100,https://monarchjiujitsuacademy.com/,
+Long Island,Oceanside,ECF Gym,ecfmmagym,,,,,40.636200,-73.637500,https://ecfmmagym.com/,
+Long Island,Huntington,A-Force Brazilian Jiu Jitsu - Huntington,aforcebjj,,,,,40.867600,-73.410200,https://www.aforcebjj.com/,
+Long Island,East Northport,A-Force Brazilian Jiu Jitsu - East Northport,aforcebjj,,,,,40.857000,-73.314600,https://www.aforcebjj.com/,
+Long Island,Huntington,Serra BJJ Academy - Huntington,serrabjjacademy,,,,,40.867600,-73.410200,https://serrabjjacademy.com/,
+Long Island,Amityville,Heavyweight Jiu-Jitsu Academy,heavyweightbjj__academy_,,,,,40.684200,-73.417100,https://heavyweightjiujitsu.com/,
+Long Island,Lindenhurst,Korfhage BJJ / Caio Terra Academy Long Island,korfhagebjj_cta_long_island,,,,,40.688400,-73.374500,https://korfhagebjj.com/,
+Long Island,Hauppauge,10th Planet Long Island,10plongisland,,,,,40.823100,-73.195800,https://10plongisland.com/,
+Long Island,Lake Grove,Vanguard Academy Jiu-Jitsu - Lake Grove,vanguardacademyjj,,,,,40.856700,-73.116800,https://vanguardjj.com/,
+Long Island,Commack,Vanguard Academy Jiu-Jitsu - Commack,vanguardacademyjj,,,,,40.843000,-73.279900,https://vanguardjj.com/,
+Long Island,Oakdale,Kioto Brazilian Jiu Jitsu South Shore,kiotobjj,,,,,40.738200,-73.129700,https://kiotobjj.com/,
+Long Island,Islip Terrace,Maxum BJJ,maxumbjj,,,,,40.754800,-73.182700,https://www.maxumbjj.com/,
+Long Island,Patchogue,Peak Jiu-Jitsu,jtsatava,,,,,40.760900,-72.987100,https://www.peakjj.com/,
+Long Island,Patchogue,Freedom Jiu Jitsu,freedomjiujitsu,,,,,40.760900,-72.987100,https://freedomjiujitsu.com/,
+Long Island,Yaphank,Breathe Jiu-Jitsu,breathejiujitsu,,,,,40.837000,-72.917400,https://www.breathejiujitsu.com/,
+Long Island,Lindenhurst,Sucker Free Jiu Jitsu,suckerfreejiujitsu,,,,,40.688400,-73.374500,https://suckerfreejiujitsu.com/,
+Long Island,Miller Place,United Studios PMA,unitedstudiospma,,,,,40.943600,-72.991300,https://www.tryuskarate.com/,
+Long Island,Huntington Station,ROK Jiu Jitsu,rok_bjj,,,,,40.814300,-73.363400,https://rokbjj.com/,
+Long Island,Holbrook,Forge Wrestling and Jiu Jitsu,forge_wrestling_bjj,,,,,40.796400,-73.071800,https://forgewrestlingbjj.com/,
+Long Island,West Babylon,Long Island MMA,li_mma,,,,,40.715850,-73.354450,https://limixedmartialarts.com/,
+Long Island,Holbrook,Vamos Mixed Martial Arts - Holbrook,vamos_mma,,,,,40.796400,-73.071800,https://www.vamosmma.com/holbrook-ny/,"1708 Church Street, Holbrook, NY 11741"
+Long Island,Riverhead,Vamos Mixed Martial Arts - Riverhead,vamos_mma,,,,,40.926200,-72.652000,https://www.vamosmma.com/riverhead-ny/,"67 East Main Street, Riverhead, NY 11901"
 New York State,Eastchester / New Rochelle,Igor Gracie Jiu Jitsu Academy,igorgracieacademy,,,,,,,https://igorgraciejiujitsu.com/
-New York State,Briarcliff Manor,Julio Cruz BJJ Westchester,juliocruzbjj,,,,,,,https://www.juliocruzbjjwestchester.com/
-New York State,Hawthorne,Westchester Jiu Jitsu Academy / Alliance Westchester,westchesterjjacademy,,,,,,,https://westchesterjjacademy.com/
-New York State,White Plains,East Coast United Jiu Jitsu & Muay Thai,eastcoastunitedbjj,,,,,,,https://www.ecubjj.com/
-New York State,Port Chester,The Jiu Jitsu Mill,thejiujitsumill,,,,,,,http://thejiujitsumill.com/
-New York State,New Rochelle,Jungle Gym New Rochelle,junglegymnewroc,,,,,,,https://junglegymnewroc.com/
-New York State,Yonkers,Animals MMA Yonkers,animalsmmayonkers,,,,,,,https://www.mmayonkers.com/
-New York State,White Plains,Essential Jiu-Jitsu / JT Torres,essentialbjj,,,,,,,https://www.essentialbjj.com/
-New York State,Mount Vernon,Arena Training Center,arenatrainingcenterny,,,,,,,https://arenatrainingcenterny.com/
-New York State,Yonkers,Tiger Schulmann’s - Yonkers,tsmmayonkers,,,,,,,https://tsk.com/locations/ny/yonkers/
-New York State,White Plains,Tiger Schulmann’s - White Plains,tsmawhiteplains,,,,,,,https://tsk.com/locations/ny/whiteplains/
-New York State,New City,Renzo Gracie Rockland,renzogracierockland,,,,,,,https://www.renzogracierockland.com/
-New York State,Suffern,NY United BJJ,nyunitedbjj,,,,,,,https://nyunitedbjj.org/
+New York State,Briarcliff Manor,Julio Cruz BJJ Westchester,juliocruzbjj,,,,,41.144400,-73.835000,https://www.juliocruzbjjwestchester.com/,
+New York State,Hawthorne,Westchester Jiu Jitsu Academy / Alliance Westchester,westchesterjjacademy,,,,,41.107300,-73.796000,https://westchesterjjacademy.com/,
+New York State,White Plains,East Coast United Jiu Jitsu & Muay Thai,eastcoastunitedbjj,,,,,41.044929,-73.769100,https://www.ecubjj.com/,
+New York State,Port Chester,The Jiu Jitsu Mill,thejiujitsumill,,,,,41.022200,-73.679800,http://thejiujitsumill.com/,
+New York State,New Rochelle,Jungle Gym New Rochelle,junglegymnewroc,,,,,40.919350,-73.784350,https://junglegymnewroc.com/,
+New York State,Yonkers,Animals MMA Yonkers,animalsmmayonkers,,,,,40.938333,-73.874750,https://www.mmayonkers.com/,
+New York State,White Plains,Essential Jiu-Jitsu / JT Torres,essentialbjj,,,,,41.044929,-73.769100,https://www.essentialbjj.com/,
+New York State,Mount Vernon,Arena Training Center,arenatrainingcenterny,,,,,40.913050,-73.831775,https://arenatrainingcenterny.com/,
+New York State,Yonkers,Tiger Schulmann’s - Yonkers,tsmmayonkers,,,,,40.938333,-73.874750,https://tsk.com/locations/ny/yonkers/,
+New York State,White Plains,Tiger Schulmann’s - White Plains,tsmawhiteplains,,,,,41.044929,-73.769100,https://tsk.com/locations/ny/whiteplains/,
+New York State,New City,Renzo Gracie Rockland,renzogracierockland,,,,,41.147200,-73.996200,https://www.renzogracierockland.com/,
+New York State,Suffern,NY United BJJ,nyunitedbjj,,,,,41.117700,-74.124100,https://nyunitedbjj.org/,
 New York State,Rockland County,Rigoro Gym,rigorogym,,,,,,,https://rigorogym.com/
-New York State,Beacon,Evolution Grappling Academy,evobjj,,,,,,,https://evolution-bjj.com/location/beacon-ny/
-New York State,Poughkeepsie,Mercury Jiu Jitsu,2l2qfit,,,,,,,https://mercuryjiujitsu.com/
-New York State,Poughkeepsie,Precision Mixed Martial Arts,precisionboxingandmma,,,,,,,https://precisionmixedmartialarts.com/
-New York State,Kingston,Ascended Jiu-Jitsu & Yoga,bjj.ascended.yoga,,,,,,,https://ascensionbjjny.com/
-New York State,Kingston,Midtown Jiu Jitsu,midtownjj,,,,,,,https://midtownjj.com/
-New York State,Middletown,Renzo Gracie Middletown,renzograciemiddletownny,,,,,,,https://www.rgamiddletown.com/
-New York State,Albany,Atlas Jiu Jitsu - Albany,atlasjiujitsu,,,,,,,https://www.atlasjiujitsu.com/
-New York State,Valatie,Atlas Jiu Jitsu - Valatie,atlasjiujitsu,,,,,,,https://www.atlasjiujitsu.com/hudson
-New York State,Glens Falls,Atlas Jiu Jitsu - Glens Falls,atlasjiujitsu,,,,,,,https://www.atlasjiujitsu.com/
-New York State,Latham,Clever Combat Jiu-Jitsu & MMA,clevercombat,,,,,,,https://clevercombat.com/schedule/,"239 Old Maxwell Rd Building C, Latham, NY 12110"
-New York State,Latham,Renzo Gracie Latham,renzogracielatham,,,,,,,https://renzo-gracie-latham.gymdesk.com/
-New York State,Watervliet,Brian Beaury Jiu Jitsu,brianbeauryjiujitsu,,,,,,,https://brianbeauryjiujitsu.com/
-New York State,Albany,Team Jucão BJJ Albany,jucaobjjny,,,,,,,https://jucaobjjny.com/
+New York State,Beacon,Evolution Grappling Academy,evobjj,,,,,41.509700,-73.963400,https://evolution-bjj.com/location/beacon-ny/,
+New York State,Poughkeepsie,Mercury Jiu Jitsu,2l2qfit,,,,,41.728500,-73.815300,https://mercuryjiujitsu.com/,
+New York State,Poughkeepsie,Precision Mixed Martial Arts,precisionboxingandmma,,,,,41.728500,-73.815300,https://precisionmixedmartialarts.com/,
+New York State,Kingston,Ascended Jiu-Jitsu & Yoga,bjj.ascended.yoga,,,,,41.948350,-74.032100,https://ascensionbjjny.com/,
+New York State,Kingston,Midtown Jiu Jitsu,midtownjj,,,,,41.948350,-74.032100,https://midtownjj.com/,
+New York State,Middletown,Renzo Gracie Middletown,renzograciemiddletownny,,,,,41.469900,-74.407550,https://www.rgamiddletown.com/,
+New York State,Albany,Atlas Jiu Jitsu - Albany,atlasjiujitsu,,,,,42.658598,-73.763798,https://www.atlasjiujitsu.com/,
+New York State,Valatie,Atlas Jiu Jitsu - Valatie,atlasjiujitsu,,,,,42.432100,-73.668300,https://www.atlasjiujitsu.com/hudson,
+New York State,Glens Falls,Atlas Jiu Jitsu - Glens Falls,atlasjiujitsu,,,,,43.311500,-73.644800,https://www.atlasjiujitsu.com/,
+New York State,Latham,Clever Combat Jiu-Jitsu & MMA,clevercombat,,,,,42.746200,-73.763000,https://clevercombat.com/schedule/,"239 Old Maxwell Rd Building C, Latham, NY 12110"
+New York State,Latham,Renzo Gracie Latham,renzogracielatham,,,,,42.746200,-73.763000,https://renzo-gracie-latham.gymdesk.com/,
+New York State,Watervliet,Brian Beaury Jiu Jitsu,brianbeauryjiujitsu,,,,,42.729800,-73.712300,https://brianbeauryjiujitsu.com/,
+New York State,Albany,Team Jucão BJJ Albany,jucaobjjny,,,,,42.658598,-73.763798,https://jucaobjjny.com/,
 New York State,Liverpool / Syracuse,Tai Kai Jiu-Jitsu,taikaimartialarts,,,,,,,https://syracusejiujitsu.com/
 New York State,Syracuse / Baldwinsville,Haven Jiu Jitsu,havenjiujitsu,,,,,,,https://cnyjiujitsu.com/
-New York State,Syracuse,SAS Team Syracuse / Diego Ramos Academy,sasteamsyracuse,,,,,,,https://www.sasteamsyracuse.com/
+New York State,Syracuse,SAS Team Syracuse / Diego Ramos Academy,sasteamsyracuse,,,,,43.048096,-76.159179,https://www.sasteamsyracuse.com/,
 New York State,Solvay,Inner Circle BJJ,innercirclebjj,,,,,,,https://www.innercirclebjj.com/
-New York State,Syracuse,Bulletproof Combat,bulletproofbjjmma,,,,,,,https://bulletproofcombat.com/
+New York State,Syracuse,Bulletproof Combat,bulletproofbjjmma,,,,,43.048096,-76.159179,https://bulletproofcombat.com/,
 New York State,New Hartford / Utica,Dojo 1 Martial Arts,coachlen_dojo1,,,,,,,https://www.dojo1mma.com/
-New York State,Rome,David Bruce’s American Martial Arts,https://www.facebook.com/p/David-Bruces-American-Martial-Arts-100057055766799/,,,,,,,https://romekarate.com/
-New York State,Ithaca,Ithaca BJJ School,bjj_ithaca,,,,,,,https://www.ithacabjjschool.com/
-New York State,Binghamton,Broome County Martial Arts,bcmainfo,,,,,,,https://www.broomecountymartialarts.com/
-New York State,Endicott,607 Grappling,607grappling,,,,,,,https://www.607grappling.com/
+New York State,Rome,David Bruce’s American Martial Arts,https://www.facebook.com/p/David-Bruces-American-Martial-Arts-100057055766799/,,,,,43.224450,-75.447950,https://romekarate.com/,
+New York State,Ithaca,Ithaca BJJ School,bjj_ithaca,,,,,42.448450,-76.488225,https://www.ithacabjjschool.com/,
+New York State,Binghamton,Broome County Martial Arts,bcmainfo,,,,,42.113000,-75.893600,https://www.broomecountymartialarts.com/,
+New York State,Endicott,607 Grappling,607grappling,,,,,42.115800,-76.051300,https://www.607grappling.com/,
 New York State,Rochester / Irondequoit,Rochester Jiu Jitsu,rochesterjiujitsu,,,,,,,https://rochesterjiujitsu.com/
-New York State,Rochester,NOVA Jiu Jitsu,nova_jiujitsu,,,,,,,https://novajiujitsu.com/
-New York State,Rochester,Rochester Top Team,roctopteam,,,,,,,https://rochestertopteam.com/
-New York State,Webster,Dark Arts,darkartsroc,,,,,,,https://darkartsroc.com/
+New York State,Rochester,NOVA Jiu Jitsu,nova_jiujitsu,,,,,43.198103,-77.636595,https://novajiujitsu.com/,
+New York State,Rochester,Rochester Top Team,roctopteam,,,,,43.198103,-77.636595,https://rochestertopteam.com/,
+New York State,Webster,Dark Arts,darkartsroc,,,,,43.219600,-77.461600,https://darkartsroc.com/,
 New York State,Buffalo / West Seneca,Buffalo Brazilian Jiu Jitsu Academy,buffalobjj,,,,,,,https://buffalobjj.com/
 New York State,Hamburg / Buffalo,Sub Zero Jiu Jitsu,subzerobjj,,,,,,,https://subzerobjj.com/
-New York State,Buffalo,Buffalo Combat Fitness,bcfbjj,,,,,,,https://www.bcfbjj.com/
-New York State,Plattsburgh,Robert Hugus Brazilian Jiu-Jitsu,roberthugus_bjj,,,,,,,https://www.roberthugusbjj.com/
-New York State,Watertown,American Top Team Watertown,attwatertown,,,,,,,https://americantopteamwatertown.com/
-New York State,Evans Mills,Shinobi MMA and Behring Jiu Jitsu,behringjjshinobimma,,,,,,,https://shinobimmany.com/
-New Jersey,Hackensack,ROLLSTAR Jiu Jitsu,rollstar.hq,,,,,,,https://www.rollstarbjj.com/,
-New Jersey,Jersey City,Unity Jiu Jitsu Jersey City,unityjiujitsu_jerseycity,,,,,,,https://www.unityjiujitsujc.com/,
-New Jersey,Kenilworth,Untitled BJJ,untitledbjj,,,,,,,https://www.untitledbjj.com/,
-New Jersey,East Rutherford,Kokoro Jiu Jitsu,kokorojiujitsu,,,,,,,https://www.kokorojiujitsu.com/home,
-New Jersey,Waldwick,Jiu Jitsu North Jersey,jiujitsunorthjersey,,,,,,,https://jiujitsunorthjersey.com/,
+New York State,Buffalo,Buffalo Combat Fitness,bcfbjj,,,,,42.869418,-78.845336,https://www.bcfbjj.com/,
+New York State,Plattsburgh,Robert Hugus Brazilian Jiu-Jitsu,roberthugus_bjj,,,,,44.689050,-73.456700,https://www.roberthugusbjj.com/,
+New York State,Watertown,American Top Team Watertown,attwatertown,,,,,43.941500,-75.904450,https://americantopteamwatertown.com/,
+New York State,Evans Mills,Shinobi MMA and Behring Jiu Jitsu,behringjjshinobimma,,,,,44.081700,-75.830500,https://shinobimmany.com/,
+New Jersey,Hackensack,ROLLSTAR Jiu Jitsu,rollstar.hq,,,,,40.887050,-74.046900,https://www.rollstarbjj.com/,
+New Jersey,Jersey City,Unity Jiu Jitsu Jersey City,unityjiujitsu_jerseycity,,,,,40.728808,-74.068792,https://www.unityjiujitsujc.com/,
+New Jersey,Kenilworth,Untitled BJJ,untitledbjj,,,,,40.675900,-74.294400,https://www.untitledbjj.com/,
+New Jersey,East Rutherford,Kokoro Jiu Jitsu,kokorojiujitsu,,,,,40.838500,-74.104100,https://www.kokorojiujitsu.com/home,
+New Jersey,Waldwick,Jiu Jitsu North Jersey,jiujitsunorthjersey,,,,,41.013000,-74.124300,https://jiujitsunorthjersey.com/,
 New Jersey,North Haledon,Hibiscus BJJ,hibiscusbjj,,,,,,,https://www.hibiscusbjj.com/,
-New Jersey,Montclair,Montclair Martial Arts,montclairmma,,,,,,,https://www.montclairmma.com/,
-New Jersey,Hammonton,Snake Pit USA MMA,snakepitusamma,,,,,,,https://snakepitusamma.com/,
-New Jersey,Clifton,Carnicella MMA,carnicellamma,,,,,,,https://www.carnicellamma.com/,
+New Jersey,Montclair,Montclair Martial Arts,montclairmma,,,,,40.828050,-74.208800,https://www.montclairmma.com/,
+New Jersey,Hammonton,Snake Pit USA MMA,snakepitusamma,,,,,39.638000,-74.772800,https://snakepitusamma.com/,
+New Jersey,Clifton,Carnicella MMA,carnicellamma,,,,,40.857960,-74.155260,https://www.carnicellamma.com/,
 New Jersey,Sea Bright,Eleven Jiu Jitsu,elevenjiujitsu,,,,,,,https://www.mindbodyonline.com/explore/locations/eleven-jiu-jitsu?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3,
-New Jersey,West Long Branch,RR Martial Arts Academy,rrmartialarts,,,,,,,https://rrmartialarts.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
-New Jersey,Jersey City,Procel BJJ,procelbjj,,,,,,,https://procelbjj.com/,
-New Jersey,Swedesboro,Swedesboro Jiu-Jitsu and MMA,swedesboromma,,,,,,,https://www.swedesboromma.com/,
-New Jersey,Bloomfield,TRA Jiu Jitsu Bloomfield,trajiujitsubloomfield,,,,,,,https://lp.trajiujitsu.com/?utm_source=instagram&utm_medium=ig&utm_campaign=insta_bio&utm_content=link_in_bio,
-New Jersey,Bayonne,TRA Jiu Jitsu Bayonne,trajiujitsubayonne,,,,,,,https://lp.trajiujitsu.com/?utm_source=instagram&utm_medium=ig&utm_campaign=insta_bio&utm_content=link_in_bio,
-New Jersey,Bayonne,Prolific BJJ,prolific_bjj,,,,,,,https://prolificbjj.com/
+New Jersey,West Long Branch,RR Martial Arts Academy,rrmartialarts,,,,,40.287800,-74.016200,https://rrmartialarts.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
+New Jersey,Jersey City,Procel BJJ,procelbjj,,,,,40.728808,-74.068792,https://procelbjj.com/,
+New Jersey,Swedesboro,Swedesboro Jiu-Jitsu and MMA,swedesboromma,,,,,39.752900,-75.336200,https://www.swedesboromma.com/,
+New Jersey,Bloomfield,TRA Jiu Jitsu Bloomfield,trajiujitsubloomfield,,,,,40.803500,-74.189100,https://lp.trajiujitsu.com/?utm_source=instagram&utm_medium=ig&utm_campaign=insta_bio&utm_content=link_in_bio,
+New Jersey,Bayonne,TRA Jiu Jitsu Bayonne,trajiujitsubayonne,,,,,40.666400,-74.119200,https://lp.trajiujitsu.com/?utm_source=instagram&utm_medium=ig&utm_campaign=insta_bio&utm_content=link_in_bio,
+New Jersey,Bayonne,Prolific BJJ,prolific_bjj,,,,,40.666400,-74.119200,https://prolificbjj.com/,
 New Jersey,Morristown / Bernardsville,Rush MMA BJJ,rushmmabjj,,,,,,,https://rushmixedmartialarts.com/,
-New Jersey,Columbus,Tempo Jiu Jitsu,tempobjjnj,,,,,,,https://tempobjj.com/,
-New Jersey,Sewell,Tiger Kang Martial Arts,tigerkangmartialarts,,,,,,,https://tigerkangkarate.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
-New Jersey,Nutley,Cruz MMA,cruzmmaofficial,,,,,,,https://cruzmma.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
+New Jersey,Columbus,Tempo Jiu Jitsu,tempobjjnj,,,,,40.064200,-74.689900,https://tempobjj.com/,
+New Jersey,Sewell,Tiger Kang Martial Arts,tigerkangmartialarts,,,,,39.747300,-75.089900,https://tigerkangkarate.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
+New Jersey,Nutley,Cruz MMA,cruzmmaofficial,,,,,40.818500,-74.158900,https://cruzmma.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
 New Jersey,Somerset County,AK BJJ,akbjj_mma,,,,,,,https://akbjj.com/,
-New Jersey,Bloomfield,Rare Breed MMA,rarebreedmma,,,,,,,https://rarebreedmma.com/,
-New Jersey,Hoboken,David Branch Jiu Jitsu,davidbranchjiujitsu,,,,,,,https://dbjjhoboken.com/,
-New Jersey,Paramus,Bergen County BJJ,bergencountybjj,,,,,,,,
-New Jersey,Secaucus,Jiu Jitsu FTC Secaucus,jiujitsuftcsecaucus,,,,,,,https://www.jiujitsunewjersey.com/,
-New Jersey,Westwood,Pike Brazilian Jiu Jitsu Academy,pikebrazilianjiujitsuacademy,,,,,,,https://www.pikebjj.com/,
-New Jersey,Riverdale,UFC Gym Riverdale BJJ,ufcriverdale_bjj,,,,,,,https://www.ufcgym.com/locations/riverdale?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
-New Jersey,Cream Ridge,The Hive Martial Arts Academy,thehivejj,,,,,,,https://thehivejj.com/,
-New Jersey,Garwood,Fight and Fitness MMA,fightandfitnessmma,,,,,,,https://fightandfitnessmma.com/,
-New Jersey,Old Bridge,Rolles Gracie Academy,rollesgracieacademy,,,,,,,https://rollesgracieacademy.com/,
-New Jersey,Newark,Fight Club Jiu Jitsu HQ,fightclubjiujitsu.usa,,,,,,,https://fcjiujitsu.com/,
-New Jersey,Saddle Brook,Edge Ultimate Martial Arts,edgeuma,,,,,,,https://www.theedgemma.com/,
-New Jersey,Edison,Rolles Gracie Academy Edison,rollesgracieedison,,,,,,,https://rollesgracieedison.com/,
-New Jersey,Teaneck,Gregor Gracie Jiu Jitsu Teaneck,gregorgracieteaneck,,,,,,,https://www.gregorgracie.com/,
-New Jersey,Woodbridge,Velez Jiu Jitsu,velezjiujitsu,,,,,,,https://www.dieseltrainingbjj.com/,
-New Jersey,Saddle Brook,Silver Fox Brazilian Jiu Jitsu,silverfoxbjj,,,,,,,https://silverfoxbjj.com/,
-New Jersey,Clifton,Kuzushi Brazilian Jiu Jitsu,kuzushi_bjj,,,,,,,https://kuzushibjj.com/,
-New Jersey,South River,Joao Abreu BJJ Academy,jabjjacademy,,,,,,,https://jabjjacademy.com/,
-New Jersey,Jersey City,CULTR Fight Club,cultrfightclub,,,,,,,https://www.cultrfightclub.com/,
-New Jersey,Vineland,Apache MMA,apache.mma,,,,,,,https://apachemma.com/,
+New Jersey,Bloomfield,Rare Breed MMA,rarebreedmma,,,,,40.803500,-74.189100,https://rarebreedmma.com/,
+New Jersey,Hoboken,David Branch Jiu Jitsu,davidbranchjiujitsu,,,,,40.744500,-74.032900,https://dbjjhoboken.com/,
+New Jersey,Paramus,Bergen County BJJ,bergencountybjj,,,,,40.947900,-74.075200,,
+New Jersey,Secaucus,Jiu Jitsu FTC Secaucus,jiujitsuftcsecaucus,,,,,40.761900,-74.069450,https://www.jiujitsunewjersey.com/,
+New Jersey,Westwood,Pike Brazilian Jiu Jitsu Academy,pikebrazilianjiujitsuacademy,,,,,41.009200,-74.004100,https://www.pikebjj.com/,
+New Jersey,Riverdale,UFC Gym Riverdale BJJ,ufcriverdale_bjj,,,,,40.993100,-74.308800,https://www.ufcgym.com/locations/riverdale?utm_source=ig&utm_medium=social&utm_content=link_in_bio,
+New Jersey,Cream Ridge,The Hive Martial Arts Academy,thehivejj,,,,,40.139900,-74.465000,https://thehivejj.com/,
+New Jersey,Garwood,Fight and Fitness MMA,fightandfitnessmma,,,,,40.651200,-74.323900,https://fightandfitnessmma.com/,
+New Jersey,Old Bridge,Rolles Gracie Academy,rollesgracieacademy,,,,,40.398000,-74.323600,https://rollesgracieacademy.com/,
+New Jersey,Newark,Fight Club Jiu Jitsu HQ,fightclubjiujitsu.usa,,,,,40.746235,-74.198195,https://fcjiujitsu.com/,
+New Jersey,Saddle Brook,Edge Ultimate Martial Arts,edgeuma,,,,,40.903100,-74.095500,https://www.theedgemma.com/,
+New Jersey,Edison,Rolles Gracie Academy Edison,rollesgracieedison,,,,,40.515580,-74.386300,https://rollesgracieedison.com/,
+New Jersey,Teaneck,Gregor Gracie Jiu Jitsu Teaneck,gregorgracieteaneck,,,,,40.891500,-74.011900,https://www.gregorgracie.com/,
+New Jersey,Woodbridge,Velez Jiu Jitsu,velezjiujitsu,,,,,40.556000,-74.284500,https://www.dieseltrainingbjj.com/,
+New Jersey,Saddle Brook,Silver Fox Brazilian Jiu Jitsu,silverfoxbjj,,,,,40.903100,-74.095500,https://silverfoxbjj.com/,
+New Jersey,Clifton,Kuzushi Brazilian Jiu Jitsu,kuzushi_bjj,,,,,40.857960,-74.155260,https://kuzushibjj.com/,
+New Jersey,South River,Joao Abreu BJJ Academy,jabjjacademy,,,,,40.444400,-74.380100,https://jabjjacademy.com/,
+New Jersey,Jersey City,CULTR Fight Club,cultrfightclub,,,,,40.728808,-74.068792,https://www.cultrfightclub.com/,
+New Jersey,Vineland,Apache MMA,apache.mma,,,,,39.477833,-75.000033,https://apachemma.com/,
 New Jersey,Neptune Township,Asbury Park Jiu Jitsu,asburyparkjiujitsu,,,,,,,https://www.asburyparkjj.com/,
-New Jersey,Fair Lawn,Viper's Den BJJ,vipersdenbjj,,,,,,,https://vipersdenbjj.com/,
-New Jersey,South Plainfield,Method Jiu Jitsu,method_jiu_jitsu,,,,,,,https://www.methodjj.com/,
-New Jersey,Jersey City,TRA Jiu Jitsu Jersey City,tra_jiujitsu,,,,,,,https://lp.trajiujitsu.com/?utm_source=instagram&utm_medium=ig&utm_campaign=insta_bio&utm_content=link_in_bio,
-New Jersey,Edgewater,Jiu Jitsu Family NJ,brazilian_jiujitsu__nj,,,,,,,https://www.jiujitsunewjersey.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio#welcome-to-ftc,
-New Jersey,Jersey City,Renzo Gracie Jersey City,renzograciejc,,,,,,,https://renzograciejc.com/,
-New Jersey,Garfield,Choke & Dagger Combat Club,chokeanddaggercombatclub,,,,,,,https://choke-dagger-combat-club.gymdesk.com/,
-New Jersey,Hoboken,Remix MMA,remixmma2020,,,,,,,https://www.remixmma.com/,
-New Jersey,Sicklerville,Wolf Brazilian Jiu Jitsu,teamwolfbjj,,,,,,,https://www.teamwolfbjj.com/,
-New Jersey,Phillipsburg,Sneaky Panda Jiu-Jitsu,sneakypandajj,,,,,,,https://sneakypandajj.com/,
-New Jersey,Florence,Matakas Jiu Jitsu Academy Florence,matakasjiujitsu_florence,,,,,,,https://matakasbjj.com/,
-New Jersey,Montville,David Branch Jiu Jitsu Montville,davidbranchjiujitsumontville,,,,,,,https://dbjjmontville.com/,
-New Jersey,Chester,Black River BJJ,blackriverbjjchester,,,,,,,https://chesterbjj.com/,
-New Jersey,Butler,Silver Fox BJJ Butler,silverfoxbjj_butler,,,,,,,https://silverfoxbjjbutler.com/,
+New Jersey,Fair Lawn,Viper's Den BJJ,vipersdenbjj,,,,,40.934300,-74.116600,https://vipersdenbjj.com/,
+New Jersey,South Plainfield,Method Jiu Jitsu,method_jiu_jitsu,,,,,40.583900,-74.414700,https://www.methodjj.com/,
+New Jersey,Jersey City,TRA Jiu Jitsu Jersey City,tra_jiujitsu,,,,,40.728808,-74.068792,https://lp.trajiujitsu.com/?utm_source=instagram&utm_medium=ig&utm_campaign=insta_bio&utm_content=link_in_bio,
+New Jersey,Edgewater,Jiu Jitsu Family NJ,brazilian_jiujitsu__nj,,,,,40.831700,-73.973800,https://www.jiujitsunewjersey.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio#welcome-to-ftc,
+New Jersey,Jersey City,Renzo Gracie Jersey City,renzograciejc,,,,,40.728808,-74.068792,https://renzograciejc.com/,
+New Jersey,Garfield,Choke & Dagger Combat Club,chokeanddaggercombatclub,,,,,40.878900,-74.108100,https://choke-dagger-combat-club.gymdesk.com/,
+New Jersey,Hoboken,Remix MMA,remixmma2020,,,,,40.744500,-74.032900,https://www.remixmma.com/,
+New Jersey,Sicklerville,Wolf Brazilian Jiu Jitsu,teamwolfbjj,,,,,39.735400,-74.986400,https://www.teamwolfbjj.com/,
+New Jersey,Phillipsburg,Sneaky Panda Jiu-Jitsu,sneakypandajj,,,,,40.707900,-75.150700,https://sneakypandajj.com/,
+New Jersey,Florence,Matakas Jiu Jitsu Academy Florence,matakasjiujitsu_florence,,,,,40.118000,-74.805500,https://matakasbjj.com/,
+New Jersey,Montville,David Branch Jiu Jitsu Montville,davidbranchjiujitsumontville,,,,,40.904900,-74.364600,https://dbjjmontville.com/,
+New Jersey,Chester,Black River BJJ,blackriverbjjchester,,,,,40.789200,-74.677600,https://chesterbjj.com/,
+New Jersey,Butler,Silver Fox BJJ Butler,silverfoxbjj_butler,,,,,40.998800,-74.426100,https://silverfoxbjjbutler.com/,
 New Jersey,Branchburg,Branchburg BJJ Club,branchburgbjjclub,,,,,,,,
-New Jersey,Woodbridge,Woodbridge Jiu Jitsu,woodbridgemartialarts_jj,,,,,,,https://edisonkarate.com/,
-New Jersey,Windsor,Brazen Martial Arts,brazenmartialarts,,,,,,,https://brazenmartialarts.com/,
+New Jersey,Woodbridge,Woodbridge Jiu Jitsu,woodbridgemartialarts_jj,,,,,40.556000,-74.284500,https://edisonkarate.com/,
+New Jersey,Windsor,Brazen Martial Arts,brazenmartialarts,,,,,40.242300,-74.578700,https://brazenmartialarts.com/,
 New Jersey,Guttenberg,Close Quarters Brazilian Jiu Jitsu,cqbjjfit_,,,,,,,https://www.cqbjjfit.com/,
 New Jersey,Wall Township,Madhouse Academy,madhouseacademy,,,,,,,https://madhouseacademy.com/,
-New Jersey,Fort Lee,The Fight Lab USA,thefightlabusa,,,,,,,https://thefightlabusa.com/,
-New Jersey,Westwood,Elevate Jiu Jitsu Academy,elevatejiujitsuacademy,,,,,,,https://elevatejiujitsuacademy.com/,
+New Jersey,Fort Lee,The Fight Lab USA,thefightlabusa,,,,,40.850300,-73.974500,https://thefightlabusa.com/,
+New Jersey,Westwood,Elevate Jiu Jitsu Academy,elevatejiujitsuacademy,,,,,41.009200,-74.004100,https://elevatejiujitsuacademy.com/,
 New Jersey,North Jersey,SubForce Brazilian Jiu Jitsu,subforcebjj,,,,,,,https://www.subforcebjj.com/,
-New Jersey,East Hanover,Silver Fox BJJ East Hanover,silverfoxbjjeh,,,,,,,https://www.silverfoxbjjeh.com/,
-New Jersey,Edison,Ascend Jiu-Jitsu,ascend.bjj,,,,,,,https://www.ascendjiujitsu.com/
-NYC,Brooklyn,JKMA Brooklyn,jkma_brooklyn,,,,,,,https://johnnykaratenyc.com/,
-NYC,New York,Jiu Livre Grappling Office,jiulivre,,,,,,,https://www.jiulivre.com/,
-NYC,Brooklyn,5FIFTY5 Jiu Jitsu,5fifty5bjj,,,,,,,https://555jiujitsu.com/,
-NYC,New York,Next Evolution Martial Arts / Kioto BJJ NYC,nemmaa_,,,,,,,https://nextevolutionmartialarts.com/,
-NYC,New York,Harlem Free Fight Academy,harlemfreefight,,,,,,,https://harlemfreefight.org/,
-NYC,Brooklyn,Brooklyn Heights Jiu Jitsu,brooklynheightsjiujitsu,,,,,,,https://www.brooklynheightsjiujitsu.com/,
-Long Island,Hewlett,Lucid Jiu Jitsu,lucidgrappling,,,,,,,https://lucidjiujitsu.com/,
-Long Island,Southampton,Hamptons Jiu Jitsu,hamptonsjiujitsu,,,,,,,https://www.hamptonsjiujitsu.com/,
-Long Island,Port Jefferson Station,10th Planet East Long Island,10peastli,,,,,,,https://10plongislandeast.com/,
-Long Island,Hicksville,East Coast MMA & Fitness,eastcoastmmafitness,,,,,,,https://ecmmaandfitness.com/,
-Long Island,New Hyde Park,UFC Gym Long Island,ufcgymlongisland,,,,,,,https://www.ufcgym.com/locations/long-island,
-Long Island,West Islip,Smash Flow Jiu Jitsu,smashflowjj,,,,,,,https://smashflowjj.com/,
-Long Island,North Babylon,Jiu Jitsu Modern,jiu_jitsu_modern,,,,,,,https://www.jiujitsumodern.com/,
-Long Island,Massapequa,Wind Jiu-Jitsu,wind_jiujitsu,,,,,,,https://windjiujitsu.com/,
-Long Island,Cutchogue,North Fork Jiu Jitsu,northforkjiujitsu,,,,,,,https://northforkjiujitsu.com/,
-Long Island,Long Beach,West End Jiu-Jitsu Club,west_end_jiu_jitsu_club,,,,,,,https://www.westendjiujitsu.com/
-Long Island,Valley Stream,Unity Jiu Jitsu Valley Stream,unityjiujitsuvalleystream,,,,,,,https://unityjiujitsuvs.com/,"2 E Merrick Rd, Valley Stream, NY 11580"
-New York State,Bath,10th Planet Bath,10thplanetbathny,,,,,,,https://10th-planet-bath-ny.learnworlds.com/home,
-New York State,Marlboro,Snake Hill MMA,snakehillmma,,,,,,,https://snakehillmma.com/,
-New York State,Clifton Park,Clifton Park Submission Academy,cparksa_,,,,,,,https://cliftonparkbjj.com/,
-New York State,Binghamton,APEX Combat Sports,apexcombatsports,,,,,,,https://www.acsbinghamton.com/,
-New York State,Wappingers Falls,Black Hole Jiu Jitsu,blackholebjjhq,,,,,,,https://www.blackholejj.com/,
-New York State,New City,New City Jiu-Jitsu,_newcityjiujitsu,,,,,,,https://newcitybjj.com/,
-New York State,Goshen,Clear Jiu Jitsu and Judo,clear_jiu_jitsu_judo,,,,,,,http://clear-jiujitsu.com/,
-New York State,Schenectady,Electric City BJJ,electriccitybjj,,,,,,,https://electriccitybjj.com/,
-New Jersey,South Amboy,Ambush Jiu-Jitsu Club,ambushjiujitsuclub,,,,,,,,
-New Jersey,East Rutherford,Notorious MMA,notoriousmixedmartialarts,,,,,,,https://www.notoriousbjj.com/,
-New Jersey,Lodi,Mark Ramos Academy,markramosacademy_legit,,,,,,,https://www.markramosacademy.com/,
-New Jersey,Midland Park,Rigoro Gym Midland Park,rigorogym_midlandpark,,,,,,,https://rigorogym.com/,
-New Jersey,Maywood,Precise BJJ,precisebjj,,,,,,,https://www.precisebjj.com/,
-New Jersey,Whitehouse Station,Rampart Academy Jiu Jitsu,rampartacademyjiujitsu,,,,,,,https://rampartacademyjiujitsu.com/,
-New Jersey,Wayne,Up Top Martial Arts,uptopmartialarts,,,,,,,,
-New Jersey,Morristown,Four Elements Jiu-Jitsu Academy,fourelementsjiujitsu,,,,,,,https://fourelementsjiujitsu.com/,
+New Jersey,East Hanover,Silver Fox BJJ East Hanover,silverfoxbjjeh,,,,,40.819200,-74.363600,https://www.silverfoxbjjeh.com/,
+New Jersey,Edison,Ascend Jiu-Jitsu,ascend.bjj,,,,,40.515580,-74.386300,https://www.ascendjiujitsu.com/,
+NYC,Brooklyn,JKMA Brooklyn,jkma_brooklyn,,,,,40.651551,-73.954526,https://johnnykaratenyc.com/,
+NYC,New York,Jiu Livre Grappling Office,jiulivre,,,,,40.759186,-73.981724,https://www.jiulivre.com/,
+NYC,Brooklyn,5FIFTY5 Jiu Jitsu,5fifty5bjj,,,,,40.651551,-73.954526,https://555jiujitsu.com/,
+NYC,New York,Next Evolution Martial Arts / Kioto BJJ NYC,nemmaa_,,,,,40.759186,-73.981724,https://nextevolutionmartialarts.com/,
+NYC,New York,Harlem Free Fight Academy,harlemfreefight,,,,,40.759186,-73.981724,https://harlemfreefight.org/,
+NYC,Brooklyn,Brooklyn Heights Jiu Jitsu,brooklynheightsjiujitsu,,,,,40.651551,-73.954526,https://www.brooklynheightsjiujitsu.com/,
+Long Island,Hewlett,Lucid Jiu Jitsu,lucidgrappling,,,,,40.640400,-73.695700,https://lucidjiujitsu.com/,
+Long Island,Southampton,Hamptons Jiu Jitsu,hamptonsjiujitsu,,,,,40.894300,-72.399900,https://www.hamptonsjiujitsu.com/,
+Long Island,Port Jefferson Station,10th Planet East Long Island,10peastli,,,,,40.913600,-73.046400,https://10plongislandeast.com/,
+Long Island,Hicksville,East Coast MMA & Fitness,eastcoastmmafitness,,,,,40.763475,-73.543750,https://ecmmaandfitness.com/,
+Long Island,New Hyde Park,UFC Gym Long Island,ufcgymlongisland,,,,,40.744800,-73.688900,https://www.ufcgym.com/locations/long-island,
+Long Island,West Islip,Smash Flow Jiu Jitsu,smashflowjj,,,,,40.711700,-73.300700,https://smashflowjj.com/,
+Long Island,North Babylon,Jiu Jitsu Modern,jiu_jitsu_modern,,,,,40.732100,-73.323600,https://www.jiujitsumodern.com/,
+Long Island,Massapequa,Wind Jiu-Jitsu,wind_jiujitsu,,,,,40.668200,-73.458800,https://windjiujitsu.com/,
+Long Island,Cutchogue,North Fork Jiu Jitsu,northforkjiujitsu,,,,,41.013900,-72.480300,https://northforkjiujitsu.com/,
+Long Island,Long Beach,West End Jiu-Jitsu Club,west_end_jiu_jitsu_club,,,,,40.587700,-73.659500,https://www.westendjiujitsu.com/,
+Long Island,Valley Stream,Unity Jiu Jitsu Valley Stream,unityjiujitsuvalleystream,,,,,40.663600,-73.708667,https://unityjiujitsuvs.com/,"2 E Merrick Rd, Valley Stream, NY 11580"
+New York State,Bath,10th Planet Bath,10thplanetbathny,,,,,42.357500,-77.302800,https://10th-planet-bath-ny.learnworlds.com/home,
+New York State,Marlboro,Snake Hill MMA,snakehillmma,,,,,41.605600,-73.988000,https://snakehillmma.com/,
+New York State,Clifton Park,Clifton Park Submission Academy,cparksa_,,,,,42.849900,-73.785100,https://cliftonparkbjj.com/,
+New York State,Binghamton,APEX Combat Sports,apexcombatsports,,,,,42.113000,-75.893600,https://www.acsbinghamton.com/,
+New York State,Wappingers Falls,Black Hole Jiu Jitsu,blackholebjjhq,,,,,41.595000,-73.887600,https://www.blackholejj.com/,
+New York State,New City,New City Jiu-Jitsu,_newcityjiujitsu,,,,,41.147200,-73.996200,https://newcitybjj.com/,
+New York State,Goshen,Clear Jiu Jitsu and Judo,clear_jiu_jitsu_judo,,,,,41.394600,-74.330200,http://clear-jiujitsu.com/,
+New York State,Schenectady,Electric City BJJ,electriccitybjj,,,,,42.813300,-73.948145,https://electriccitybjj.com/,
+New Jersey,South Amboy,Ambush Jiu-Jitsu Club,ambushjiujitsuclub,,,,,40.464000,-74.274200,,
+New Jersey,East Rutherford,Notorious MMA,notoriousmixedmartialarts,,,,,40.838500,-74.104100,https://www.notoriousbjj.com/,
+New Jersey,Lodi,Mark Ramos Academy,markramosacademy_legit,,,,,40.876400,-74.083800,https://www.markramosacademy.com/,
+New Jersey,Midland Park,Rigoro Gym Midland Park,rigorogym_midlandpark,,,,,40.995700,-74.140900,https://rigorogym.com/,
+New Jersey,Maywood,Precise BJJ,precisebjj,,,,,40.902400,-74.062900,https://www.precisebjj.com/,
+New Jersey,Whitehouse Station,Rampart Academy Jiu Jitsu,rampartacademyjiujitsu,,,,,40.615600,-74.772400,https://rampartacademyjiujitsu.com/,
+New Jersey,Wayne,Up Top Martial Arts,uptopmartialarts,,,,,40.947600,-74.245800,,
+New Jersey,Morristown,Four Elements Jiu-Jitsu Academy,fourelementsjiujitsu,,,,,40.819767,-74.515700,https://fourelementsjiujitsu.com/,
 New Jersey,Galloway,Tap House Jiu-Jitsu,taphouse_jiujitsu,,,,,,,https://taphousebjj.com/,
-New Jersey,Newark,Rolles Gracie Academy Newark,rollesgracieacademy_newark,,,,,,,https://rollesgracienewark.com/,
-New Jersey,Glen Rock,Trasso Jiu Jitsu & Wrestling,trassojjw,,,,,,,https://www.trassojjw.com/,
+New Jersey,Newark,Rolles Gracie Academy Newark,rollesgracieacademy_newark,,,,,40.746235,-74.198195,https://rollesgracienewark.com/,
+New Jersey,Glen Rock,Trasso Jiu Jitsu & Wrestling,trassojjw,,,,,40.960200,-74.125400,https://www.trassojjw.com/,
 New Jersey,Wall,Impact Mixed Martial Arts,impactmma_,,,,,,,https://www.impactmuaythai.com/,
-New York State,Nyack,5150 Martial Arts,5150martialarts,,,,,,,https://5150martialarts.com/,
-New York State,Harrison,Gracie Lab Jiu-Jitsu,gracielabjj,,,,,,,https://www.gracielabjj.com/,
-New York State,Catskill,Firehouse Jiu Jitsu,firehousejiujitsu,,,,,,,https://www.firehousejj.com/,"30 W Bridge St, Catskill, NY 12414"
-New York State,Mahopac Falls,String Theory Jiu Jitsu,stringtheorybjj,,,,,,,https://www.stringtheorybjj.com/,
-New York State,Red Hook,Train Stop Jiu Jitsu,trainstopjiujitsu,,,,,,,https://www.trainstopjiujitsu.com/,
-New York State,Oswego,Oswego Jiu Jitsu,oswegojiujitsu,,,,,,,https://oswegojiujitsu.com/,
-Long Island,Syosset,ECMMA Syosset,ecmma_syosset,,,,,,,https://www.ecmmasyosset.com/,
-Long Island,Ronkonkoma,Lockdown BJJ,lockdownbjj,,,,,,,https://lockdownbjj.com/,
-NYC,Staten Island,Glory Martial Arts South Shore,glorysouthshore,,,,,,,https://gmacbooking.com/,
-New York State,Saratoga Springs,Alliance Saratoga,alliance_saratoga,,,,,,,https://saratogajiujitsu.com/,
-NYC,Astoria,Gentle Art Studio / Lotus Club Brazilian Jiu Jitsu,gentleart.studio,,,,,,,https://gentleartstudio.com/,"28-02 Astoria Blvd, Astoria, NY 11102"
-NYC,Staten Island,Castle Brazilian Jiu Jitsu,castlebjj,,,,,,,https://www.castlebjj.com/,"1595 Forest Ave, Staten Island, NY 10302"
-New Jersey,Swedesboro,Liquid Minds Mixed Martial Arts,liquidmindsmma,,,,,,,https://www.swedesboromma.com/,"95 Woodstown Rd, Swedesboro, NJ 08085"
-NYC,New York,UFC Gym Jiu-Jitsu Jiu Livre,ufcgymjiujitsu.jiulivre.nyc,,,,,,,https://www.jiulivre.com/,"383 5th Ave, 3rd Floor, New York, NY 10016"
-New Jersey,Hazlet,Hammer Sports & Performance,hammer_trained,,,,,,,https://www.hammertrained.com/,"1719 Union Ave, Hazlet, NJ 07730"
-NYC,New York,Hinds Combat Midtown West,hindscombatmidtownwest,,,,,,,https://www.hindscombatmidtownwest.com/,"360 W 36th St, New York, NY 10018"
-NYC,Flushing,Cornerstone Thai Boxing,cornerstone_thai_boxing,,,,,,,https://www.cornerstonethaiboxing.com/,"42-18 162nd St, Flushing, NY 11358"
-New Jersey,Oakhurst,Rolles Gracie Academy Ocean,rollesgracieoceannj,,,,,,,https://app.rollesgracieocean.com/founding-member,"1710 NJ-35, Oakhurst, NJ 07755"
-NYC,Brooklyn,Leoa Jiu-Jitsu,leoajiujitsu,,,,,,,,"33 Noble Street, Brooklyn, NY"
-New York State,Brewster,Jiu Jitsu Haus,jiujitsuhaus,,,,,,,https://jiujitsuhaus.com/,"988 Route 22 Suite A, Brewster, NY 10509"
+New York State,Nyack,5150 Martial Arts,5150martialarts,,,,,41.091400,-73.925200,https://5150martialarts.com/,
+New York State,Harrison,Gracie Lab Jiu-Jitsu,gracielabjj,,,,,40.971900,-73.718100,https://www.gracielabjj.com/,
+New York State,Catskill,Firehouse Jiu Jitsu,firehousejiujitsu,,,,,42.227600,-73.898500,https://www.firehousejj.com/,"30 W Bridge St, Catskill, NY 12414"
+New York State,Mahopac Falls,String Theory Jiu Jitsu,stringtheorybjj,,,,,41.372600,-73.760100,https://www.stringtheorybjj.com/,
+New York State,Red Hook,Train Stop Jiu Jitsu,trainstopjiujitsu,,,,,42.006400,-73.854600,https://www.trainstopjiujitsu.com/,
+New York State,Oswego,Oswego Jiu Jitsu,oswegojiujitsu,,,,,43.439400,-76.461300,https://oswegojiujitsu.com/,
+Long Island,Syosset,ECMMA Syosset,ecmma_syosset,,,,,40.820400,-73.502250,https://www.ecmmasyosset.com/,
+Long Island,Ronkonkoma,Lockdown BJJ,lockdownbjj,,,,,40.808300,-73.130500,https://lockdownbjj.com/,
+NYC,Staten Island,Glory Martial Arts South Shore,glorysouthshore,,,,,40.586793,-74.146629,https://gmacbooking.com/,
+New York State,Saratoga Springs,Alliance Saratoga,alliance_saratoga,,,,,43.070800,-73.740800,https://saratogajiujitsu.com/,
+NYC,Astoria,Gentle Art Studio / Lotus Club Brazilian Jiu Jitsu,gentleart.studio,,,,,40.767600,-73.920475,https://gentleartstudio.com/,"28-02 Astoria Blvd, Astoria, NY 11102"
+NYC,Staten Island,Castle Brazilian Jiu Jitsu,castlebjj,,,,,40.586793,-74.146629,https://www.castlebjj.com/,"1595 Forest Ave, Staten Island, NY 10302"
+New Jersey,Swedesboro,Liquid Minds Mixed Martial Arts,liquidmindsmma,,,,,39.752900,-75.336200,https://www.swedesboromma.com/,"95 Woodstown Rd, Swedesboro, NJ 08085"
+NYC,New York,UFC Gym Jiu-Jitsu Jiu Livre,ufcgymjiujitsu.jiulivre.nyc,,,,,40.759186,-73.981724,https://www.jiulivre.com/,"383 5th Ave, 3rd Floor, New York, NY 10016"
+New Jersey,Hazlet,Hammer Sports & Performance,hammer_trained,,,,,40.422600,-74.179900,https://www.hammertrained.com/,"1719 Union Ave, Hazlet, NJ 07730"
+NYC,New York,Hinds Combat Midtown West,hindscombatmidtownwest,,,,,40.759186,-73.981724,https://www.hindscombatmidtownwest.com/,"360 W 36th St, New York, NY 10018"
+NYC,Flushing,Cornerstone Thai Boxing,cornerstone_thai_boxing,,,,,40.733188,-73.838725,https://www.cornerstonethaiboxing.com/,"42-18 162nd St, Flushing, NY 11358"
+New Jersey,Oakhurst,Rolles Gracie Academy Ocean,rollesgracieoceannj,,,,,40.264800,-74.018400,https://app.rollesgracieocean.com/founding-member,"1710 NJ-35, Oakhurst, NJ 07755"
+NYC,Brooklyn,Leoa Jiu-Jitsu,leoajiujitsu,,,,,40.651551,-73.954526,,"33 Noble Street, Brooklyn, NY"
+New York State,Brewster,Jiu Jitsu Haus,jiujitsuhaus,,,,,41.409700,-73.599200,https://jiujitsuhaus.com/,"988 Route 22 Suite A, Brewster, NY 10509"

@@ -238,4 +238,21 @@
   .headerMenuButton{
     transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
   }
+
+  :root.theme-breathing body,
+  :root.theme-breathing .header,
+  :root.theme-breathing .row,
+  :root.theme-breathing .pill,
+  :root.theme-breathing .menu,
+  :root.theme-breathing .suggest,
+  :root.theme-breathing .seminarCard,
+  :root.theme-breathing .seminarCard__date,
+  :root.theme-breathing .viewToggle,
+  :root.theme-breathing .viewToggle__thumb,
+  :root.theme-breathing .themeToggle,
+  :root.theme-breathing .headerMenuButton,
+  :root.theme-breathing .seminarRail__arrow{
+    transition-duration: 520ms;
+    transition-timing-function: ease-in-out;
+  }
 }
