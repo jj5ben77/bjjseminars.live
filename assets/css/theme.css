@@ -20,6 +20,31 @@
   line-height: 1;
 }
 
+/* Keep both theme logos in the same footprint so they can crossfade. */
+.header__logoCrop{
+  position: relative;
+  display: grid;
+}
+
+.header__logoCrop .header__logoImage{
+  grid-area: 1 / 1;
+  display: block !important;
+  opacity: 1;
+}
+
+.header__logoCrop .header__logoImage--dark{
+  opacity: 0;
+}
+
+:root[data-theme="dark"] .header__logoCrop .header__logoImage--light{
+  display: block !important;
+  opacity: 0;
+}
+
+:root[data-theme="dark"] .header__logoCrop .header__logoImage--dark{
+  opacity: 1;
+}
+
 .siteHeaderInner--title .viewToggle{
   order: 6;
 }
@@ -239,6 +264,10 @@
     transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
   }
 
+  .header__logoImage{
+    transition: opacity 180ms ease;
+  }
+
   :root.theme-breathing body,
   :root.theme-breathing .header,
   :root.theme-breathing .row,
@@ -251,8 +280,59 @@
   :root.theme-breathing .viewToggle__thumb,
   :root.theme-breathing .themeToggle,
   :root.theme-breathing .headerMenuButton,
-  :root.theme-breathing .seminarRail__arrow{
-    transition-duration: 520ms;
+  :root.theme-breathing .seminarRail__arrow,
+  :root.theme-breathing .header__title,
+  :root.theme-breathing .headerSocial__link,
+  :root.theme-breathing .seminarRail__eyebrow,
+  :root.theme-breathing .seminarRail__title,
+  :root.theme-breathing .group__label,
+  :root.theme-breathing .cell,
+  :root.theme-breathing .cell a,
+  :root.theme-breathing .seminarCard__name,
+  :root.theme-breathing .regionTabs__button{
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: 650ms;
     transition-timing-function: ease-in-out;
+  }
+
+  :root.theme-breathing .header__logoImage{
+    transition: opacity 650ms ease-in-out;
+  }
+}
+
+@media (max-width: 640px) and (prefers-reduced-motion: no-preference){
+  :root.theme-breathing .row,
+  :root.theme-breathing .suggest,
+  :root.theme-breathing .seminarCard,
+  :root.theme-breathing .seminarCard__date,
+  :root.theme-breathing .seminarRail__arrow,
+  :root.theme-breathing .headerSocial__link,
+  :root.theme-breathing .seminarRail__eyebrow,
+  :root.theme-breathing .seminarRail__title,
+  :root.theme-breathing .group__label,
+  :root.theme-breathing .cell,
+  :root.theme-breathing .cell a,
+  :root.theme-breathing .seminarCard__name,
+  :root.theme-breathing .regionTabs__button{
+    transition: none;
+  }
+
+  :root.theme-breathing body,
+  :root.theme-breathing .header,
+  :root.theme-breathing .pill,
+  :root.theme-breathing .menu,
+  :root.theme-breathing .viewToggle,
+  :root.theme-breathing .viewToggle__thumb,
+  :root.theme-breathing .themeToggle,
+  :root.theme-breathing .headerMenuButton,
+  :root.theme-breathing .header__title{
+    transition-property: background-color, color, border-color;
+    transition-duration: 360ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  :root.theme-breathing .header__logoImage{
+    transition: opacity 360ms ease-in-out;
+    will-change: opacity;
   }
 }

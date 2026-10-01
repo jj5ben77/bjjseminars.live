@@ -50,10 +50,11 @@ function initThemeToggle(){
     } catch{}
 
     const oppositeTheme = settledTheme === "dark" ? "light" : "dark";
+    const isCompactViewport = window.matchMedia("(max-width: 640px)").matches;
     document.documentElement.classList.add("theme-breathing");
-    breathTimers.push(window.setTimeout(() => applyTheme(oppositeTheme), 180));
-    breathTimers.push(window.setTimeout(() => applyTheme(settledTheme), 760));
-    breathTimers.push(window.setTimeout(stopThemeBreath, 1420));
+    breathTimers.push(window.setTimeout(() => applyTheme(oppositeTheme), isCompactViewport ? 120 : 200));
+    breathTimers.push(window.setTimeout(() => applyTheme(settledTheme), isCompactViewport ? 650 : 1100));
+    breathTimers.push(window.setTimeout(stopThemeBreath, isCompactViewport ? 1100 : 1850));
   };
 
   applyTheme(settledTheme);
