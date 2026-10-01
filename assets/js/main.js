@@ -24,7 +24,6 @@ function initThemeToggle(){
   if(!button) return;
 
   let settledTheme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
-  const breathTimers = [];
 
   const applyTheme = (theme) => {
     const isDark = theme === "dark";
@@ -36,31 +35,8 @@ function initThemeToggle(){
     button.title = label;
   };
 
-  const stopThemeBreath = () => {
-    breathTimers.splice(0).forEach(window.clearTimeout);
-    document.documentElement.classList.remove("theme-breathing");
-  };
-
-  const startThemeBreath = () => {
-    if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    try{
-      if(sessionStorage.getItem("bjj-seminars-theme-breathed")) return;
-      sessionStorage.setItem("bjj-seminars-theme-breathed", "1");
-    } catch{}
-
-    const oppositeTheme = settledTheme === "dark" ? "light" : "dark";
-    const isCompactViewport = window.matchMedia("(max-width: 640px)").matches;
-    document.documentElement.classList.add("theme-breathing");
-    breathTimers.push(window.setTimeout(() => applyTheme(oppositeTheme), isCompactViewport ? 120 : 200));
-    breathTimers.push(window.setTimeout(() => applyTheme(settledTheme), isCompactViewport ? 650 : 1100));
-    breathTimers.push(window.setTimeout(stopThemeBreath, isCompactViewport ? 1100 : 1850));
-  };
-
   applyTheme(settledTheme);
-  startThemeBreath();
   button.addEventListener("click", () => {
-    stopThemeBreath();
     const nextTheme = settledTheme === "dark" ? "light" : "dark";
     settledTheme = nextTheme;
     localStorage.setItem("bjj-seminars-theme", nextTheme);
