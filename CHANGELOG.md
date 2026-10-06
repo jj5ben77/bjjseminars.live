@@ -2,6 +2,15 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-06
+
+### Added
+
+- Added **Calestine Jiu Jitsu** in Brooklyn and **Hamptons Jiu-Jitsu Westhampton Beach** to the gym directory.
+- Added new seminars featuring **Emily Kwok** and **Carl Massaro**.
+- Added four additional **Federico Tisi USA Seminar Tour** stops in Queens, Scotch Plains, Nyack, and Old Bridge.
+- Added seminar flyers, Instagram sources, pricing details where available, and ZIP-search coordinates for the new listings.
+
 ## 2026-10-01
 
 ### Added
