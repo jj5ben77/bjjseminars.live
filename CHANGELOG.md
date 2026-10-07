@@ -2,6 +2,14 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-07
+
+### Added
+
+- Added **Wisdom Jiu Jitsu Academy** in Randolph, New Jersey, to the gym directory.
+- Added seminars featuring **Jacob Couch** at Montclair Martial Arts, **Mason Fowler** at Korfhage BJJ, and **Mayssa Bastos** at Wisdom Jiu Jitsu Academy.
+- Added verified seminar flyers, Instagram sources, pricing details, addresses, and search coordinates for the new listings.
+
 ## 2026-10-06
 
 ### Added
