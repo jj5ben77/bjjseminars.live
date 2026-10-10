@@ -2,6 +2,14 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-10
+
+### Added
+
+- Added the **5150 Bully Prevention Workshop**, **Illuminati Competition Session at Webb Fitness & MMA**, **Pablo Carela Total Control Workshop**, and **Anderson Campos Kids Charity Seminar**.
+- Added verified event flyers, Instagram sources, event times, pricing details, and search coordinates for all four listings.
+- Added **Caio Terra Academy Queens** and **Ahlert Jiu Jitsu** to the gym directory with verified Instagram accounts, websites, addresses, and search coordinates.
+
 ## 2026-10-07
 
 ### Added
