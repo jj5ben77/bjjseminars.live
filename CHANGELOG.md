@@ -2,6 +2,14 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-15
+
+- Added Rob Lauth guest instruction at Kokoro, Cindy Ung at Endgame BJJ, and Rafael Lovato Jr. seminar stops at Savarese BJJ, Renzo Gracie Northern Valley, and Buffalo United Martial Arts.
+- Added the Four Elements grand re-opening seminars. The Alexandre Manara open mat remains outside the seminar-only event feed.
+- Added Irie Martial Arts FC, Endgame BJJ, and Buffalo United Martial Arts to the gym directory.
+- Recorded the seminar intake rule to verify every host gym against the directory and include verified missing hosts in the preview.
+- Verified against Instagram stories and saved Repost sources. Added original flyers for all six new event listings, with the Lovato tour flyer shared by its three stops.
+
 ## 2026-10-10
 
 ### Added
