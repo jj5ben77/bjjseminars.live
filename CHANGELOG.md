@@ -4,6 +4,7 @@ Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented 
 
 ## 2026-10-19
 
+- Added André Almeida's October 24 No-Gi seminar at RABJJ Academy in Robbinsville, with the original flyer; verified the host gym is already listed.
 - Added Adi Zimmerman's October 24 deep half guard seminar at West End Jiu-Jitsu Club and Ffion Davies' February 28, 2027 Gi and No-Gi seminars at Park Slope Academy, with original flyers.
 - Added Maximum Athletics in North Plainfield to the gym directory. Verified both seminar hosts already exist in the directory.
 
