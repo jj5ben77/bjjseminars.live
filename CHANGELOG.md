@@ -2,6 +2,11 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-19
+
+- Added Adi Zimmerman's October 24 deep half guard seminar at West End Jiu-Jitsu Club and Ffion Davies' February 28, 2027 Gi and No-Gi seminars at Park Slope Academy, with original flyers.
+- Added Maximum Athletics in North Plainfield to the gym directory. Verified both seminar hosts already exist in the directory.
+
 ## 2026-10-15
 
 - Added Rob Lauth guest instruction at Kokoro, Cindy Ung at Endgame BJJ, and Rafael Lovato Jr. seminar stops at Savarese BJJ, Renzo Gracie Northern Valley, and Buffalo United Martial Arts.
