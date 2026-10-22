@@ -2,6 +2,12 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-22
+
+- Added Chris Wojcik's November 10 seminar at Bayshore Brazilian Jiu Jitsu and Devhonte “Bones” Johnson's November 15 seminar at Unity Jiu Jitsu Valley Stream, with original flyers. Verified both host gyms are already listed.
+- Added Eigen Jiu Jitsu in Allendale to the gym directory with its verified Instagram account.
+- Simplified the five latest seminar titles to instructor names; times and topics remain on their flyers.
+
 ## 2026-10-19
 
 - Added André Almeida's October 24 No-Gi seminar at RABJJ Academy in Robbinsville, with the original flyer; verified the host gym is already listed.
