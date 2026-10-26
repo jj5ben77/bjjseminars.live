@@ -2,6 +2,10 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-26
+
+- Added Lake Effect Martial Arts in Depew and Team Savage LIMMA in Long Island City to the gym directory, with verified Instagram accounts and addresses. Team Savage is a separate location from the existing Long Island MMA listing in West Babylon.
+
 ## 2026-10-22
 
 - Added Chris Wojcik's November 10 seminar at Bayshore Brazilian Jiu Jitsu and Devhonte “Bones” Johnson's November 15 seminar at Unity Jiu Jitsu Valley Stream, with original flyers. Verified both host gyms are already listed.
