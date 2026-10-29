@@ -2,6 +2,12 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-10-29
+
+- Added seminars with Dr. Vikas Patel at Lucid Jiu Jitsu, Shintaro Higashi at 5FIFTY5, Ramon Ribeiro at Jiu Jitsu FTC Secaucus, and Christos Papadelos at Union BJJ MMA, plus the women's self-defense workshop at Renzo Gracie Latham.
+- Included three original flyers. Ramon Ribeiro and Christos Papadelos currently link to their source reels without local flyers.
+- Added verified host Union BJJ MMA to the directory. Unverified city and address fields remain blank. Verified all five seminar hosts are listed.
+
 ## 2026-10-26
 
 - Added Lake Effect Martial Arts in Depew and Team Savage LIMMA in Long Island City to the gym directory, with verified Instagram accounts and addresses. Team Savage is a separate location from the existing Long Island MMA listing in West Babylon.
