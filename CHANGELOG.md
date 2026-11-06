@@ -2,6 +2,41 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-11-06
+
+- Added Eigen's free workshop, Jared Gordon at Team Savage LIMMA, Mayssa Bastos at Unity, Marcos Tinoco at Ascend, Jon Terry at Lifestyle, Mike Paolillo at AMA, and Chris Haueter's April 17 seminar and April 18 VIP session at Nisky, with seven original flyers and source links.
+- Added Nisky Martial Arts & Family Center using its official website and verified address. Its unverified Instagram account remains blank.
+- Updated Eigen's address, Lifestyle's Instagram and address, and Unity's address from official posts and the Lifestyle website. Cleared outdated coordinates for Lifestyle and Unity rather than reusing coordinates for their previous locations.
+- Secaucus's undated reel is excluded until its instructor and date can be confirmed.
+
+## 2026-11-02
+
+- Added seminars with Gokor Chivichyan at Ronin Martial Arts Academy, Brian Glick at Jiu Jitsu North Jersey, and JJ Franco at Silver Fox BJJ East Hanover, with original flyers.
+- Added verified host listings for Ronin Martial Arts Academy and Silver Fox BJJ East Hanover; verified Jiu Jitsu North Jersey was already listed.
+- Added the original Ramon Ribeiro and Christos Papadelos flyers to their seminar listings.
+
+## 2026-10-29
+
+- Added seminars with Dr. Vikas Patel at Lucid Jiu Jitsu, Shintaro Higashi at 5FIFTY5, Ramon Ribeiro at Jiu Jitsu FTC Secaucus, and Christos Papadelos at Union BJJ MMA, plus the women's self-defense workshop at Renzo Gracie Latham.
+- Included original flyers for all five seminars.
+- Added verified host Union BJJ MMA to the directory. Unverified city and address fields remain blank. Verified all five seminar hosts are listed.
+
+## 2026-10-26
+
+- Added Lake Effect Martial Arts in Depew and Team Savage LIMMA in Long Island City to the gym directory, with verified Instagram accounts and addresses. Team Savage is a separate location from the existing Long Island MMA listing in West Babylon.
+
+## 2026-10-22
+
+- Added Chris Wojcik's November 10 seminar at Bayshore Brazilian Jiu Jitsu and Devhonte “Bones” Johnson's November 15 seminar at Unity Jiu Jitsu Valley Stream, with original flyers. Verified both host gyms are already listed.
+- Added Eigen Jiu Jitsu in Allendale to the gym directory with its verified Instagram account.
+- Simplified the five latest seminar titles to instructor names; times and topics remain on their flyers.
+
+## 2026-10-19
+
+- Added André Almeida's October 24 No-Gi seminar at RABJJ Academy in Robbinsville, with the original flyer; verified the host gym is already listed.
+- Added Adi Zimmerman's October 24 deep half guard seminar at West End Jiu-Jitsu Club and Ffion Davies' February 28, 2027 Gi and No-Gi seminars at Park Slope Academy, with original flyers.
+- Added Maximum Athletics in North Plainfield to the gym directory. Verified both seminar hosts already exist in the directory.
+
 ## 2026-10-15
 
 - Added Rob Lauth guest instruction at Kokoro, Cindy Ung at Endgame BJJ, and Rafael Lovato Jr. seminar stops at Savarese BJJ, Renzo Gracie Northern Valley, and Buffalo United Martial Arts.

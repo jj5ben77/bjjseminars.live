@@ -109,7 +109,7 @@ NYC,New York,Renzo Gracie Upper West Side,renzogracieuws,,,,,40.759186,-73.98172
 NYC,New York,Renzo Gracie Wall Street,renzograciewallst,,,,,40.759186,-73.981724,https://renzograciewallst.com/,
 NYC,New York,Renzo Gracie East Side,renzogracieeastside,,,,,40.759186,-73.981724,https://www.renzogracieeastside.com/,
 NYC,New York,Marcelo Garcia Jiu-Jitsu NYC,mgjjnyc,,,,,40.759186,-73.981724,https://marcelogarciajj.com/nyc/,
-NYC,New York,Unity Jiu Jitsu,unityjiujitsu,,,,,40.759186,-73.981724,https://unityjiujitsu.com/,
+NYC,New York,Unity Jiu Jitsu,unityjiujitsu,,,,,,,https://unityjiujitsu.com/,"144 W 114th St, New York, NY"
 NYC,New York,Studio X BJJ,studioxjiujitsu,,,,,40.759186,-73.981724,https://www.studiox.nyc/,
 NYC,New York,SD Jiu-Jitsu - Studio X,sdjiujitsu,,,,,40.759186,-73.981724,https://www.sdjiujitsu.com/,
 NYC,New York,10th Planet NYC,10thplanetnyc,,,,,40.759186,-73.981724,https://www.10thplanetjjnyc.com/,
@@ -186,7 +186,7 @@ NYC,Jackson Heights,AT Jiu-Jitsu NYC,jiujitsunyc,,,,,40.751300,-73.883000,https:
 NYC,Long Island City,Team Jucao LIC Jiu Jitsu,jucao_long_island_city,,,,,40.744933,-73.946900,https://www.bjjlic.com/,
 NYC,Ridgewood,The Jiu Jitsu Lounge,thejiujitsulounge,,,,,40.701850,-73.900900,https://www.thejiujitsulounge.com/,
 NYC,Ridgewood,5 Boro FightHaus,5borofh,,,,,40.701850,-73.900900,https://5bfh.com/,
-NYC,Astoria,Lifestyle BJJ/MMA,lifestyle_bjj_academy_nyc,,,,,40.767600,-73.920475,https://www.lifestylebjj.com/,
+NYC,Astoria,Lifestyle BJJ/MMA,lifestyle_ocj_bjj,,,,,,,https://www.lifestylebjj.com/,"30-89 38th Street, Astoria, NY 11103"
 NYC,Astoria,Tiger Schulmann’s - Astoria,tigerschulmannsastoria,,,,,40.767600,-73.920475,https://tsk.com/locations/ny/queens-astoria/,
 NYC,Rego Park,Tiger Schulmann’s - Rego Park,tigerschulmannsregopark,,,,,40.727800,-73.860200,https://tsk.com/locations/ny/queens-rego-park/,
 NYC,Glendale,Tiger Schulmann’s - Glendale,tigerschulmannsglendale,,,,,,,https://tsk.com/locations/ny/queens-glendale/
@@ -419,3 +419,11 @@ NYC,Elmhurst,Studio X Elmhurst / Kings Combat Elmhurst,studioxelmhurst,,,,2026-1
 NYC,Brooklyn,Irie Martial Arts FC,iriemartialarts,,,,2026-10-15,,,,"37 Greenpoint Avenue, 3rd Floor, Room 305, Brooklyn, NY 11222"
 New Jersey,Williamstown,Endgame BJJ,endgamebjj,,,,2026-10-15,,,,"2041 S Black Horse Pike, Williamstown, NJ 08094"
 New York State,Buffalo,Buffalo United Martial Arts,buffalo_united_martial_arts,,,,2026-10-15,,,https://buffalounitedmartialarts.com/,
+New Jersey,North Plainfield,Maximum Athletics,maximumathletics,,,,2026-10-19,,,https://maximum-athletics.com/,"385 Somerset St, North Plainfield, NJ 07060"
+New Jersey,Allendale,Eigen Jiu Jitsu,eigenjj,,,,2026-10-22,,,,"240 W Crescent Ave, Allendale, NJ"
+New York State,Depew,Lake Effect Martial Arts,lakeeffectmartialarts,,,,2026-10-26,,,,"2106 George Urban Blvd, Depew, NY 14043"
+NYC,Long Island City,Team Savage LIMMA,teamsavagelimma,,,,2026-10-26,,,https://limixedmartialarts.com/locations/long-island-city,"24-09 41st Ave, Long Island City, NY 11101"
+New Jersey,,Union BJJ MMA,unionbjjmma,,,,2026-10-29,,,https://www.unionbjjmma.com/,
+New York State,Rochester,Ronin Martial Arts Academy,roninmartialartsrochesterny,,,,2026-11-02,,,https://www.roninmaa.com/,"1600 N Clinton Ave, Rochester, NY 14621"
+New Jersey,East Hanover,Silver Fox BJJ East Hanover,silverfoxbjjeh,,,,2026-11-02,,,https://www.silverfoxbjjeh.com/,"28 Littell Rd, East Hanover, NJ 07936"
+New York State,Niskayuna,Nisky Martial Arts & Family Center,,,,,2026-11-06,,,https://niskymartialarts.com/,"2305 Nott Street East, Suite 303, Niskayuna, NY 12309"
