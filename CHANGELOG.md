@@ -2,6 +2,10 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-11-12
+
+- Added six events with original flyers: Alex Au at Kokoro, Owen Jones at Vanguard Lake Grove, Judo for BJJ at SubForce, Paulo Rodrigues at Masterskya, Dominyka Obelenyte at Princeton BJJ, and JT Torres at Radji Barrett Jiu-Jitsu.
+
 ## 2026-11-06
 
 - Added Eigen's free workshop, Jared Gordon at Team Savage LIMMA, Mayssa Bastos at Unity, Marcos Tinoco at Ascend, Jon Terry at Lifestyle, Mike Paolillo at AMA, and Chris Haueter's April 17 seminar and April 18 VIP session at Nisky, with seven original flyers and source links.
