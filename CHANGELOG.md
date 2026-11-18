@@ -2,6 +2,11 @@
 
 Public updates to [BJJ Seminars Live](https://bjjseminars.live/) are documented here by release date.
 
+## 2026-11-18
+
+- Added seven events with original flyers: Rafael Silveira at Heritage, Dailah Martinez at Deadweight, Paul Schreiner at Marcelo Garcia Academy, Matt Dvorovy at Otherworld, Mauricio Ruffy at Nick Catone MMA, Downbeach/JCC's free seminar, and Girls in Gis at Apache MMA.
+- Added Community Jiu Jitsu in Boonton and Downbeach Jiu Jitsu in Margate City to the gym directory.
+
 ## 2026-11-12
 
 - Added six events with original flyers: Alex Au at Kokoro, Owen Jones at Vanguard Lake Grove, Judo for BJJ at SubForce, Paulo Rodrigues at Masterskya, Dominyka Obelenyte at Princeton BJJ, and JT Torres at Radji Barrett Jiu-Jitsu.
